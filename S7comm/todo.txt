@@ -1,0 +1,2 @@
+Customize Plant identification of the module, reversing hexdump szl id 001c index  0003
+Do the same thing for kernel version szl id 0132 index 0004

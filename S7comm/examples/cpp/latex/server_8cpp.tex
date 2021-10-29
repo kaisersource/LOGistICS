@@ -1,0 +1,100 @@
+\hypertarget{server_8cpp}{}\doxysection{server.\+cpp File Reference}
+\label{server_8cpp}\index{server.cpp@{server.cpp}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include \char`\"{}snap7.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+Include dependency graph for server.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{server_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{snap7_8h_a9d788225533cdad3848aa5f83020fbc3}{S7\+A\+PI}} \mbox{\hyperlink{server_8cpp_a953cb066553033460a66d104f2b58c5a}{Event\+Call\+Back}} (void $\ast$usr\+Ptr, \mbox{\hyperlink{snap7_8h_a47606d433a2f84c9c65147e7e2daf167}{P\+Srv\+Event}} P\+Event, int Size)
+\item 
+void \mbox{\hyperlink{snap7_8h_a9d788225533cdad3848aa5f83020fbc3}{S7\+A\+PI}} \mbox{\hyperlink{server_8cpp_ab63534a12867193cd4e63d36a9b6cf7b}{Read\+Event\+Call\+Back}} (void $\ast$usr\+Ptr, \mbox{\hyperlink{snap7_8h_a47606d433a2f84c9c65147e7e2daf167}{P\+Srv\+Event}} P\+Event, int Size)
+\item 
+int \mbox{\hyperlink{server_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+T\+S7\+Server $\ast$ \mbox{\hyperlink{server_8cpp_a0f95bcbb1648e77cb4c8855aa04084bf}{Server}}
+\item 
+unsigned char \mbox{\hyperlink{server_8cpp_ac9fa26f798e18a8c1a80ed9aed3c48f7}{D\+B21}} \mbox{[}512\mbox{]}
+\item 
+unsigned char \mbox{\hyperlink{server_8cpp_a06ba20d9e50b8f4df929b26fdc7c02c9}{D\+B103}} \mbox{[}1280\mbox{]}
+\item 
+unsigned char \mbox{\hyperlink{server_8cpp_a4db0da4c18aea284b3ad0665ced42f0e}{D\+B3}} \mbox{[}1024\mbox{]}
+\item 
+\mbox{\hyperlink{snap7_8h_ab8ef12fab634c171394422d0ee8baf94}{byte}} \mbox{\hyperlink{server_8cpp_a84af253306cc25d31298f531a3166f7c}{cnt}} = 0
+\item 
+std\+::ofstream \mbox{\hyperlink{server_8cpp_a2e0aad28e3078b74e13b692c93b18962}{outfile}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{server_8cpp_a953cb066553033460a66d104f2b58c5a}\label{server_8cpp_a953cb066553033460a66d104f2b58c5a}} 
+\index{server.cpp@{server.cpp}!EventCallBack@{EventCallBack}}
+\index{EventCallBack@{EventCallBack}!server.cpp@{server.cpp}}
+\doxysubsubsection{\texorpdfstring{EventCallBack()}{EventCallBack()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{snap7_8h_a9d788225533cdad3848aa5f83020fbc3}{S7\+A\+PI}} Event\+Call\+Back (\begin{DoxyParamCaption}\item[{void $\ast$}]{usr\+Ptr,  }\item[{\mbox{\hyperlink{snap7_8h_a47606d433a2f84c9c65147e7e2daf167}{P\+Srv\+Event}}}]{P\+Event,  }\item[{int}]{Size }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{server_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\label{server_8cpp_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{server.cpp@{server.cpp}!main@{main}}
+\index{main@{main}!server.cpp@{server.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{server_8cpp_ab63534a12867193cd4e63d36a9b6cf7b}\label{server_8cpp_ab63534a12867193cd4e63d36a9b6cf7b}} 
+\index{server.cpp@{server.cpp}!ReadEventCallBack@{ReadEventCallBack}}
+\index{ReadEventCallBack@{ReadEventCallBack}!server.cpp@{server.cpp}}
+\doxysubsubsection{\texorpdfstring{ReadEventCallBack()}{ReadEventCallBack()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{snap7_8h_a9d788225533cdad3848aa5f83020fbc3}{S7\+A\+PI}} Read\+Event\+Call\+Back (\begin{DoxyParamCaption}\item[{void $\ast$}]{usr\+Ptr,  }\item[{\mbox{\hyperlink{snap7_8h_a47606d433a2f84c9c65147e7e2daf167}{P\+Srv\+Event}}}]{P\+Event,  }\item[{int}]{Size }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{server_8cpp_a84af253306cc25d31298f531a3166f7c}\label{server_8cpp_a84af253306cc25d31298f531a3166f7c}} 
+\index{server.cpp@{server.cpp}!cnt@{cnt}}
+\index{cnt@{cnt}!server.cpp@{server.cpp}}
+\doxysubsubsection{\texorpdfstring{cnt}{cnt}}
+{\footnotesize\ttfamily \mbox{\hyperlink{snap7_8h_ab8ef12fab634c171394422d0ee8baf94}{byte}} cnt = 0}
+
+\mbox{\Hypertarget{server_8cpp_a06ba20d9e50b8f4df929b26fdc7c02c9}\label{server_8cpp_a06ba20d9e50b8f4df929b26fdc7c02c9}} 
+\index{server.cpp@{server.cpp}!DB103@{DB103}}
+\index{DB103@{DB103}!server.cpp@{server.cpp}}
+\doxysubsubsection{\texorpdfstring{DB103}{DB103}}
+{\footnotesize\ttfamily unsigned char D\+B103\mbox{[}1280\mbox{]}}
+
+\mbox{\Hypertarget{server_8cpp_ac9fa26f798e18a8c1a80ed9aed3c48f7}\label{server_8cpp_ac9fa26f798e18a8c1a80ed9aed3c48f7}} 
+\index{server.cpp@{server.cpp}!DB21@{DB21}}
+\index{DB21@{DB21}!server.cpp@{server.cpp}}
+\doxysubsubsection{\texorpdfstring{DB21}{DB21}}
+{\footnotesize\ttfamily unsigned char D\+B21\mbox{[}512\mbox{]}}
+
+\mbox{\Hypertarget{server_8cpp_a4db0da4c18aea284b3ad0665ced42f0e}\label{server_8cpp_a4db0da4c18aea284b3ad0665ced42f0e}} 
+\index{server.cpp@{server.cpp}!DB3@{DB3}}
+\index{DB3@{DB3}!server.cpp@{server.cpp}}
+\doxysubsubsection{\texorpdfstring{DB3}{DB3}}
+{\footnotesize\ttfamily unsigned char D\+B3\mbox{[}1024\mbox{]}}
+
+\mbox{\Hypertarget{server_8cpp_a2e0aad28e3078b74e13b692c93b18962}\label{server_8cpp_a2e0aad28e3078b74e13b692c93b18962}} 
+\index{server.cpp@{server.cpp}!outfile@{outfile}}
+\index{outfile@{outfile}!server.cpp@{server.cpp}}
+\doxysubsubsection{\texorpdfstring{outfile}{outfile}}
+{\footnotesize\ttfamily std\+::ofstream outfile}
+
+\mbox{\Hypertarget{server_8cpp_a0f95bcbb1648e77cb4c8855aa04084bf}\label{server_8cpp_a0f95bcbb1648e77cb4c8855aa04084bf}} 
+\index{server.cpp@{server.cpp}!Server@{Server}}
+\index{Server@{Server}!server.cpp@{server.cpp}}
+\doxysubsubsection{\texorpdfstring{Server}{Server}}
+{\footnotesize\ttfamily T\+S7\+Server$\ast$ Server}
+

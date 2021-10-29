@@ -1,0 +1,5 @@
+VendorName,ProductCode,VendorUrl,ProductName,ModelName,Version
+Schneider,33595863910696,se.com,Modicon M340,BMXP342020,0.5.1
+Toshiba,38883775847289,toshiba.com,T300MV2,M4HAN33800AAA0,1.3
+Beckhoff,3917C8160000,beckhoff.com,CANopen bk5120, BK5120 3.1
+Panasonic,13559727101,panasonic-electric-works.com,FP7 CPS31E,AFP7CPS31E,4.52

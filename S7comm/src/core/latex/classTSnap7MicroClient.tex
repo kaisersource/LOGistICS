@@ -1,0 +1,206 @@
+\hypertarget{classTSnap7MicroClient}{}\doxysection{T\+Snap7\+Micro\+Client Class Reference}
+\label{classTSnap7MicroClient}\index{TSnap7MicroClient@{TSnap7MicroClient}}
+Inheritance diagram for T\+Snap7\+Micro\+Client\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classTSnap7MicroClient}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_addc63b3bf8a39d8baf7f7d109e16187d}\label{classTSnap7MicroClient_addc63b3bf8a39d8baf7f7d109e16187d}} 
+int {\bfseries Reset} (bool Do\+Reconnect)
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_a41983df83cb5458f825a287a5cef9164}\label{classTSnap7MicroClient_a41983df83cb5458f825a287a5cef9164}} 
+void {\bfseries Set\+Connection\+Params} (const char $\ast$Rem\+Address, word Local\+T\+S\+AP, word Remote\+Tsap)
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_a405162bd914d2c873ad6337269c64aec}\label{classTSnap7MicroClient_a405162bd914d2c873ad6337269c64aec}} 
+void {\bfseries Set\+Connection\+Type} (word Conn\+Type)
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_a1ce8c716d9bc8cfff5ef8df1bb7281c6}\label{classTSnap7MicroClient_a1ce8c716d9bc8cfff5ef8df1bb7281c6}} 
+int {\bfseries Connect\+To} (const char $\ast$Rem\+Address, int Rack, int Slot)
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_ad38906f4dcf3374380d347dd84627197}\label{classTSnap7MicroClient_ad38906f4dcf3374380d347dd84627197}} 
+int {\bfseries Connect} ()
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_a199cdb644e91b77e07bba5f93408dc5c}\label{classTSnap7MicroClient_a199cdb644e91b77e07bba5f93408dc5c}} 
+int {\bfseries Disconnect} ()
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_acf0fb77d3833d849b5f9a73165e092ce}\label{classTSnap7MicroClient_acf0fb77d3833d849b5f9a73165e092ce}} 
+int {\bfseries Get\+Param} (int Param\+Number, void $\ast$p\+Value)
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_a4b890ab745449d6b6ff2972c7c7dabd9}\label{classTSnap7MicroClient_a4b890ab745449d6b6ff2972c7c7dabd9}} 
+int {\bfseries Set\+Param} (int Param\+Number, void $\ast$p\+Value)
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_a4000ee49f902c9211abe23f2a0cf5644}\label{classTSnap7MicroClient_a4000ee49f902c9211abe23f2a0cf5644}} 
+int {\bfseries Read\+Area} (int Area, int D\+B\+Number, int Start, int Amount, int Word\+Len, void $\ast$p\+Usr\+Data)
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_a760b857ddaa2108836ddb2fdc4ce456c}\label{classTSnap7MicroClient_a760b857ddaa2108836ddb2fdc4ce456c}} 
+int {\bfseries Write\+Area} (int Area, int D\+B\+Number, int Start, int Amount, int Word\+Len, void $\ast$p\+Usr\+Data)
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_a8a40ae69575530a158390f30a0a83e67}\label{classTSnap7MicroClient_a8a40ae69575530a158390f30a0a83e67}} 
+int {\bfseries Read\+Multi\+Vars} (\mbox{\hyperlink{structTS7DataItem}{P\+S7\+Data\+Item}} Item, int Items\+Count)
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_a31e39abb7eb2314914d4f9c236406970}\label{classTSnap7MicroClient_a31e39abb7eb2314914d4f9c236406970}} 
+int {\bfseries Write\+Multi\+Vars} (\mbox{\hyperlink{structTS7DataItem}{P\+S7\+Data\+Item}} Item, int Items\+Count)
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_a9768b1b0616ae3c7eeb3b31285f7d60c}\label{classTSnap7MicroClient_a9768b1b0616ae3c7eeb3b31285f7d60c}} 
+int {\bfseries D\+B\+Read} (int D\+B\+Number, int Start, int Size, void $\ast$p\+Usr\+Data)
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_add3a9b96512ff0815138409fc801a7b8}\label{classTSnap7MicroClient_add3a9b96512ff0815138409fc801a7b8}} 
+int {\bfseries D\+B\+Write} (int D\+B\+Number, int Start, int Size, void $\ast$p\+Usr\+Data)
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_a15cf294b776e8c63c47d43fb13e33c80}\label{classTSnap7MicroClient_a15cf294b776e8c63c47d43fb13e33c80}} 
+int {\bfseries M\+B\+Read} (int Start, int Size, void $\ast$p\+Usr\+Data)
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_acf89cc2c3cc90b2e5935cb2830f1730a}\label{classTSnap7MicroClient_acf89cc2c3cc90b2e5935cb2830f1730a}} 
+int {\bfseries M\+B\+Write} (int Start, int Size, void $\ast$p\+Usr\+Data)
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_a897d92784c86315c5c6754564e019782}\label{classTSnap7MicroClient_a897d92784c86315c5c6754564e019782}} 
+int {\bfseries E\+B\+Read} (int Start, int Size, void $\ast$p\+Usr\+Data)
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_a7e5b2b6e1d5fbef9f6605180245eb594}\label{classTSnap7MicroClient_a7e5b2b6e1d5fbef9f6605180245eb594}} 
+int {\bfseries E\+B\+Write} (int Start, int Size, void $\ast$p\+Usr\+Data)
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_a30b4b293783e9c15757e372203b0c891}\label{classTSnap7MicroClient_a30b4b293783e9c15757e372203b0c891}} 
+int {\bfseries A\+B\+Read} (int Start, int Size, void $\ast$p\+Usr\+Data)
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_a5331f009aa46a4345628d54d9ef979dd}\label{classTSnap7MicroClient_a5331f009aa46a4345628d54d9ef979dd}} 
+int {\bfseries A\+B\+Write} (int Start, int Size, void $\ast$p\+Usr\+Data)
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_a8529bc0d922e9415f85e064d52bac2ea}\label{classTSnap7MicroClient_a8529bc0d922e9415f85e064d52bac2ea}} 
+int {\bfseries T\+M\+Read} (int Start, int Amount, void $\ast$p\+Usr\+Data)
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_acd085aef60f12d3c45f208ac12a66cf8}\label{classTSnap7MicroClient_acd085aef60f12d3c45f208ac12a66cf8}} 
+int {\bfseries T\+M\+Write} (int Start, int Amount, void $\ast$p\+Usr\+Data)
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_adef0b1ecbcc41ed5047414b13edb49c4}\label{classTSnap7MicroClient_adef0b1ecbcc41ed5047414b13edb49c4}} 
+int {\bfseries C\+T\+Read} (int Start, int Amount, void $\ast$p\+Usr\+Data)
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_a73691b06ae79a8776e316bcd65e3a846}\label{classTSnap7MicroClient_a73691b06ae79a8776e316bcd65e3a846}} 
+int {\bfseries C\+T\+Write} (int Start, int Amount, void $\ast$p\+Usr\+Data)
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_ac654718c0435db59a030df6fcc860e83}\label{classTSnap7MicroClient_ac654718c0435db59a030df6fcc860e83}} 
+int {\bfseries List\+Blocks} (\mbox{\hyperlink{structTS7BlocksList}{P\+S7\+Blocks\+List}} p\+Usr\+Data)
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_a433bbb0f7ebbd688a6ad2d9eaf75af14}\label{classTSnap7MicroClient_a433bbb0f7ebbd688a6ad2d9eaf75af14}} 
+int {\bfseries Get\+Ag\+Block\+Info} (int Block\+Type, int Block\+Num, \mbox{\hyperlink{structTS7BlockInfo}{P\+S7\+Block\+Info}} p\+Usr\+Data)
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_aaca3ad3fd271c7c04bfdb86b29db23b2}\label{classTSnap7MicroClient_aaca3ad3fd271c7c04bfdb86b29db23b2}} 
+int {\bfseries Get\+Pg\+Block\+Info} (void $\ast$p\+Block, \mbox{\hyperlink{structTS7BlockInfo}{P\+S7\+Block\+Info}} p\+Usr\+Data, int Size)
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_ae4217b9410f389f007514e955c50c429}\label{classTSnap7MicroClient_ae4217b9410f389f007514e955c50c429}} 
+int {\bfseries List\+Blocks\+Of\+Type} (int Block\+Type, T\+S7\+Blocks\+Of\+Type $\ast$p\+Usr\+Data, int \&Items\+Count)
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_a02e9e609542207b9f2af5e97bc7fd61a}\label{classTSnap7MicroClient_a02e9e609542207b9f2af5e97bc7fd61a}} 
+int {\bfseries Upload} (int Block\+Type, int Block\+Num, void $\ast$p\+Usr\+Data, int \&Size)
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_acec9f693d626afa47704f9063f86722c}\label{classTSnap7MicroClient_acec9f693d626afa47704f9063f86722c}} 
+int {\bfseries Full\+Upload} (int Block\+Type, int Block\+Num, void $\ast$p\+Usr\+Data, int \&Size)
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_a766390426d9e7a86f8a22b1214bd7492}\label{classTSnap7MicroClient_a766390426d9e7a86f8a22b1214bd7492}} 
+int {\bfseries Download} (int Block\+Num, void $\ast$p\+Usr\+Data, int Size)
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_a313f18c9e99aa7c8812f505b12f4ede6}\label{classTSnap7MicroClient_a313f18c9e99aa7c8812f505b12f4ede6}} 
+int {\bfseries Delete} (int Block\+Type, int Block\+Num)
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_a535ba4230c101feb3146559c5ef5dca0}\label{classTSnap7MicroClient_a535ba4230c101feb3146559c5ef5dca0}} 
+int {\bfseries D\+B\+Get} (int D\+B\+Number, void $\ast$p\+Usr\+Data, int \&Size)
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_afef17bfd964ccc40c96ff3c4f19d5305}\label{classTSnap7MicroClient_afef17bfd964ccc40c96ff3c4f19d5305}} 
+int {\bfseries D\+B\+Fill} (int D\+B\+Number, int Fill\+Char)
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_a947f7d67e046129bc38d650dd494dabf}\label{classTSnap7MicroClient_a947f7d67e046129bc38d650dd494dabf}} 
+int {\bfseries Get\+Plc\+Date\+Time} (tm \&Date\+Time)
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_a37b197cacc1ec1661e5922d4164df701}\label{classTSnap7MicroClient_a37b197cacc1ec1661e5922d4164df701}} 
+int {\bfseries Set\+Plc\+Date\+Time} (tm $\ast$Date\+Time)
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_a1319ef90726d2d5e99e43c2b5a3a0100}\label{classTSnap7MicroClient_a1319ef90726d2d5e99e43c2b5a3a0100}} 
+int {\bfseries Set\+Plc\+System\+Date\+Time} ()
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_a51e06a2a552ed6ac14e5e2b74d780165}\label{classTSnap7MicroClient_a51e06a2a552ed6ac14e5e2b74d780165}} 
+int {\bfseries Get\+Order\+Code} (\mbox{\hyperlink{structTS7OrderCode}{P\+S7\+Order\+Code}} p\+Usr\+Data)
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_ad010973df4ea818ca899915f0d080c94}\label{classTSnap7MicroClient_ad010973df4ea818ca899915f0d080c94}} 
+int {\bfseries Get\+Cpu\+Info} (\mbox{\hyperlink{structTS7CpuInfo}{P\+S7\+Cpu\+Info}} p\+Usr\+Data)
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_a8e5aafcb4acda784c0170934ce06c1d4}\label{classTSnap7MicroClient_a8e5aafcb4acda784c0170934ce06c1d4}} 
+int {\bfseries Get\+Cp\+Info} (\mbox{\hyperlink{structTS7CpInfo}{P\+S7\+Cp\+Info}} p\+Usr\+Data)
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_aacb84a6551ea40e8c0d6a6c51062fcf2}\label{classTSnap7MicroClient_aacb84a6551ea40e8c0d6a6c51062fcf2}} 
+int {\bfseries Read\+S\+ZL} (int ID, int Index, \mbox{\hyperlink{structTS7SZL}{P\+S7\+S\+ZL}} p\+Usr\+Data, int \&Size)
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_a4898739133b0687b22dada019ff028c1}\label{classTSnap7MicroClient_a4898739133b0687b22dada019ff028c1}} 
+int {\bfseries Read\+S\+Z\+L\+List} (\mbox{\hyperlink{structTS7SZLList}{P\+S7\+S\+Z\+L\+List}} p\+Usr\+Data, int \&Items\+Count)
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_ac13836658a4e50682503479e20148e54}\label{classTSnap7MicroClient_ac13836658a4e50682503479e20148e54}} 
+int {\bfseries Plc\+Hot\+Start} ()
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_af77500487ec277ee41caf1059305d0e2}\label{classTSnap7MicroClient_af77500487ec277ee41caf1059305d0e2}} 
+int {\bfseries Plc\+Cold\+Start} ()
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_ad68e7ca6a7125062ca538ad566d99494}\label{classTSnap7MicroClient_ad68e7ca6a7125062ca538ad566d99494}} 
+int {\bfseries Plc\+Stop} ()
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_af7a390ae4b25c0b8312ef0c6331d9dc2}\label{classTSnap7MicroClient_af7a390ae4b25c0b8312ef0c6331d9dc2}} 
+int {\bfseries Copy\+Ram\+To\+Rom} (int Timeout)
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_a00cf368be5fe372d7e0acb88b7bccd23}\label{classTSnap7MicroClient_a00cf368be5fe372d7e0acb88b7bccd23}} 
+int {\bfseries Compress} (int Timeout)
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_a04fc49bcbdab81d9e7733730be8e045e}\label{classTSnap7MicroClient_a04fc49bcbdab81d9e7733730be8e045e}} 
+int {\bfseries Get\+Plc\+Status} (int \&Status)
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_a3e37a246fa648d2b4accaa4e975c118e}\label{classTSnap7MicroClient_a3e37a246fa648d2b4accaa4e975c118e}} 
+int {\bfseries Get\+Protection} (\mbox{\hyperlink{structTS7Protection}{P\+S7\+Protection}} p\+Usr\+Data)
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_ac2b8d331364f477c1a82d9d108a28a80}\label{classTSnap7MicroClient_ac2b8d331364f477c1a82d9d108a28a80}} 
+int {\bfseries Set\+Session\+Password} (char $\ast$Password)
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_a827213d4c4f594be1af4da5a01c0a6db}\label{classTSnap7MicroClient_a827213d4c4f594be1af4da5a01c0a6db}} 
+int {\bfseries Clear\+Session\+Password} ()
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_a8b5ee529664f1c1fa742b848c8465d8e}\label{classTSnap7MicroClient_a8b5ee529664f1c1fa742b848c8465d8e}} 
+bool {\bfseries Busy} ()
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_ac6e1b486eb9b2af0f2ca76d9aa0be068}\label{classTSnap7MicroClient_ac6e1b486eb9b2af0f2ca76d9aa0be068}} 
+int {\bfseries Time} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_ae9e24ca3a9e96597dd745898452dea2a}\label{classTSnap7MicroClient_ae9e24ca3a9e96597dd745898452dea2a}} 
+T\+S7\+Buffer {\bfseries op\+Data}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_aeecdbbbb3b336fb727c78e6c3b0c8112}\label{classTSnap7MicroClient_aeecdbbbb3b336fb727c78e6c3b0c8112}} 
+int {\bfseries Data\+Size\+Byte} (int Word\+Length)
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_a4674a909f917e33b2e1b0417876fe981}\label{classTSnap7MicroClient_a4674a909f917e33b2e1b0417876fe981}} 
+int {\bfseries Perform\+Operation} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_abe4902f4f2cc844c74da792d0239ac19}\label{classTSnap7MicroClient_abe4902f4f2cc844c74da792d0239ac19}} 
+word {\bfseries Connection\+Type}
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_a677619c91d85c4d7ae11ce10e7101e23}\label{classTSnap7MicroClient_a677619c91d85c4d7ae11ce10e7101e23}} 
+longword {\bfseries Job\+Start}
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_a32522d77b5cd8b78bb4c186e2ce82fdd}\label{classTSnap7MicroClient_a32522d77b5cd8b78bb4c186e2ce82fdd}} 
+\mbox{\hyperlink{structTSnap7Job}{T\+Snap7\+Job}} {\bfseries Job}
+\item 
+\mbox{\Hypertarget{classTSnap7MicroClient_a93c5674ad3424d0dad6f1f422a5ea2f7}\label{classTSnap7MicroClient_a93c5674ad3424d0dad6f1f422a5ea2f7}} 
+int {\bfseries op\+Size}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+s7\+\_\+micro\+\_\+client.\+h\item 
+s7\+\_\+micro\+\_\+client.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,95 @@
+\hypertarget{ppartner_8cpp}{}\doxysection{ppartner.\+cpp File Reference}
+\label{ppartner_8cpp}\index{ppartner.cpp@{ppartner.cpp}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}snap7.\+h\char`\"{}}\newline
+Include dependency graph for ppartner.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=305pt]{ppartner_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{ppartner_8cpp_acf2c5fe0549ea905f765ac31e9718403}{H\+E\+X\+D\+U\+M\+P\+\_\+\+C\+O\+LS}}~16
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{ppartner_8cpp_a5ae07f63d6b390e42068d941038dadf2}{Usage}} ()
+\item 
+void \mbox{\hyperlink{ppartner_8cpp_a8ed5c8ac998b1861574e558d7225d5e5}{Sys\+Sleep}} (\mbox{\hyperlink{snap7_8h_a3d2fcf4deaa34e5652fef200e52b956b}{longword}} Delay\+\_\+ms)
+\item 
+void \mbox{\hyperlink{ppartner_8cpp_a04b9be5761870c98157effa97032dfc1}{hexdump}} (void $\ast$mem, unsigned int len)
+\item 
+void \mbox{\hyperlink{snap7_8h_a9d788225533cdad3848aa5f83020fbc3}{S7\+A\+PI}} \mbox{\hyperlink{ppartner_8cpp_a261f51c589f192813f53584fb2204f8e}{Recv\+Callback}} (void $\ast$usr\+Ptr, int op\+Result, \mbox{\hyperlink{snap7_8h_a3d2fcf4deaa34e5652fef200e52b956b}{longword}} R\+\_\+\+ID, void $\ast$pdata, int Size)
+\item 
+int \mbox{\hyperlink{ppartner_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+T\+S7\+Partner $\ast$ \mbox{\hyperlink{ppartner_8cpp_a6a710c6dc516fbf86f34ebf2d8cc14ba}{Partner}}
+\item 
+\mbox{\hyperlink{snap7_8h_ab8ef12fab634c171394422d0ee8baf94}{byte}} \mbox{\hyperlink{ppartner_8cpp_acc147f4f0f304c2bf23635dab99967de}{Buffer}} \mbox{[}65536\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{ppartner_8cpp_acf2c5fe0549ea905f765ac31e9718403}\label{ppartner_8cpp_acf2c5fe0549ea905f765ac31e9718403}} 
+\index{ppartner.cpp@{ppartner.cpp}!HEXDUMP\_COLS@{HEXDUMP\_COLS}}
+\index{HEXDUMP\_COLS@{HEXDUMP\_COLS}!ppartner.cpp@{ppartner.cpp}}
+\doxysubsubsection{\texorpdfstring{HEXDUMP\_COLS}{HEXDUMP\_COLS}}
+{\footnotesize\ttfamily \#define H\+E\+X\+D\+U\+M\+P\+\_\+\+C\+O\+LS~16}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{ppartner_8cpp_a04b9be5761870c98157effa97032dfc1}\label{ppartner_8cpp_a04b9be5761870c98157effa97032dfc1}} 
+\index{ppartner.cpp@{ppartner.cpp}!hexdump@{hexdump}}
+\index{hexdump@{hexdump}!ppartner.cpp@{ppartner.cpp}}
+\doxysubsubsection{\texorpdfstring{hexdump()}{hexdump()}}
+{\footnotesize\ttfamily void hexdump (\begin{DoxyParamCaption}\item[{void $\ast$}]{mem,  }\item[{unsigned int}]{len }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ppartner_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\label{ppartner_8cpp_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{ppartner.cpp@{ppartner.cpp}!main@{main}}
+\index{main@{main}!ppartner.cpp@{ppartner.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ppartner_8cpp_a261f51c589f192813f53584fb2204f8e}\label{ppartner_8cpp_a261f51c589f192813f53584fb2204f8e}} 
+\index{ppartner.cpp@{ppartner.cpp}!RecvCallback@{RecvCallback}}
+\index{RecvCallback@{RecvCallback}!ppartner.cpp@{ppartner.cpp}}
+\doxysubsubsection{\texorpdfstring{RecvCallback()}{RecvCallback()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{snap7_8h_a9d788225533cdad3848aa5f83020fbc3}{S7\+A\+PI}} Recv\+Callback (\begin{DoxyParamCaption}\item[{void $\ast$}]{usr\+Ptr,  }\item[{int}]{op\+Result,  }\item[{\mbox{\hyperlink{snap7_8h_a3d2fcf4deaa34e5652fef200e52b956b}{longword}}}]{R\+\_\+\+ID,  }\item[{void $\ast$}]{pdata,  }\item[{int}]{Size }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ppartner_8cpp_a8ed5c8ac998b1861574e558d7225d5e5}\label{ppartner_8cpp_a8ed5c8ac998b1861574e558d7225d5e5}} 
+\index{ppartner.cpp@{ppartner.cpp}!SysSleep@{SysSleep}}
+\index{SysSleep@{SysSleep}!ppartner.cpp@{ppartner.cpp}}
+\doxysubsubsection{\texorpdfstring{SysSleep()}{SysSleep()}}
+{\footnotesize\ttfamily void Sys\+Sleep (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{snap7_8h_a3d2fcf4deaa34e5652fef200e52b956b}{longword}}}]{Delay\+\_\+ms }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ppartner_8cpp_a5ae07f63d6b390e42068d941038dadf2}\label{ppartner_8cpp_a5ae07f63d6b390e42068d941038dadf2}} 
+\index{ppartner.cpp@{ppartner.cpp}!Usage@{Usage}}
+\index{Usage@{Usage}!ppartner.cpp@{ppartner.cpp}}
+\doxysubsubsection{\texorpdfstring{Usage()}{Usage()}}
+{\footnotesize\ttfamily void Usage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{ppartner_8cpp_acc147f4f0f304c2bf23635dab99967de}\label{ppartner_8cpp_acc147f4f0f304c2bf23635dab99967de}} 
+\index{ppartner.cpp@{ppartner.cpp}!Buffer@{Buffer}}
+\index{Buffer@{Buffer}!ppartner.cpp@{ppartner.cpp}}
+\doxysubsubsection{\texorpdfstring{Buffer}{Buffer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{snap7_8h_ab8ef12fab634c171394422d0ee8baf94}{byte}} Buffer\mbox{[}65536\mbox{]}}
+
+\mbox{\Hypertarget{ppartner_8cpp_a6a710c6dc516fbf86f34ebf2d8cc14ba}\label{ppartner_8cpp_a6a710c6dc516fbf86f34ebf2d8cc14ba}} 
+\index{ppartner.cpp@{ppartner.cpp}!Partner@{Partner}}
+\index{Partner@{Partner}!ppartner.cpp@{ppartner.cpp}}
+\doxysubsubsection{\texorpdfstring{Partner}{Partner}}
+{\footnotesize\ttfamily T\+S7\+Partner$\ast$ Partner}
+

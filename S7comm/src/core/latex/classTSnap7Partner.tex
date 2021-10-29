@@ -1,0 +1,140 @@
+\hypertarget{classTSnap7Partner}{}\doxysection{T\+Snap7\+Partner Class Reference}
+\label{classTSnap7Partner}\index{TSnap7Partner@{TSnap7Partner}}
+Inheritance diagram for T\+Snap7\+Partner\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classTSnap7Partner}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTSnap7Partner_ab9064123c42dde5d0b5a073428b27050}\label{classTSnap7Partner_ab9064123c42dde5d0b5a073428b27050}} 
+{\bfseries T\+Snap7\+Partner} (bool Create\+Active)
+\item 
+\mbox{\Hypertarget{classTSnap7Partner_a04442e1d75b460ac9a7da7d68f2cefd9}\label{classTSnap7Partner_a04442e1d75b460ac9a7da7d68f2cefd9}} 
+int {\bfseries Start} ()
+\item 
+\mbox{\Hypertarget{classTSnap7Partner_a2c20583a403af12c1c03f8baa052a597}\label{classTSnap7Partner_a2c20583a403af12c1c03f8baa052a597}} 
+int {\bfseries Start\+To} (const char $\ast$Loc\+Address, const char $\ast$Rem\+Address, word Loc\+Tsap, word Rem\+Tsap)
+\item 
+\mbox{\Hypertarget{classTSnap7Partner_a00180bf5bbca6e8299c239548fb96da6}\label{classTSnap7Partner_a00180bf5bbca6e8299c239548fb96da6}} 
+int {\bfseries Stop} ()
+\item 
+\mbox{\Hypertarget{classTSnap7Partner_af01dca5e12c3a189c0deea6814d46aab}\label{classTSnap7Partner_af01dca5e12c3a189c0deea6814d46aab}} 
+int {\bfseries Status} ()
+\item 
+\mbox{\Hypertarget{classTSnap7Partner_aa157c5eb5384f968759b3903dbb41b4f}\label{classTSnap7Partner_aa157c5eb5384f968759b3903dbb41b4f}} 
+int {\bfseries Get\+Param} (int Param\+Number, void $\ast$p\+Value)
+\item 
+\mbox{\Hypertarget{classTSnap7Partner_a81059ed2d9499bb6ad79578fd783b8f5}\label{classTSnap7Partner_a81059ed2d9499bb6ad79578fd783b8f5}} 
+int {\bfseries Set\+Param} (int Param\+Number, void $\ast$p\+Value)
+\item 
+\mbox{\Hypertarget{classTSnap7Partner_ae86c1d27b5066d0a4f13e07e714583b1}\label{classTSnap7Partner_ae86c1d27b5066d0a4f13e07e714583b1}} 
+int {\bfseries B\+Send} (longword R\+\_\+\+ID, void $\ast$p\+Usr\+Data, int Size)
+\item 
+\mbox{\Hypertarget{classTSnap7Partner_a6019b5490c6db81d22722720877d974b}\label{classTSnap7Partner_a6019b5490c6db81d22722720877d974b}} 
+int {\bfseries As\+B\+Send} (longword R\+\_\+\+ID, void $\ast$p\+Usr\+Data, int Size)
+\item 
+\mbox{\Hypertarget{classTSnap7Partner_a87c762816ac5c0cfe5105a76cc1aed71}\label{classTSnap7Partner_a87c762816ac5c0cfe5105a76cc1aed71}} 
+bool {\bfseries Check\+As\+B\+Send\+Completion} (int \&op\+Result)
+\item 
+\mbox{\Hypertarget{classTSnap7Partner_a6a048e2404befd81a877f8d3575cb59a}\label{classTSnap7Partner_a6a048e2404befd81a877f8d3575cb59a}} 
+int {\bfseries Wait\+As\+B\+Send\+Completion} (longword Timeout)
+\item 
+\mbox{\Hypertarget{classTSnap7Partner_ab639f1d778b8f7b0ea11bc471f5439e1}\label{classTSnap7Partner_ab639f1d778b8f7b0ea11bc471f5439e1}} 
+int {\bfseries Set\+Send\+Callback} (pfn\+\_\+\+Par\+B\+Send\+Completion p\+Completion, void $\ast$usr\+Ptr)
+\item 
+\mbox{\Hypertarget{classTSnap7Partner_ad4fe87a9083de968c834a65e4452f92c}\label{classTSnap7Partner_ad4fe87a9083de968c834a65e4452f92c}} 
+int {\bfseries B\+Recv} (longword \&R\+\_\+\+ID, void $\ast$p\+Data, int \&Size, longword Timeout)
+\item 
+\mbox{\Hypertarget{classTSnap7Partner_a42b2fed36e9147097a2977d8351476ef}\label{classTSnap7Partner_a42b2fed36e9147097a2977d8351476ef}} 
+bool {\bfseries Check\+As\+B\+Recv\+Completion} (int \&op\+Result, longword \&R\+\_\+\+ID, void $\ast$p\+Data, int \&Size)
+\item 
+\mbox{\Hypertarget{classTSnap7Partner_a5c17d19f1bc3aa6f6cbb96d6d3b93b54}\label{classTSnap7Partner_a5c17d19f1bc3aa6f6cbb96d6d3b93b54}} 
+int {\bfseries Set\+Recv\+Callback} (pfn\+\_\+\+Par\+B\+Recv\+Call\+Back p\+Completion, void $\ast$usr\+Ptr)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTSnap7Partner_a505191742f1e5e4a30a04387393f300f}\label{classTSnap7Partner_a505191742f1e5e4a30a04387393f300f}} 
+bool {\bfseries Active}
+\item 
+\mbox{\Hypertarget{classTSnap7Partner_aa19bcf397ce71b46a92437f36c3417ac}\label{classTSnap7Partner_aa19bcf397ce71b46a92437f36c3417ac}} 
+bool {\bfseries Running}
+\item 
+\mbox{\Hypertarget{classTSnap7Partner_ab488d76b201eb199def97b94ca744451}\label{classTSnap7Partner_ab488d76b201eb199def97b94ca744451}} 
+longword {\bfseries Peer\+Address}
+\item 
+\mbox{\Hypertarget{classTSnap7Partner_a4602f7193902c4fab0439b2a8c3ffbf0}\label{classTSnap7Partner_a4602f7193902c4fab0439b2a8c3ffbf0}} 
+longword {\bfseries Src\+Address}
+\item 
+\mbox{\Hypertarget{classTSnap7Partner_a8f9e77e703f0c2db497173f53cb1c79d}\label{classTSnap7Partner_a8f9e77e703f0c2db497173f53cb1c79d}} 
+int {\bfseries B\+Recv\+Timeout}
+\item 
+\mbox{\Hypertarget{classTSnap7Partner_af456728d635a43d9c42d80393490ff70}\label{classTSnap7Partner_af456728d635a43d9c42d80393490ff70}} 
+int {\bfseries B\+Send\+Timeout}
+\item 
+\mbox{\Hypertarget{classTSnap7Partner_ac3354cdaf60ae0518057338633b443cd}\label{classTSnap7Partner_ac3354cdaf60ae0518057338633b443cd}} 
+longword {\bfseries Send\+Time}
+\item 
+\mbox{\Hypertarget{classTSnap7Partner_a2457fa41992269876a0376abf632d1f6}\label{classTSnap7Partner_a2457fa41992269876a0376abf632d1f6}} 
+longword {\bfseries Recv\+Time}
+\item 
+\mbox{\Hypertarget{classTSnap7Partner_a77dd25553f426f5972e6ee6fd6eec4ea}\label{classTSnap7Partner_a77dd25553f426f5972e6ee6fd6eec4ea}} 
+longword {\bfseries Recovery\+Time}
+\item 
+\mbox{\Hypertarget{classTSnap7Partner_a00c03915bba04cde61b841511301220a}\label{classTSnap7Partner_a00c03915bba04cde61b841511301220a}} 
+longword {\bfseries Keep\+Alive\+Time}
+\item 
+\mbox{\Hypertarget{classTSnap7Partner_a9639480a7413c0202122f1b362b41fe2}\label{classTSnap7Partner_a9639480a7413c0202122f1b362b41fe2}} 
+longword {\bfseries Bytes\+Sent}
+\item 
+\mbox{\Hypertarget{classTSnap7Partner_a004678cc8104c2f17aa65ab6bb7968b9}\label{classTSnap7Partner_a004678cc8104c2f17aa65ab6bb7968b9}} 
+longword {\bfseries Bytes\+Recv}
+\item 
+\mbox{\Hypertarget{classTSnap7Partner_a3a36e48db27ba5f22646275dade40f44}\label{classTSnap7Partner_a3a36e48db27ba5f22646275dade40f44}} 
+longword {\bfseries Send\+Errors}
+\item 
+\mbox{\Hypertarget{classTSnap7Partner_a00a473b13ffb151822e08939181a1021}\label{classTSnap7Partner_a00a473b13ffb151822e08939181a1021}} 
+longword {\bfseries Recv\+Errors}
+\item 
+\mbox{\Hypertarget{classTSnap7Partner_ab63054ed36cd0e8b3e9a9334f1a3f780}\label{classTSnap7Partner_ab63054ed36cd0e8b3e9a9334f1a3f780}} 
+bool {\bfseries Linked}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTSnap7Partner_af7116ec8b84e841591ea855df29e817e}\label{classTSnap7Partner_af7116ec8b84e841591ea855df29e817e}} 
+bool {\bfseries Execute} ()
+\item 
+\mbox{\Hypertarget{classTSnap7Partner_aa3481dda0eb94be643e574136e81e007}\label{classTSnap7Partner_aa3481dda0eb94be643e574136e81e007}} 
+void {\bfseries Disconnect} ()
+\item 
+\mbox{\Hypertarget{classTSnap7Partner_aeb7bb09d5fd036d0a092569a7aa1313f}\label{classTSnap7Partner_aeb7bb09d5fd036d0a092569a7aa1313f}} 
+bool {\bfseries Connect\+To\+Peer} ()
+\item 
+\mbox{\Hypertarget{classTSnap7Partner_ae1efd97957f0bcedef0d3d06e38790e9}\label{classTSnap7Partner_ae1efd97957f0bcedef0d3d06e38790e9}} 
+bool {\bfseries Perform\+Function\+Negotiate} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTSnap7Partner_ac23a92f6b4495eee747a314f05ec5241}\label{classTSnap7Partner_ac23a92f6b4495eee747a314f05ec5241}} 
+bool {\bfseries Stopping}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTSnap7Partner_a229f0aa4866203dc2c1ceba88ff8c479}\label{classTSnap7Partner_a229f0aa4866203dc2c1ceba88ff8c479}} 
+class {\bfseries T\+Connection\+Server}
+\item 
+\mbox{\Hypertarget{classTSnap7Partner_a05e892e10e339420a254bc85ea96c876}\label{classTSnap7Partner_a05e892e10e339420a254bc85ea96c876}} 
+class {\bfseries T\+Partner\+Thread}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+s7\+\_\+partner.\+h\item 
+s7\+\_\+partner.\+cpp\end{DoxyCompactItemize}

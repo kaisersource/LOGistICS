@@ -1,0 +1,110 @@
+\hypertarget{classTSnap7Server}{}\doxysection{T\+Snap7\+Server Class Reference}
+\label{classTSnap7Server}\index{TSnap7Server@{TSnap7Server}}
+Inheritance diagram for T\+Snap7\+Server\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classTSnap7Server}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTSnap7Server_aa51851eee77f1a4ed78a2426b9ee8270}\label{classTSnap7Server_aa51851eee77f1a4ed78a2426b9ee8270}} 
+int {\bfseries Start\+To} (const char $\ast$Address)
+\item 
+\mbox{\Hypertarget{classTSnap7Server_ada4179af32303c68c588a79adda87b9f}\label{classTSnap7Server_ada4179af32303c68c588a79adda87b9f}} 
+int {\bfseries Get\+Param} (int Param\+Number, void $\ast$p\+Value)
+\item 
+\mbox{\Hypertarget{classTSnap7Server_a26bf79018f0d86e3f4dc2fee62d35436}\label{classTSnap7Server_a26bf79018f0d86e3f4dc2fee62d35436}} 
+int {\bfseries Set\+Param} (int Param\+Number, void $\ast$p\+Value)
+\item 
+\mbox{\Hypertarget{classTSnap7Server_a3430a3699f187078cf0926b467c8b49b}\label{classTSnap7Server_a3430a3699f187078cf0926b467c8b49b}} 
+int {\bfseries Register\+Area} (int Area\+Code, word Index, void $\ast$p\+Usr\+Data, word Size)
+\item 
+\mbox{\Hypertarget{classTSnap7Server_a7d3be959be25b4e5b164753aa60aed4f}\label{classTSnap7Server_a7d3be959be25b4e5b164753aa60aed4f}} 
+int {\bfseries Unregister\+Area} (int Area\+Code, word Index)
+\item 
+\mbox{\Hypertarget{classTSnap7Server_adb784342c13195ee9bf9f39bbfbc3949}\label{classTSnap7Server_adb784342c13195ee9bf9f39bbfbc3949}} 
+int {\bfseries Lock\+Area} (int Area\+Code, word D\+B\+Number)
+\item 
+\mbox{\Hypertarget{classTSnap7Server_abe8dc4f297b1ee6c48694db47058b815}\label{classTSnap7Server_abe8dc4f297b1ee6c48694db47058b815}} 
+int {\bfseries Unlock\+Area} (int Area\+Code, word D\+B\+Number)
+\item 
+\mbox{\Hypertarget{classTSnap7Server_a8b81eea8b4275b0f2fe9a887f4788787}\label{classTSnap7Server_a8b81eea8b4275b0f2fe9a887f4788787}} 
+int {\bfseries Set\+Read\+Events\+Call\+Back} (pfn\+\_\+\+Srv\+Call\+Back P\+Call\+Back, void $\ast$Usr\+Ptr)
+\item 
+\mbox{\Hypertarget{classTSnap7Server_a56856b212877aacf1b05ecb39d9349fa}\label{classTSnap7Server_a56856b212877aacf1b05ecb39d9349fa}} 
+int {\bfseries Set\+R\+W\+Area\+Call\+Back} (pfn\+\_\+\+R\+W\+Area\+Call\+Back P\+Call\+Back, void $\ast$Usr\+Ptr)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTSnap7Server_a29a9c66260fe46bdfe7c8e5add18d39c}\label{classTSnap7Server_a29a9c66260fe46bdfe7c8e5add18d39c}} 
+int {\bfseries Work\+Interval}
+\item 
+\mbox{\Hypertarget{classTSnap7Server_a6204e607990ed3aa2f5948842b30c6ed}\label{classTSnap7Server_a6204e607990ed3aa2f5948842b30c6ed}} 
+byte {\bfseries Cpu\+Status}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTSnap7Server_a87a71d032aa89b4499148df7a8a65ef9}\label{classTSnap7Server_a87a71d032aa89b4499148df7a8a65ef9}} 
+\mbox{\hyperlink{structTS7Area}{P\+S7\+Area}} {\bfseries Find\+DB} (word D\+B\+Number)
+\item 
+\mbox{\Hypertarget{classTSnap7Server_ad4c9a0b12b6eb002548b8f201bc21650}\label{classTSnap7Server_ad4c9a0b12b6eb002548b8f201bc21650}} 
+P\+Worker\+Socket {\bfseries Create\+Worker\+Socket} (socket\+\_\+t Sock)
+\item 
+\mbox{\Hypertarget{classTSnap7Server_a06a4ce547942a0b9b6de255a7ae26c67}\label{classTSnap7Server_a06a4ce547942a0b9b6de255a7ae26c67}} 
+int {\bfseries Register\+DB} (word Number, void $\ast$p\+Usr\+Data, word Size)
+\item 
+\mbox{\Hypertarget{classTSnap7Server_a0a7c8393466cdd09810e65dc63da5cd2}\label{classTSnap7Server_a0a7c8393466cdd09810e65dc63da5cd2}} 
+int {\bfseries Register\+Sys} (int Area\+Code, void $\ast$p\+Usr\+Data, word Size)
+\item 
+\mbox{\Hypertarget{classTSnap7Server_a350bca778167811596dc5aa6e88f203b}\label{classTSnap7Server_a350bca778167811596dc5aa6e88f203b}} 
+int {\bfseries Unregister\+DB} (word D\+B\+Number)
+\item 
+\mbox{\Hypertarget{classTSnap7Server_aac3cf2fdd8543555e8c66b13f1870b69}\label{classTSnap7Server_aac3cf2fdd8543555e8c66b13f1870b69}} 
+int {\bfseries Unregister\+Sys} (int Area\+Code)
+\item 
+\mbox{\Hypertarget{classTSnap7Server_a82a3da9c07d07070bfa9d3f8753aee1b}\label{classTSnap7Server_a82a3da9c07d07070bfa9d3f8753aee1b}} 
+void {\bfseries Do\+Read\+Event} (int Sender, longword Code, word Ret\+Code, word Param1, word Param2, word Param3, word Param4)
+\item 
+\mbox{\Hypertarget{classTSnap7Server_adba4f12b40886d14fa68f13c4be8cce3}\label{classTSnap7Server_adba4f12b40886d14fa68f13c4be8cce3}} 
+bool {\bfseries Do\+Read\+Area} (int Sender, int Area, int D\+B\+Number, int Start, int Size, int Word\+Len, void $\ast$p\+Usr\+Data)
+\item 
+\mbox{\Hypertarget{classTSnap7Server_a6f71da9aa0038e4c8f518ec7fcc4bf6c}\label{classTSnap7Server_a6f71da9aa0038e4c8f518ec7fcc4bf6c}} 
+bool {\bfseries Do\+Write\+Area} (int Sender, int Area, int D\+B\+Number, int Start, int Size, int Word\+Len, void $\ast$p\+Usr\+Data)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTSnap7Server_a72eff6e8278b5be4fde1ff1f16957806}\label{classTSnap7Server_a72eff6e8278b5be4fde1ff1f16957806}} 
+int {\bfseries D\+B\+Count}
+\item 
+\mbox{\Hypertarget{classTSnap7Server_adbe28b45fe79d74ad8ff490ea4310f36}\label{classTSnap7Server_adbe28b45fe79d74ad8ff490ea4310f36}} 
+int {\bfseries D\+B\+Limit}
+\item 
+\mbox{\Hypertarget{classTSnap7Server_a1f9c6bedec19c9707b5c42bae0c75300}\label{classTSnap7Server_a1f9c6bedec19c9707b5c42bae0c75300}} 
+\mbox{\hyperlink{structTS7Area}{P\+S7\+Area}} {\bfseries DB} \mbox{[}Max\+DB\mbox{]}
+\item 
+\mbox{\Hypertarget{classTSnap7Server_a0a31ac2fc1b331f8262132e7b12a9279}\label{classTSnap7Server_a0a31ac2fc1b331f8262132e7b12a9279}} 
+\mbox{\hyperlink{structTS7Area}{P\+S7\+Area}} {\bfseries HA} \mbox{[}5\mbox{]}
+\item 
+\mbox{\Hypertarget{classTSnap7Server_a1e2f1fe9f971548425c0274ae05aed38}\label{classTSnap7Server_a1e2f1fe9f971548425c0274ae05aed38}} 
+bool {\bfseries Resource\+Less}
+\item 
+\mbox{\Hypertarget{classTSnap7Server_ac7509b0e5eafc98a534a4f3050aa5617}\label{classTSnap7Server_ac7509b0e5eafc98a534a4f3050aa5617}} 
+word {\bfseries Force\+P\+DU}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTSnap7Server_a3ef03c8a94a52f1f88992458b4e196b5}\label{classTSnap7Server_a3ef03c8a94a52f1f88992458b4e196b5}} 
+class {\bfseries T\+S7\+Worker}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+s7\+\_\+server.\+h\item 
+s7\+\_\+server.\+cpp\end{DoxyCompactItemize}

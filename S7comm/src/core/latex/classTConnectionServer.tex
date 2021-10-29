@@ -1,0 +1,59 @@
+\hypertarget{classTConnectionServer}{}\doxysection{T\+Connection\+Server Class Reference}
+\label{classTConnectionServer}\index{TConnectionServer@{TConnectionServer}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTConnectionServer_a4555d635f1973008faf3aaa754ea11de}\label{classTConnectionServer_a4555d635f1973008faf3aaa754ea11de}} 
+int {\bfseries Start\+To} (const char $\ast$Address)
+\item 
+\mbox{\Hypertarget{classTConnectionServer_ad12a62eb9c307d4a69ca9b85117152dc}\label{classTConnectionServer_ad12a62eb9c307d4a69ca9b85117152dc}} 
+void {\bfseries Stop} ()
+\item 
+\mbox{\Hypertarget{classTConnectionServer_a727b2c1a9ec657f129e588024aef0a84}\label{classTConnectionServer_a727b2c1a9ec657f129e588024aef0a84}} 
+int {\bfseries Register\+Partner} (\mbox{\hyperlink{classTSnap7Partner}{P\+Snap7\+Partner}} Partner)
+\item 
+\mbox{\Hypertarget{classTConnectionServer_ad0e87f9cf01c0a70eec3acdd715910ca}\label{classTConnectionServer_ad0e87f9cf01c0a70eec3acdd715910ca}} 
+void {\bfseries Remove\+Partner} (\mbox{\hyperlink{classTSnap7Partner}{P\+Snap7\+Partner}} Partner)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTConnectionServer_a900753ed022f52a1a55368405ba54e3b}\label{classTConnectionServer_a900753ed022f52a1a55368405ba54e3b}} 
+int {\bfseries Partners\+Count}
+\item 
+\mbox{\Hypertarget{classTConnectionServer_a07537c9a63183a69f5525b7d68a26895}\label{classTConnectionServer_a07537c9a63183a69f5525b7d68a26895}} 
+longword {\bfseries Local\+Bind}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTConnectionServer_aed1526db5c345e31f8ae1e267c8d334c}\label{classTConnectionServer_aed1526db5c345e31f8ae1e267c8d334c}} 
+void {\bfseries Incoming} (socket\+\_\+t Sock)
+\item 
+\mbox{\Hypertarget{classTConnectionServer_a544fa7ef0d51f3364b5138df54148464}\label{classTConnectionServer_a544fa7ef0d51f3364b5138df54148464}} 
+int {\bfseries Start} ()
+\item 
+\mbox{\Hypertarget{classTConnectionServer_a55ed73493e0c43af0ba2b98de06eb135}\label{classTConnectionServer_a55ed73493e0c43af0ba2b98de06eb135}} 
+int {\bfseries First\+Free} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTConnectionServer_a0b9adae7798879380734c69d78a24065}\label{classTConnectionServer_a0b9adae7798879380734c69d78a24065}} 
+\mbox{\hyperlink{classTSnap7Partner}{P\+Snap7\+Partner}} {\bfseries Partners} \mbox{[}Max\+Partners\mbox{]}
+\item 
+\mbox{\Hypertarget{classTConnectionServer_a06948564ab059b95d5f12c62d468d0e2}\label{classTConnectionServer_a06948564ab059b95d5f12c62d468d0e2}} 
+bool {\bfseries Destroying}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTConnectionServer_a5e1c9b50b6e6d08fbca6bf5d30d165ec}\label{classTConnectionServer_a5e1c9b50b6e6d08fbca6bf5d30d165ec}} 
+class {\bfseries T\+Conn\+Listener\+Thread}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+s7\+\_\+partner.\+h\item 
+s7\+\_\+partner.\+cpp\end{DoxyCompactItemize}

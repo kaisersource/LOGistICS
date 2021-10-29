@@ -1,0 +1,159 @@
+\hypertarget{classTS7Worker}{}\doxysection{T\+S7\+Worker Class Reference}
+\label{classTS7Worker}\index{TS7Worker@{TS7Worker}}
+Inheritance diagram for T\+S7\+Worker\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classTS7Worker}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTS7Worker_a9b8cf5765a2d3ec4617d147db4bf7df7}\label{classTS7Worker_a9b8cf5765a2d3ec4617d147db4bf7df7}} 
+\mbox{\hyperlink{classTSnap7Server}{T\+Snap7\+Server}} $\ast$ {\bfseries F\+Server}
+\item 
+\mbox{\Hypertarget{classTS7Worker_ae6c6cfe3f4c183fd12e4db0bd66d42ed}\label{classTS7Worker_ae6c6cfe3f4c183fd12e4db0bd66d42ed}} 
+int {\bfseries F\+P\+D\+U\+Length}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTS7Worker_aa6e6bbd1133f5b85c661bf73c45a76ff}\label{classTS7Worker_aa6e6bbd1133f5b85c661bf73c45a76ff}} 
+int {\bfseries Data\+Size\+Byte} (int Word\+Length)
+\item 
+\mbox{\Hypertarget{classTS7Worker_a10b54b485a6e49fbef58df75576ae7c8}\label{classTS7Worker_a10b54b485a6e49fbef58df75576ae7c8}} 
+bool {\bfseries Execute\+Recv} ()
+\item 
+\mbox{\Hypertarget{classTS7Worker_a21eeb0bb3e0ef28421cc30f3e6faf322}\label{classTS7Worker_a21eeb0bb3e0ef28421cc30f3e6faf322}} 
+void {\bfseries Do\+Event} (longword Code, word Ret\+Code, word Param1, word Param2, word Param3, word Param4)
+\item 
+\mbox{\Hypertarget{classTS7Worker_a1d7741f997c13453e59d341454a43f72}\label{classTS7Worker_a1d7741f997c13453e59d341454a43f72}} 
+void {\bfseries Do\+Read\+Event} (longword Code, word Ret\+Code, word Param1, word Param2, word Param3, word Param4)
+\item 
+\mbox{\Hypertarget{classTS7Worker_a9945662d61f80a8925f214b6e336e792}\label{classTS7Worker_a9945662d61f80a8925f214b6e336e792}} 
+void {\bfseries Fragment\+Skipped} (int Size)
+\item 
+\mbox{\Hypertarget{classTS7Worker_a24ec6e04ea3ba369ae2a72f87ca7a506}\label{classTS7Worker_a24ec6e04ea3ba369ae2a72f87ca7a506}} 
+bool {\bfseries Iso\+Perform\+Command} (int \&Size)
+\item 
+\mbox{\Hypertarget{classTS7Worker_aa9142acffbd68431a4e052eccf85ae18}\label{classTS7Worker_aa9142acffbd68431a4e052eccf85ae18}} 
+bool {\bfseries Perform\+P\+D\+U\+Ack} (int \&Size)
+\item 
+\mbox{\Hypertarget{classTS7Worker_a50c339675cadea7b3eea9ab7c92c5a92}\label{classTS7Worker_a50c339675cadea7b3eea9ab7c92c5a92}} 
+bool {\bfseries Perform\+P\+D\+U\+Request} (int \&Size)
+\item 
+\mbox{\Hypertarget{classTS7Worker_a8a9359c376117c6087deb21587eae758}\label{classTS7Worker_a8a9359c376117c6087deb21587eae758}} 
+bool {\bfseries Perform\+P\+D\+U\+Usr\+Data} (int \&Size)
+\item 
+\mbox{\Hypertarget{classTS7Worker_a9c74db3b90994de2cf157349a54d7804}\label{classTS7Worker_a9c74db3b90994de2cf157349a54d7804}} 
+\mbox{\hyperlink{structTS7Area}{P\+S7\+Area}} {\bfseries Get\+Area} (byte S7\+Code, word index)
+\item 
+\mbox{\Hypertarget{classTS7Worker_a3d601ed7dad1c1b43d99401642c1f208}\label{classTS7Worker_a3d601ed7dad1c1b43d99401642c1f208}} 
+bool {\bfseries Perform\+Function\+Read} ()
+\item 
+\mbox{\Hypertarget{classTS7Worker_ac568957d080814fb7cdbc0647e55f9cb}\label{classTS7Worker_ac568957d080814fb7cdbc0647e55f9cb}} 
+word {\bfseries Read\+Area} (\mbox{\hyperlink{structTResFunReadItem}{P\+Res\+Fun\+Read\+Item}} Res\+Item\+Data, \mbox{\hyperlink{structTReqFunReadItem}{P\+Req\+Fun\+Read\+Item}} Req\+Item\+Par, int \&P\+D\+U\+Remainder, \mbox{\hyperlink{structTEv}{T\+Ev}} \&EV)
+\item 
+\mbox{\Hypertarget{classTS7Worker_a1be18537439690d9464d7b90fa53683d}\label{classTS7Worker_a1be18537439690d9464d7b90fa53683d}} 
+word {\bfseries R\+A\+\_\+\+Not\+Found} (\mbox{\hyperlink{structTResFunReadItem}{P\+Res\+Fun\+Read\+Item}} Res\+Item, \mbox{\hyperlink{structTEv}{T\+Ev}} \&EV)
+\item 
+\mbox{\Hypertarget{classTS7Worker_aeafad47ffaa133731893e0cfba7a3c9e}\label{classTS7Worker_aeafad47ffaa133731893e0cfba7a3c9e}} 
+word {\bfseries R\+A\+\_\+\+Out\+Of\+Range} (\mbox{\hyperlink{structTResFunReadItem}{P\+Res\+Fun\+Read\+Item}} Res\+Item, \mbox{\hyperlink{structTEv}{T\+Ev}} \&EV)
+\item 
+\mbox{\Hypertarget{classTS7Worker_a57a85bbfb493031312cbcec3c8885377}\label{classTS7Worker_a57a85bbfb493031312cbcec3c8885377}} 
+word {\bfseries R\+A\+\_\+\+Size\+Over\+P\+DU} (\mbox{\hyperlink{structTResFunReadItem}{P\+Res\+Fun\+Read\+Item}} Res\+Item, \mbox{\hyperlink{structTEv}{T\+Ev}} \&EV)
+\item 
+\mbox{\Hypertarget{classTS7Worker_ac800df9ee29393f0f59f38eee1ea4752}\label{classTS7Worker_ac800df9ee29393f0f59f38eee1ea4752}} 
+bool {\bfseries Perform\+Function\+Write} ()
+\item 
+\mbox{\Hypertarget{classTS7Worker_a4522128d82f6900cc269763c2aba1925}\label{classTS7Worker_a4522128d82f6900cc269763c2aba1925}} 
+byte {\bfseries Write\+Area} (\mbox{\hyperlink{structTReqFunWriteDataItem}{P\+Req\+Fun\+Write\+Data\+Item}} Req\+Item\+Data, \mbox{\hyperlink{structTReqFunWriteItem}{P\+Req\+Fun\+Write\+Item}} Req\+Item\+Par, \mbox{\hyperlink{structTEv}{T\+Ev}} \&EV)
+\item 
+\mbox{\Hypertarget{classTS7Worker_a8f7dece43003fd02230b8b6ec7abaff6}\label{classTS7Worker_a8f7dece43003fd02230b8b6ec7abaff6}} 
+byte {\bfseries W\+A\+\_\+\+Not\+Found} (\mbox{\hyperlink{structTEv}{T\+Ev}} \&EV)
+\item 
+\mbox{\Hypertarget{classTS7Worker_a27ad35c4e3881113eff91f99ca115420}\label{classTS7Worker_a27ad35c4e3881113eff91f99ca115420}} 
+byte {\bfseries W\+A\+\_\+\+Invalid\+Transport\+Size} (\mbox{\hyperlink{structTEv}{T\+Ev}} \&EV)
+\item 
+\mbox{\Hypertarget{classTS7Worker_a09a5333d2bf9ff7dec32a246c8d7dae6}\label{classTS7Worker_a09a5333d2bf9ff7dec32a246c8d7dae6}} 
+byte {\bfseries W\+A\+\_\+\+Out\+Of\+Range} (\mbox{\hyperlink{structTEv}{T\+Ev}} \&EV)
+\item 
+\mbox{\Hypertarget{classTS7Worker_acb53568acac2e7d8b039a3bec7ed7b6c}\label{classTS7Worker_acb53568acac2e7d8b039a3bec7ed7b6c}} 
+byte {\bfseries W\+A\+\_\+\+Data\+Size\+Mismatch} (\mbox{\hyperlink{structTEv}{T\+Ev}} \&EV)
+\item 
+\mbox{\Hypertarget{classTS7Worker_a8df1a6cfdedb08e4d01197cc748451b1}\label{classTS7Worker_a8df1a6cfdedb08e4d01197cc748451b1}} 
+bool {\bfseries Perform\+Function\+Negotiate} ()
+\item 
+\mbox{\Hypertarget{classTS7Worker_a99be5369bfed4a06bc8475311af19a73}\label{classTS7Worker_a99be5369bfed4a06bc8475311af19a73}} 
+bool {\bfseries Perform\+Function\+Control} (byte Pdu\+Fun)
+\item 
+\mbox{\Hypertarget{classTS7Worker_ae6366a3c97bf9adcf388cae07bbabc95}\label{classTS7Worker_ae6366a3c97bf9adcf388cae07bbabc95}} 
+bool {\bfseries Perform\+Function\+Upload} ()
+\item 
+\mbox{\Hypertarget{classTS7Worker_a378072aef0bea5c6b6c699ee90ec26f2}\label{classTS7Worker_a378072aef0bea5c6b6c699ee90ec26f2}} 
+bool {\bfseries Perform\+Function\+Download} ()
+\item 
+\mbox{\Hypertarget{classTS7Worker_adee2b1f338ae28d234aa873b3bbbd0f5}\label{classTS7Worker_adee2b1f338ae28d234aa873b3bbbd0f5}} 
+bool {\bfseries Perform\+Group\+Programmer} ()
+\item 
+\mbox{\Hypertarget{classTS7Worker_aaddc73749b326912768a6d05cf2ed70e}\label{classTS7Worker_aaddc73749b326912768a6d05cf2ed70e}} 
+bool {\bfseries Perform\+Group\+Cyclic\+Data} ()
+\item 
+\mbox{\Hypertarget{classTS7Worker_acf17a722b6ec071ddcb0c5d96fc9e86c}\label{classTS7Worker_acf17a722b6ec071ddcb0c5d96fc9e86c}} 
+bool {\bfseries Perform\+Group\+Security} ()
+\item 
+\mbox{\Hypertarget{classTS7Worker_a60105ec73dbd12ea2b8b2931d6972435}\label{classTS7Worker_a60105ec73dbd12ea2b8b2931d6972435}} 
+bool {\bfseries Perform\+Group\+Block\+Info} ()
+\item 
+\mbox{\Hypertarget{classTS7Worker_a819eac90104703afa763da5f7eca6268}\label{classTS7Worker_a819eac90104703afa763da5f7eca6268}} 
+void {\bfseries B\+L\+K\+\_\+\+List\+All} (\mbox{\hyperlink{structTCB}{T\+CB}} \&CB)
+\item 
+\mbox{\Hypertarget{classTS7Worker_a6d3f817718b91acac3c96624be57a5e4}\label{classTS7Worker_a6d3f817718b91acac3c96624be57a5e4}} 
+void {\bfseries B\+L\+K\+\_\+\+List\+BoT} (byte Block\+Type, bool Start, \mbox{\hyperlink{structTCB}{T\+CB}} \&CB)
+\item 
+\mbox{\Hypertarget{classTS7Worker_a09f2ef11e7aef4a0a471bb91063571bf}\label{classTS7Worker_a09f2ef11e7aef4a0a471bb91063571bf}} 
+void {\bfseries B\+L\+K\+\_\+\+No\+Resource\+\_\+\+List\+BoT} (\mbox{\hyperlink{structTDataFunGetBot}{P\+Data\+Fun\+Get\+Bot}} Data, \mbox{\hyperlink{structTCB}{T\+CB}} \&CB)
+\item 
+\mbox{\Hypertarget{classTS7Worker_a2d57b077d5ed50def5fb51f0ef4d3879}\label{classTS7Worker_a2d57b077d5ed50def5fb51f0ef4d3879}} 
+void {\bfseries B\+L\+K\+\_\+\+Get\+Blk\+Info} (\mbox{\hyperlink{structTCB}{T\+CB}} \&CB)
+\item 
+\mbox{\Hypertarget{classTS7Worker_ab729ae9c53c8facbe7be633de0f130d8}\label{classTS7Worker_ab729ae9c53c8facbe7be633de0f130d8}} 
+void {\bfseries B\+L\+K\+\_\+\+No\+Resource\+\_\+\+Get\+Blk\+Info} (\mbox{\hyperlink{structTResDataBlockInfo}{P\+Res\+Data\+Block\+Info}} Data, \mbox{\hyperlink{structTCB}{T\+CB}} \&CB)
+\item 
+\mbox{\Hypertarget{classTS7Worker_a41733447b9c2443dfaf68bcaab371256}\label{classTS7Worker_a41733447b9c2443dfaf68bcaab371256}} 
+void {\bfseries B\+L\+K\+\_\+\+Get\+Block\+Num\+\_\+\+Get\+Blk\+Info} (int \&Blk\+Num, \mbox{\hyperlink{structTReqDataBlockInfo}{P\+Req\+Data\+Block\+Info}} Req\+Data)
+\item 
+\mbox{\Hypertarget{classTS7Worker_ad38296ca38145d9086b1c0e8b7635591}\label{classTS7Worker_ad38296ca38145d9086b1c0e8b7635591}} 
+void {\bfseries B\+L\+K\+\_\+\+Do\+Block\+Info\+\_\+\+Get\+Blk\+Info} (\mbox{\hyperlink{structTS7Area}{P\+S7\+Area}} DB, \mbox{\hyperlink{structTResDataBlockInfo}{P\+Res\+Data\+Block\+Info}} Data, \mbox{\hyperlink{structTCB}{T\+CB}} \&CB)
+\item 
+\mbox{\Hypertarget{classTS7Worker_ab9e4905093c83768bd167ab0f0fbd581}\label{classTS7Worker_ab9e4905093c83768bd167ab0f0fbd581}} 
+bool {\bfseries Perform\+Get\+Clock} ()
+\item 
+\mbox{\Hypertarget{classTS7Worker_af587d534708615c828aad1078ccd4ed0}\label{classTS7Worker_af587d534708615c828aad1078ccd4ed0}} 
+bool {\bfseries Perform\+Set\+Clock} ()
+\item 
+\mbox{\Hypertarget{classTS7Worker_a545843f93f6cff64809d046e2ae219ab}\label{classTS7Worker_a545843f93f6cff64809d046e2ae219ab}} 
+bool {\bfseries Perform\+Group\+S\+ZL} ()
+\item 
+\mbox{\Hypertarget{classTS7Worker_ae4131412bd2aa8169a46c24180d44ac3}\label{classTS7Worker_ae4131412bd2aa8169a46c24180d44ac3}} 
+void {\bfseries S\+Z\+L\+Not\+Available} ()
+\item 
+\mbox{\Hypertarget{classTS7Worker_ab6506dd6545547b6f481f773c3786ab5}\label{classTS7Worker_ab6506dd6545547b6f481f773c3786ab5}} 
+void {\bfseries S\+Z\+L\+System\+State} ()
+\item 
+\mbox{\Hypertarget{classTS7Worker_ae8670d8af069da70224d40115e148569}\label{classTS7Worker_ae8670d8af069da70224d40115e148569}} 
+void {\bfseries S\+Z\+L\+Data} (void $\ast$P, int len)
+\item 
+\mbox{\Hypertarget{classTS7Worker_a504bc3bc8ff08e4b1044dd069471d754}\label{classTS7Worker_a504bc3bc8ff08e4b1044dd069471d754}} 
+void {\bfseries S\+Z\+L\+\_\+\+I\+D424} ()
+\item 
+\mbox{\Hypertarget{classTS7Worker_a567e988e6373bf18c03a95fba7de4986}\label{classTS7Worker_a567e988e6373bf18c03a95fba7de4986}} 
+void {\bfseries S\+Z\+L\+\_\+\+I\+D131\+\_\+\+I\+D\+X003} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+s7\+\_\+server.\+h\item 
+s7\+\_\+server.\+cpp\end{DoxyCompactItemize}

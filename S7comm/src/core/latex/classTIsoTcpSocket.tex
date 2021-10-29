@@ -1,0 +1,98 @@
+\hypertarget{classTIsoTcpSocket}{}\doxysection{T\+Iso\+Tcp\+Socket Class Reference}
+\label{classTIsoTcpSocket}\index{TIsoTcpSocket@{TIsoTcpSocket}}
+Inheritance diagram for T\+Iso\+Tcp\+Socket\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classTIsoTcpSocket}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTIsoTcpSocket_a5761889a55f6c9551cfb972777e448b4}\label{classTIsoTcpSocket_a5761889a55f6c9551cfb972777e448b4}} 
+int {\bfseries iso\+Connect} ()
+\item 
+\mbox{\Hypertarget{classTIsoTcpSocket_a099171087c1aae0e741608649efbe1ca}\label{classTIsoTcpSocket_a099171087c1aae0e741608649efbe1ca}} 
+int {\bfseries iso\+Disconnect} (bool Only\+T\+CP)
+\item 
+\mbox{\Hypertarget{classTIsoTcpSocket_a6f27a89b809239e954b4a47c95b37216}\label{classTIsoTcpSocket_a6f27a89b809239e954b4a47c95b37216}} 
+int {\bfseries iso\+Send\+Buffer} (void $\ast$Data, int Size)
+\item 
+\mbox{\Hypertarget{classTIsoTcpSocket_afc1824deae300d1f88d38c6d915c01c5}\label{classTIsoTcpSocket_afc1824deae300d1f88d38c6d915c01c5}} 
+int {\bfseries iso\+Recv\+Buffer} (void $\ast$Data, int \&Size)
+\item 
+\mbox{\Hypertarget{classTIsoTcpSocket_a119af51e178808f004628b0cb5916db1}\label{classTIsoTcpSocket_a119af51e178808f004628b0cb5916db1}} 
+int {\bfseries iso\+Exchange\+Buffer} (void $\ast$Data, int \&Size)
+\item 
+\mbox{\Hypertarget{classTIsoTcpSocket_a33a0057b32f0157c6cdb6b2bd026d1d2}\label{classTIsoTcpSocket_a33a0057b32f0157c6cdb6b2bd026d1d2}} 
+bool {\bfseries Iso\+P\+D\+U\+Ready} ()
+\item 
+\mbox{\Hypertarget{classTIsoTcpSocket_abc79aa2371f882bce5c491a9693bb050}\label{classTIsoTcpSocket_abc79aa2371f882bce5c491a9693bb050}} 
+int {\bfseries iso\+Send\+P\+DU} (\mbox{\hyperlink{structTIsoDataPDU}{P\+Iso\+Data\+P\+DU}} Data)
+\item 
+\mbox{\Hypertarget{classTIsoTcpSocket_ad23154e1de9e37e649af206bf7826955}\label{classTIsoTcpSocket_ad23154e1de9e37e649af206bf7826955}} 
+int {\bfseries iso\+Recv\+P\+DU} (\mbox{\hyperlink{structTIsoDataPDU}{P\+Iso\+Data\+P\+DU}} Data)
+\item 
+\mbox{\Hypertarget{classTIsoTcpSocket_aa9ca771af470aeb5a35ce2dd37c52fe6}\label{classTIsoTcpSocket_aa9ca771af470aeb5a35ce2dd37c52fe6}} 
+int {\bfseries iso\+Exchange\+P\+DU} (\mbox{\hyperlink{structTIsoDataPDU}{P\+Iso\+Data\+P\+DU}} Data)
+\item 
+\mbox{\Hypertarget{classTIsoTcpSocket_ad631189e0c8acda90ef3140a201b4cc2}\label{classTIsoTcpSocket_ad631189e0c8acda90ef3140a201b4cc2}} 
+void {\bfseries Iso\+Peek} (void $\ast$p\+P\+DU, T\+P\+D\+U\+Kind \&Pdu\+Kind)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTIsoTcpSocket_a32d2e5e8abc5cade8a16079b715a6d83}\label{classTIsoTcpSocket_a32d2e5e8abc5cade8a16079b715a6d83}} 
+word {\bfseries Src\+T\+Sap}
+\item 
+\mbox{\Hypertarget{classTIsoTcpSocket_a6ddf1f389fbfbeb79e04e3a6f390c94d}\label{classTIsoTcpSocket_a6ddf1f389fbfbeb79e04e3a6f390c94d}} 
+word {\bfseries Dst\+T\+Sap}
+\item 
+\mbox{\Hypertarget{classTIsoTcpSocket_aba26d9e3cb7963d66f7630e1187e506d}\label{classTIsoTcpSocket_aba26d9e3cb7963d66f7630e1187e506d}} 
+word {\bfseries Src\+Ref}
+\item 
+\mbox{\Hypertarget{classTIsoTcpSocket_ae9223c15c2878742f93b925b288bb96e}\label{classTIsoTcpSocket_ae9223c15c2878742f93b925b288bb96e}} 
+word {\bfseries Dst\+Ref}
+\item 
+\mbox{\Hypertarget{classTIsoTcpSocket_af92151b733734b493a4bb503d3b863e7}\label{classTIsoTcpSocket_af92151b733734b493a4bb503d3b863e7}} 
+int {\bfseries Iso\+P\+D\+U\+Size}
+\item 
+\mbox{\Hypertarget{classTIsoTcpSocket_a182decc861d741973c13d110d76448a9}\label{classTIsoTcpSocket_a182decc861d741973c13d110d76448a9}} 
+int {\bfseries Last\+Iso\+Error}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTIsoTcpSocket_a4a9d296410d2273593468d1bbf5f2a21}\label{classTIsoTcpSocket_a4a9d296410d2273593468d1bbf5f2a21}} 
+int {\bfseries Set\+Iso\+Error} (int Error)
+\item 
+\mbox{\Hypertarget{classTIsoTcpSocket_a4096b82bbbb53294ac6f9f7263584ff9}\label{classTIsoTcpSocket_a4096b82bbbb53294ac6f9f7263584ff9}} 
+virtual int {\bfseries Build\+Control\+P\+DU} ()
+\item 
+\mbox{\Hypertarget{classTIsoTcpSocket_a2825c853d02ead950115f2e37b266fce}\label{classTIsoTcpSocket_a2825c853d02ead950115f2e37b266fce}} 
+int {\bfseries P\+D\+U\+Size} (void $\ast$p\+P\+DU)
+\item 
+\mbox{\Hypertarget{classTIsoTcpSocket_af112db5ebc04f445b38600dad7f6e257}\label{classTIsoTcpSocket_af112db5ebc04f445b38600dad7f6e257}} 
+virtual void {\bfseries Iso\+Parse\+P\+DU} (\mbox{\hyperlink{structTIsoControlPDU}{T\+Iso\+Control\+P\+DU}} P\+DU)
+\item 
+\mbox{\Hypertarget{classTIsoTcpSocket_a0b60ac86bca49f0ed590d8f0bcf282e5}\label{classTIsoTcpSocket_a0b60ac86bca49f0ed590d8f0bcf282e5}} 
+int {\bfseries Iso\+Confirm\+Connection} (u\+\_\+char P\+D\+U\+Type)
+\item 
+\mbox{\Hypertarget{classTIsoTcpSocket_a29ee547b9b062270932fb04851aafff8}\label{classTIsoTcpSocket_a29ee547b9b062270932fb04851aafff8}} 
+void {\bfseries Clr\+Iso\+Error} ()
+\item 
+\mbox{\Hypertarget{classTIsoTcpSocket_a61fa429b490072f720063e88aec5d318}\label{classTIsoTcpSocket_a61fa429b490072f720063e88aec5d318}} 
+virtual void {\bfseries Fragment\+Skipped} (int Size)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTIsoTcpSocket_ad4f07980cef6e02655012fc25cfb9649}\label{classTIsoTcpSocket_ad4f07980cef6e02655012fc25cfb9649}} 
+\mbox{\hyperlink{structTIsoDataPDU}{T\+Iso\+Data\+P\+DU}} {\bfseries P\+DU}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+s7\+\_\+isotcp.\+h\item 
+s7\+\_\+isotcp.\+cpp\end{DoxyCompactItemize}
