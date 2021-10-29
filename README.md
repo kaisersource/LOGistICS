@@ -1,10 +1,10 @@
 Build LOGistICS container inside the dir by using:
 docker build -t logistics .
 
-Execute in interactive mode in order to enable GUI 
+Execute in interactive mode in order to enable GUI:
 docker run -it -p 102:102 -p 502:502 logistics
 
-In order to cetach the container and avoid its suicide do:
+In order to detach the container and avoid its suicide do:
 ctrl+p, then ctrl+q 
 
 
@@ -18,7 +18,7 @@ ctrl+p, then ctrl+q
 
 - [x] S7comm honeypot
 - [x] Modbus honeypot 
-- [x] tshark replaces pyshark-based capture script  
+- [x] Tshark is used ephemerally in order to test pyshark script 
 - [x] S7comm gui template
 - [x] Modbus gui template
 - [ ] Upload Data Analysis Notebooks & ML trials
