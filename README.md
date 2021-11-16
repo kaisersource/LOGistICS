@@ -13,6 +13,7 @@ ctrl+p, then ctrl+q
 - [ ] Upload updated version of pyshark-based capture script
 - [ ] Check and report deployment differences between Zeek v3 and v4 (Otherwise Security Onion distro is adviced)
 - [ ] Docker compose to start all the services, then make the honeypot container a dependency of the capture container 
+- [ ] Add DNP3 support 
 
 ### v.0.1.0
 
