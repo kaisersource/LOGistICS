@@ -7,22 +7,30 @@ docker run -it -p 102:102 -p 502:502 logistics
 In order to detach the container and avoid its suicide do:
 ctrl+p, then ctrl+q 
 
+[TODO]
+- [x] Proper implementation of pyshark module, enhanced with its latest features
+- [x] Step 1: Supervisord integration for proper process management inside a container. Step 2: splitting logistics in microservices, one for each exposed svc.
+- [x] Ehnancement: deploy LOGistICS by using Compose or Acorn
+- [x] Migrate snap7 to pysnap7
+- [x] container hardening
+- [x] Move GUI to website 
+- [x] Migrate template params from csv to ARM/SQL database compliant.   
+- [x] Continuous improvement of Python-based Analysis based on ZAT.
 
 ### v0.1.1
 - [x] Merging honeypot setup with a shell script
 - [ ] Upload updated version of pyshark-based capture script
 - [ ] Check and report deployment differences between Zeek v3 and v4 (Otherwise Security Onion distro is adviced)
 - [ ] Docker compose to start all the services, then make the honeypot container a dependency of the capture container 
-- [ ] Add DNP3 support 
+- [ ] Add support of further ICS protocols e.g. DNP3. 
 
 ### v.0.1.0
 
 - [x] S7comm honeypot
 - [x] Modbus honeypot 
-- [x] Tshark is used ephemerally in order to test pyshark script 
 - [x] S7comm gui template
 - [x] Modbus gui template
-- [ ] Upload Data Analysis Notebooks & ML trials
+
 
 If you use *LOGistICS* in a scientific publication, we would appreciate citations using this **BibTex** entry:
 ``` tex
