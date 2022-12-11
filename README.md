@@ -23,6 +23,7 @@ ctrl+p, then ctrl+q
 - [ ] Check and report deployment differences between Zeek v3 and v4 (Otherwise Security Onion distro is adviced)
 - [ ] Docker compose to start all the services, then make the honeypot container a dependency of the capture container 
 - [ ] Add support of further ICS protocols e.g. DNP3. 
+- [x] Moved Python dependencies to requirements.txt
 
 ### v.0.1.0
 
