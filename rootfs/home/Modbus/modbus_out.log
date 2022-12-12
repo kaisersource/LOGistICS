@@ -1,0 +1,156 @@
+Template tuple
+('Schneider', '33595863910696', 'se.com', 'Modicon M340', 'BMXP342020', '0.5.1')
+getValues fc-[3] address-1: count-4
+getValues fc-[1] address-1: count-4
+getValues fc-[1] address-11: count-2
+PLC Status: Drum level: 1 coil number: 20
+PLC Status: Pump number: 1 coil status: On
+PLC Status: Drum level: 2 coil number: 20
+PLC Status: Pump number: 2 coil status: On
+PLC Status: Drum level: 3 coil number: 20
+PLC Status: Pump number: 3 coil status: On
+PLC Status: Drum level: 4 coil number: 20
+PLC Status: Pump number: 4 coil status: On
+Updating registers...
+getValues fc-[3] address-1: count-4
+getValues fc-[1] address-1: count-4
+getValues fc-[1] address-11: count-2
+setValues[3] 1:4
+Starting Modbus TCP Server on 0.0.0.0:5002
+Running in Main thread
+getValues fc-[3] address-1: count-4
+getValues fc-[1] address-1: count-4
+getValues fc-[1] address-11: count-2
+PLC Status: Drum level: 1 coil number: 20
+PLC Status: Pump number: 1 coil status: On
+PLC Status: Drum level: 2 coil number: 20
+PLC Status: Pump number: 2 coil status: On
+PLC Status: Drum level: 3 coil number: 20
+PLC Status: Pump number: 3 coil status: On
+PLC Status: Drum level: 4 coil number: 20
+PLC Status: Pump number: 4 coil status: On
+Updating registers...
+getValues fc-[3] address-1: count-4
+getValues fc-[1] address-1: count-4
+getValues fc-[1] address-11: count-2
+setValues[3] 1:4
+Template tuple
+('Schneider', '33595863910696', 'se.com', 'Modicon M340', 'BMXP342020', '0.5.1')
+getValues fc-[3] address-1: count-4
+getValues fc-[1] address-1: count-4
+getValues fc-[1] address-11: count-2
+PLC Status: Drum level: 1 coil number: 20
+PLC Status: Pump number: 1 coil status: On
+PLC Status: Drum level: 2 coil number: 20
+PLC Status: Pump number: 2 coil status: On
+PLC Status: Drum level: 3 coil number: 20
+PLC Status: Pump number: 3 coil status: On
+PLC Status: Drum level: 4 coil number: 20
+PLC Status: Pump number: 4 coil status: On
+Updating registers...
+getValues fc-[3] address-1: count-4
+getValues fc-[1] address-1: count-4
+getValues fc-[1] address-11: count-2
+setValues[3] 1:4
+Starting Modbus TCP Server on 0.0.0.0:5002
+Running in Main thread
+Template tuple
+('Schneider', '33595863910696', 'se.com', 'Modicon M340', 'BMXP342020', '0.5.1')
+getValues fc-[3] address-1: count-4
+getValues fc-[1] address-1: count-4
+getValues fc-[1] address-11: count-2
+PLC Status: Drum level: 1 coil number: 20
+PLC Status: Pump number: 1 coil status: On
+PLC Status: Drum level: 2 coil number: 20
+PLC Status: Pump number: 2 coil status: On
+PLC Status: Drum level: 3 coil number: 20
+PLC Status: Pump number: 3 coil status: On
+PLC Status: Drum level: 4 coil number: 20
+PLC Status: Pump number: 4 coil status: On
+Updating registers...
+getValues fc-[3] address-1: count-4
+getValues fc-[1] address-1: count-4
+getValues fc-[1] address-11: count-2
+setValues[3] 1:4
+Starting Modbus TCP Server on 0.0.0.0:5002
+Running in Main thread
+getValues fc-[3] address-1: count-4
+getValues fc-[1] address-1: count-4
+getValues fc-[1] address-11: count-2
+PLC Status: Drum level: 1 coil number: 20
+PLC Status: Pump number: 1 coil status: On
+PLC Status: Drum level: 2 coil number: 20
+PLC Status: Pump number: 2 coil status: On
+PLC Status: Drum level: 3 coil number: 20
+PLC Status: Pump number: 3 coil status: On
+PLC Status: Drum level: 4 coil number: 20
+PLC Status: Pump number: 4 coil status: On
+Updating registers...
+getValues fc-[3] address-1: count-4
+getValues fc-[1] address-1: count-4
+getValues fc-[1] address-11: count-2
+setValues[3] 1:4
+getValues fc-[3] address-1: count-4
+getValues fc-[1] address-1: count-4
+getValues fc-[1] address-11: count-2
+PLC Status: Drum level: 1 coil number: 20
+PLC Status: Pump number: 1 coil status: On
+PLC Status: Drum level: 2 coil number: 20
+PLC Status: Pump number: 2 coil status: On
+PLC Status: Drum level: 3 coil number: 20
+PLC Status: Pump number: 3 coil status: On
+PLC Status: Drum level: 4 coil number: 20
+PLC Status: Pump number: 4 coil status: On
+Updating registers...
+getValues fc-[3] address-1: count-4
+getValues fc-[1] address-1: count-4
+getValues fc-[1] address-11: count-2
+setValues[3] 1:4
+getValues fc-[3] address-1: count-4
+getValues fc-[1] address-1: count-4
+getValues fc-[1] address-11: count-2
+PLC Status: Drum level: 1 coil number: 20
+PLC Status: Pump number: 1 coil status: On
+PLC Status: Drum level: 2 coil number: 20
+PLC Status: Pump number: 2 coil status: On
+PLC Status: Drum level: 3 coil number: 20
+PLC Status: Pump number: 3 coil status: On
+PLC Status: Drum level: 4 coil number: 20
+PLC Status: Pump number: 4 coil status: On
+Updating registers...
+getValues fc-[3] address-1: count-4
+getValues fc-[1] address-1: count-4
+getValues fc-[1] address-11: count-2
+setValues[3] 1:4
+getValues fc-[3] address-1: count-4
+getValues fc-[1] address-1: count-4
+getValues fc-[1] address-11: count-2
+PLC Status: Drum level: 1 coil number: 20
+PLC Status: Pump number: 1 coil status: On
+PLC Status: Drum level: 2 coil number: 20
+PLC Status: Pump number: 2 coil status: On
+PLC Status: Drum level: 3 coil number: 20
+PLC Status: Pump number: 3 coil status: On
+PLC Status: Drum level: 4 coil number: 20
+PLC Status: Pump number: 4 coil status: On
+Updating registers...
+getValues fc-[3] address-1: count-4
+getValues fc-[1] address-1: count-4
+getValues fc-[1] address-11: count-2
+setValues[3] 1:4
+getValues fc-[3] address-1: count-4
+getValues fc-[1] address-1: count-4
+getValues fc-[1] address-11: count-2
+PLC Status: Drum level: 1 coil number: 20
+PLC Status: Pump number: 1 coil status: On
+PLC Status: Drum level: 2 coil number: 20
+PLC Status: Pump number: 2 coil status: On
+PLC Status: Drum level: 3 coil number: 20
+PLC Status: Pump number: 3 coil status: On
+PLC Status: Drum level: 4 coil number: 20
+PLC Status: Pump number: 4 coil status: On
+Updating registers...
+getValues fc-[3] address-1: count-4
+getValues fc-[1] address-1: count-4
+getValues fc-[1] address-11: count-2
+setValues[3] 1:4
