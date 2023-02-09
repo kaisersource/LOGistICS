@@ -53,5 +53,12 @@ series = {ARES 2021}
 }
 ```
 
+``` tex
+@article{bistarelli2022identifying,
+  title={On Identifying Repeated Patterns of OT Attacks with LOGistICS},
+  author={Bistarelli, Stefano and Bosimini, Emanuele and Santini, Francesco},
+  year={2022}
+}
+```
 
 
