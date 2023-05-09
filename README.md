@@ -20,7 +20,7 @@ ctrl+p, then ctrl+q
 ### v0.1.1
 - [x] Merging honeypot setup with a shell script
 - [ ] Upload updated version of pyshark-based capture script
-- [ ] Check and report deployment differences between Zeek v3 and v4 (Otherwise Security Onion distro is adviced)
+- [ ] Check and report deployment differences between Zeek versions (3.0.8 was used. Otherwise Security Onion distro is adviced)
 - [ ] Docker compose to start all the services, then make the honeypot container a dependency of the capture container 
 - [ ] Add support of further ICS protocols e.g. DNP3. 
 - [x] Moved Python dependencies to requirements.txt
