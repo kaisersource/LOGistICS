@@ -1,0 +1,11 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	dpd
+#open	2021-02-05-11-59-26
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	proto	analyzer	failure_reason
+#types	time	string	addr	port	addr	port	enum	string	string
+1610994186.189963	C2g4pU3Lh5pZNEoG1c	178.79.147.60	60446	192.168.1.4	502	tcp	MODBUS	Binpac exception: binpac exception: out_of_bound: ReadCoilsRequest: 4 > 0
+1610995231.784411	Cd5nif3D544ZYLhWSc	178.62.216.232	50584	192.168.1.4	502	tcp	MODBUS	Binpac exception: binpac exception: out_of_bound: ReadCoilsRequest: 4 > 0
+#close	2021-02-05-11-59-26

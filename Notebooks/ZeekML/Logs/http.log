@@ -1,0 +1,147 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	http
+#open	2021-02-05-11-59-26
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	trans_depth	method	host	uri	referrer	version	user_agent	origin	request_body_len	response_body_len	status_code	status_msg	info_code	info_msg	tags	username	password	proxied	orig_fuids	orig_filenames	orig_mime_types	resp_fuids	resp_filenames	resp_mime_types
+#types	time	string	addr	port	addr	port	count	string	string	string	string	string	string	string	count	count	count	string	count	string	set[enum]	string	string	set[string]	vector[string]	vector[string]	vector[string]	vector[string]	vector[string]	vector[string]
+1609785421.345534	CxI81b1Y8KymQbQ23h	82.53.128.61	49254	192.168.1.4	502	1	GET	kaisersource.asuscomm.com	/	-	-	curl/7.68.0	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1609785475.898026	CLHbuKfQt4G6Wrx18	82.53.128.61	49268	192.168.1.4	102	1	GET	kaisersource.asuscomm.com	/	-	-	curl/7.68.0	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1609809767.599534	CNJoIHWn9Y3UpeCpd	207.154.249.14	61953	192.168.1.4	102	3	GET	-	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1609809757.562860	CNJoIHWn9Y3UpeCpd	207.154.249.14	61953	192.168.1.4	102	2	GET	-	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1609809747.502418	CNJoIHWn9Y3UpeCpd	207.154.249.14	61953	192.168.1.4	102	1	GET	-	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1609824897.230651	CfJ9WB4U4z6KXsme6j	192.241.222.163	60064	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	Mozilla/5.0 zgrab/0.x	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1609911785.473866	CgJ7jc1alQFz96kyM3	192.241.215.162	42624	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	Mozilla/5.0 zgrab/0.x	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1610006644.983674	CigXi1391mm8jhfqzj	192.241.195.46	47262	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	Mozilla/5.0 zgrab/0.x	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1610029629.728480	C4jhlrzhuQGlvmhb5	139.162.99.243	50994	192.168.1.4	102	1	GET	clientapi.ipip.net	http://clientapi.ipip.net/echo.php?info=20210107222709	-	-	Mozilla/5.0 (Windows NT 10.0; WOW64)	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1610029655.537212	Ci75Ux10SLPIOiJdv7	139.162.99.243	35846	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	Mozilla/5.0	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1610135880.169173	CgHSeh4NGi8MKEsMaa	192.241.222.105	59998	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	Mozilla/5.0 zgrab/0.x	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1610182593.899235	CWKIE63RWzbvS6gbB7	192.35.169.48	7288	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1610216212.427421	CwUWFVH3Q6iV5n3Jg	139.162.99.243	45814	192.168.1.4	102	1	GET	clientapi.ipip.net	http://clientapi.ipip.net/echo.php?info=20210110021652	-	-	Mozilla/5.0 (Windows NT 10.0; WOW64)	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1610216238.233302	CKYOCbzdEg8ZsDBxf	139.162.99.243	59388	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	Mozilla/5.0	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1610236138.343362	Ccdp8z30bptHkgOUsg	192.241.206.247	40370	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	Mozilla/5.0 zgrab/0.x	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1610338121.033136	Cvx56B4Dh1TU0da3O9	165.22.238.120	61953	192.168.1.4	502	3	GET	-	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1610338110.895117	Cvx56B4Dh1TU0da3O9	165.22.238.120	61953	192.168.1.4	502	2	GET	-	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1610338100.713502	Cvx56B4Dh1TU0da3O9	165.22.238.120	61953	192.168.1.4	502	1	GET	-	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1610381878.289225	CP1xnY1lTg8TU31zJh	192.35.169.48	50860	192.168.1.4	502	1	GET	62.11.47.73	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1610383778.712131	CR7Pw91MGMDiOf4aUj	143.110.231.161	61953	192.168.1.4	102	3	GET	-	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1610383768.503742	CR7Pw91MGMDiOf4aUj	143.110.231.161	61953	192.168.1.4	102	2	GET	-	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1610383758.263954	CR7Pw91MGMDiOf4aUj	143.110.231.161	61953	192.168.1.4	102	1	GET	-	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1610429623.050573	C8lcLA29NY4Pj7CKp5	192.241.222.140	34344	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	Mozilla/5.0 zgrab/0.x	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1610451916.374779	C8CjLr3IVI9Dh6xCla	192.35.169.48	47240	192.168.1.4	502	1	GET	62.11.47.73	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1610451917.189594	CxQZrN1FtKa3IMsRyh	192.35.169.48	37532	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1610501504.976933	CNnqzp4rDqzIfkk6zl	83.97.20.35	33067	192.168.1.4	502	1	GET	62.11.47.73	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1610520642.909890	C8Hsbw3b2ZeCeewenk	192.241.215.145	51330	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	Mozilla/5.0 zgrab/0.x	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1610531741.869629	CniqfG3ufvQ3E5mPCk	139.162.99.243	41396	192.168.1.4	102	1	GET	clientapi.ipip.net	http://clientapi.ipip.net/echo.php?info=20210113175541	-	-	Mozilla/5.0 (Windows NT 10.0; WOW64)	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1610531767.671446	CLbvbC4gVv4fLanFgj	139.162.99.243	55800	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	Mozilla/5.0	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1610599724.840507	CWhbMT1oiNYpm25NXd	83.97.20.35	2738	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1610618693.337934	Cicy7vz7FUdHvT43c	192.241.206.240	40368	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	Mozilla/5.0 zgrab/0.x	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1610626334.488249	CoKRZs3Si59Z7SjsWg	188.166.119.132	53223	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1610636986.629281	C9djXB2vQf6sw2Dtyk	188.166.119.132	55148	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1610667430.271779	CPMfK12eMcHOMHro2f	178.79.129.208	35296	192.168.1.4	102	1	GET	-	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1610667431.825163	CzRLPe1Ba1WE0bp1Pe	178.79.129.208	35968	192.168.1.4	102	1	OPTIONS	-	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1610667433.382552	CUhXUE4G7Lz2LQ6ftk	178.79.129.208	36580	192.168.1.4	102	1	OPTIONS	-	/ RTSP/1.	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1610667450.542141	CluVcP2MGajQW89mGk	178.79.129.208	43070	192.168.1.4	102	1	GET	-	/nice ports,/Trinity.txt.bak	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1610667456.768593	CAIeQZ3iIznYQQViS2	178.79.129.208	45564	192.168.1.4	102	1	OPTIONS	-	sip:nm SIP/2.	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	VIA -> SIP/2.0/TCP nm;branch=foo	-	-	-	-	-	-
+1610682971.721105	CYJ17I15AEbk5fKlih	198.143.175.42	52372	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36 	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1610699942.411739	CoPqWu1szXwtvq4x6d	139.162.99.243	34638	192.168.1.4	102	1	GET	clientapi.ipip.net	http://clientapi.ipip.net/echo.php?info=20210115163902	-	-	Mozilla/5.0 (Windows NT 10.0; WOW64)	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1610699968.212740	C4jfTt3by9lX3CswBe	139.162.99.243	48590	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	Mozilla/5.0	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1610749700.751848	Cly8zTkbAVGcxfTdl	162.142.125.128	18496	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1610856256.977677	CedBsl2LnQT3u7Mydf	192.241.211.93	32832	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	Mozilla/5.0 zgrab/0.x	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1610872420.480478	CMeDDh4sZaslPyqAz9	64.227.108.73	61953	192.168.1.4	102	3	GET	-	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1610872410.283111	CMeDDh4sZaslPyqAz9	64.227.108.73	61953	192.168.1.4	102	2	GET	-	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1610872400.096041	CMeDDh4sZaslPyqAz9	64.227.108.73	61953	192.168.1.4	102	1	GET	-	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1610885920.277666	CPU7MT23KEwPe1cCq7	139.162.99.243	39972	192.168.1.4	102	1	GET	clientapi.ipip.net	http://clientapi.ipip.net/echo.php?info=20210117201839	-	-	Mozilla/5.0 (Windows NT 10.0; WOW64)	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1610885946.083959	CkY6jB4okPgmliBruc	139.162.99.243	54160	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	Mozilla/5.0	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1610947896.529549	COftVQ22vb2HjnM2a8	192.241.213.8	37824	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	Mozilla/5.0 zgrab/0.x	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1610994143.837415	Ct5row4KKaCJbdzNh6	178.79.147.60	37272	192.168.1.4	502	1	GET	-	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1610994145.396246	CCZU4OxwS4teWKIXh	178.79.147.60	38230	192.168.1.4	502	1	OPTIONS	-	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1610994146.948564	CPUIdTL6HW2uSGN6k	178.79.147.60	39190	192.168.1.4	502	1	OPTIONS	-	/ RTSP/1.	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1610994162.620304	CroPVH3PZvWH4Amif	178.79.147.60	47668	192.168.1.4	502	1	GET	-	/nice ports,/Trinity.txt.bak	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1610994167.405866	Crohsm3cEGzrEKbFFg	178.79.147.60	50252	192.168.1.4	502	1	OPTIONS	-	sip:nm SIP/2.	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	VIA -> SIP/2.0/TCP nm;branch=foo	-	-	-	-	-	-
+1610995189.306594	C0mada1u3kwk2gvOz4	178.62.216.232	60578	192.168.1.4	502	1	GET	-	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1610995190.866056	C7QxJB4Ji9ldzzHr4b	178.62.216.232	33098	192.168.1.4	502	1	OPTIONS	-	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1610995192.421453	CTk5kh3pH1XPoNAyuf	178.62.216.232	33842	192.168.1.4	502	1	OPTIONS	-	/ RTSP/1.	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1610995208.181138	CwU0Q1cXHFpD1n9Kj	178.62.216.232	41072	192.168.1.4	502	1	GET	-	/nice ports,/Trinity.txt.bak	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1610995212.970396	CCZo534O7I7SECaJM4	178.62.216.232	43066	192.168.1.4	502	1	OPTIONS	-	sip:nm SIP/2.	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	VIA -> SIP/2.0/TCP nm;branch=foo	-	-	-	-	-	-
+1611017737.057534	CxuzTc1HBRemtn12ac	167.99.33.240	61953	192.168.1.4	502	3	GET	-	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1611017727.001565	CxuzTc1HBRemtn12ac	167.99.33.240	61953	192.168.1.4	502	2	GET	-	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1611017716.937505	CxuzTc1HBRemtn12ac	167.99.33.240	61953	192.168.1.4	502	1	GET	-	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1611041038.115633	Cukbb52IHc7LR5UJ7k	192.241.216.207	38234	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	Mozilla/5.0 zgrab/0.x	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1611064738.593740	CVZUuahEIP5NYwy7	162.142.125.128	61754	192.168.1.4	502	1	GET	62.11.47.73	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1611064738.974868	CbwBZl3IkjiMOubGp5	162.142.125.128	26106	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1611139984.708287	CY2JXq34tGfuNmc2tb	192.241.221.236	41692	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	Mozilla/5.0 zgrab/0.x	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1611227156.987961	C0mISs2CKSd5NLIoIc	192.241.211.166	45212	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	Mozilla/5.0 zgrab/0.x	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1611230711.529502	CFE5c5DV4wShMuaA4	139.162.99.243	36564	192.168.1.4	102	1	GET	clientapi.ipip.net	http://clientapi.ipip.net/echo.php?info=20210121200511	-	-	Mozilla/5.0 (Windows NT 10.0; WOW64)	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1611230737.365733	Cq5cwp2k09Rlu16F3b	139.162.99.243	49994	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	Mozilla/5.0	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1611379726.709662	CU6kKoqrgeJvF8jqk	45.141.159.4	59364	192.168.1.4	502	1	GET	-	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1611379731.757758	CoCv5c3bXoPiCFrXH7	45.141.159.4	59530	192.168.1.4	502	1	OPTIONS	-	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1611379739.809229	CNgvSF2rE3R7wjzwt6	45.141.159.4	59656	192.168.1.4	502	1	OPTIONS	-	/ RTSP/1.	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1611386703.999384	CSl9he33Z4zQR4Puj2	192.241.221.191	51082	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	Mozilla/5.0 zgrab/0.x	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1611413527.487399	C87lUK22a9kcbo8ZG6	83.97.20.35	45074	192.168.1.4	502	1	GET	62.11.47.73	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1611430699.342544	C8R8mWBiFDrSt8mm5	139.162.99.243	49910	192.168.1.4	102	1	GET	clientapi.ipip.net	http://clientapi.ipip.net/echo.php?info=20210124033818	-	-	Mozilla/5.0 (Windows NT 10.0; WOW64)	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1611430725.145444	Ciwwpj2oSnSPvdXCBa	139.162.99.243	37822	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	Mozilla/5.0	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1611469201.332256	CCeTyz4hsb6UPuMkbl	142.93.47.203	61953	192.168.1.4	502	3	GET	-	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1611469191.258490	CCeTyz4hsb6UPuMkbl	142.93.47.203	61953	192.168.1.4	502	2	GET	-	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1611469181.210666	CCeTyz4hsb6UPuMkbl	142.93.47.203	61953	192.168.1.4	502	1	GET	-	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1611473595.447221	C0NRl03boXYhPmEa7f	192.241.225.14	39440	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	Mozilla/5.0 zgrab/0.x	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1611496380.991550	CpELPT1dp8cOwLeuh	83.97.20.35	42911	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1611521545.796221	CDczBv4wguWZDynDW2	64.227.105.138	61953	192.168.1.4	102	3	GET	-	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1611521535.587267	CDczBv4wguWZDynDW2	64.227.105.138	61953	192.168.1.4	102	2	GET	-	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1611521525.334720	CDczBv4wguWZDynDW2	64.227.105.138	61953	192.168.1.4	102	1	GET	-	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1611578280.249079	COP69o4IjnMgelh8Sl	192.241.221.72	50656	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	Mozilla/5.0 zgrab/0.x	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1611610540.542021	CmvJKG3DPyGdGpluHl	139.162.99.243	44600	192.168.1.4	102	1	GET	clientapi.ipip.net	http://clientapi.ipip.net/echo.php?info=20210126053540	-	-	Mozilla/5.0 (Windows NT 10.0; WOW64)	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1611610566.348806	CetC9R2XyTTHjEIve2	139.162.99.243	60804	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	Mozilla/5.0	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1611668984.650015	CL8ZVM2Pd4t09OZ4S5	162.142.125.128	26402	192.168.1.4	502	1	GET	62.11.47.73	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1611668984.756694	CXlchJNxIKkFx2wx8	162.142.125.128	45572	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1611673259.436285	C8y4Mq22wUM9CKVX39	192.241.224.132	47066	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	Mozilla/5.0 zgrab/0.x	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1611712631.831767	CYVv0PKBrMYW4q0hc	139.162.99.243	34840	192.168.1.4	102	1	GET	clientapi.ipip.net	http://clientapi.ipip.net/echo.php?info=20210127095711	-	-	Mozilla/5.0 (Windows NT 10.0; WOW64)	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1611712657.635316	CgczuFw5sddlA9LSc	139.162.99.243	50888	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	Mozilla/5.0	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1611759872.136534	CYKPiQ10yxNbGRK4hk	192.241.208.46	46832	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	Mozilla/5.0 zgrab/0.x	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1611871451.781372	CQ3nx54d4TunOIauK7	192.241.221.80	57522	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	Mozilla/5.0 zgrab/0.x	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1611961709.644340	C6uFModd8oCD4o2wj	139.162.99.243	41356	192.168.1.4	102	1	GET	clientapi.ipip.net	http://clientapi.ipip.net/echo.php?info=20210130070829	-	-	Mozilla/5.0 (Windows NT 10.0; WOW64)	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1611961735.446658	C4t6j2dhMNFDEdCr7	139.162.99.243	57606	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	Mozilla/5.0	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1611984719.390631	CfnBjp27D5jt8ragYa	23.129.64.211	10181	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1611984729.755732	CLBhwJ1xDoNsaALlNh	23.129.64.237	58033	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1611984739.830394	C5Rfi34axYgbrTBGw8	179.43.167.228	42531	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1611984750.418905	CZOUwBcosZiSBOyH3	23.129.64.226	51161	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1611986614.642763	CenXco4ifc5o1N1R9	23.129.64.220	16100	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1611986624.600149	CuoXiP3VeLGNXvUmTk	185.220.100.245	9382	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1612011513.795011	CpzNeG3cSrSd9KQHT5	23.129.64.204	25825	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1612074889.586889	CAvLXw2ZpOmDIfopDc	128.199.5.111	61953	192.168.1.4	102	3	GET	-	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1612074879.407051	CAvLXw2ZpOmDIfopDc	128.199.5.111	61953	192.168.1.4	102	2	GET	-	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1612074869.224682	CAvLXw2ZpOmDIfopDc	128.199.5.111	61953	192.168.1.4	102	1	GET	-	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1612086752.089910	C2lByt1rvnlYm6yYz7	139.162.99.243	34010	192.168.1.4	102	1	GET	clientapi.ipip.net	http://clientapi.ipip.net/echo.php?info=20210131175231	-	-	Mozilla/5.0 (Windows NT 10.0; WOW64)	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1612086777.894349	C8zyLHJ42IykiVMg2	139.162.99.243	49848	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	Mozilla/5.0	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1612097589.234688	CLhGcr3gbmcsOVFkch	45.154.255.147	59084	192.168.1.4	502	1	GET	62.11.47.73	/	-	-	Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1612099396.668279	C9vr8E13G6BSw5Icm	45.154.255.147	59562	192.168.1.4	502	1	GET	62.11.47.73	/	-	-	Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1612099406.931984	CY1RsU26hZS1r5a8Ti	31.42.177.43	51128	192.168.1.4	502	1	GET	62.11.47.73	/	-	-	Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1612099417.699709	CBKhZI1JkXY0eMMhVl	23.129.64.206	57363	192.168.1.4	502	1	GET	62.11.47.73	/	-	-	Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1612099427.767266	CHYQ7e2wXFz9hONX6f	84.53.192.243	45174	192.168.1.4	502	1	GET	62.11.47.73	/	-	-	Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1612099438.330264	CcflLKXcq7cTFNgg8	23.129.64.210	39831	192.168.1.4	502	1	GET	62.11.47.73	/	-	-	Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1612114674.384903	C0U6fYtfKJUVPtyE5	192.241.220.88	56504	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	Mozilla/5.0 zgrab/0.x	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1612123780.181071	CyJTsb1km9VTyLnlIj	23.129.64.227	30235	192.168.1.4	502	1	GET	62.11.47.73	/	-	-	Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1612123790.551850	Cn9gAw28yKLmnckjF2	23.129.64.224	16783	192.168.1.4	502	1	GET	62.11.47.73	/	-	-	Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1612123801.131438	CVZ0Kd3ZKARmZXSxN9	23.129.64.211	59287	192.168.1.4	502	1	GET	62.11.47.73	/	-	-	Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1612129668.559928	CLL2aF39zHPI9ztfg8	134.209.186.203	61953	192.168.1.4	502	3	GET	-	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1612129658.407045	CLL2aF39zHPI9ztfg8	134.209.186.203	61953	192.168.1.4	502	2	GET	-	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1612129648.356938	CLL2aF39zHPI9ztfg8	134.209.186.203	61953	192.168.1.4	502	1	GET	-	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1612212516.280307	CtSrHy4Ti4zIAohn75	192.241.211.49	46454	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	Mozilla/5.0 zgrab/0.x	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1612301746.036264	CQJwe52CjqYUOAX98d	23.129.64.226	22523	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1612301757.810491	CMJUYi3EmhzRnKGRhk	95.211.230.211	36570	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1612307411.974436	C9KLFZm24xWxfP2ii	192.241.217.68	36998	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	Mozilla/5.0 zgrab/0.x	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1612313578.028615	CniZ1pPLrN227rOgi	83.97.20.35	6425	192.168.1.4	502	1	GET	62.11.47.73	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1612352978.579942	C8QYld3IVuDuNcIzR4	71.6.158.166	39004	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1612359804.487987	CrAJ5U191YlmIuEZ33	138.197.148.52	33932	192.168.1.4	502	1	HEAD	-	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1612359807.028251	CCUONq40P4BGF2Qane	138.197.148.52	44112	192.168.1.4	102	1	HEAD	-	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1612406851.715491	CWPwtN2VvDdTnzpGR5	83.97.20.35	17862	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	-	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1612414761.369548	CeUmUk4pT9yO9EMJhc	192.241.204.54	45118	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	Mozilla/5.0 zgrab/0.x	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1612418603.106637	CBw06v1XyP6vwATxgl	185.220.100.255	23718	192.168.1.4	502	1	GET	62.11.47.73	/	-	-	Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1612418613.661788	CmFBX34Krez1QkbpT6	23.129.64.213	45129	192.168.1.4	502	1	GET	62.11.47.73	/	-	-	Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1612418624.283550	CILzmg1SVHF06MuH6a	23.129.64.233	54278	192.168.1.4	502	1	GET	62.11.47.73	/	-	-	Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1612418635.098682	Cuikrh3J0aV9UY5Csc	23.129.64.232	27436	192.168.1.4	502	1	GET	62.11.47.73	/	-	-	Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1612418645.068334	CBMrAm3r8Aq2hgCZRc	45.154.35.236	40186	192.168.1.4	502	1	GET	62.11.47.73	/	-	-	Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1612460094.755164	CRNRFo2neSxxySfrt2	139.162.99.243	55102	192.168.1.4	102	1	GET	clientapi.ipip.net	http://clientapi.ipip.net/echo.php?info=20210205013454	-	-	Mozilla/5.0 (Windows NT 10.0; WOW64)	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1612460120.592690	CihLo53CWsj5JTqJsk	139.162.99.243	42322	192.168.1.4	102	1	GET	62.11.47.73	/	-	-	Mozilla/5.0	-	0	0	-	-	-	-	(empty)	-	-	-	-	-	-	-	-	-
+#close	2021-02-05-11-59-26

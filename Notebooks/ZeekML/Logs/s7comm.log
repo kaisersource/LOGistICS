@@ -1,0 +1,563 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	s7comm
+#open	2021-02-05-11-59-26
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	rosctr	parameter	item_count	data_info
+#types	time	string	addr	port	addr	port	string	vector[string]	count	vector[string]
+1609779445.334173	CSMohI3nFMPKT70EP6	192.168.1.7	38600	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1609779445.334430	CSMohI3nFMPKT70EP6	192.168.1.7	38600	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1609779445.335592	CSMohI3nFMPKT70EP6	192.168.1.7	38600	192.168.1.4	102	Job	type=PLC Stop	-	(empty)
+1609779445.336004	CSMohI3nFMPKT70EP6	192.168.1.7	38600	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=PLC Stop	-	(empty)
+1609788254.534172	CpSEKh2GfLkL8DNtD9	71.6.167.124	54618	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1609788254.534384	CpSEKh2GfLkL8DNtD9	71.6.167.124	54618	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1609788255.097041	CEZ0Dj4Cp3Zn6Uthoi	71.6.167.124	54628	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1609788255.097279	CEZ0Dj4Cp3Zn6Uthoi	71.6.167.124	54628	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1609788255.283003	CEZ0Dj4Cp3Zn6Uthoi	71.6.167.124	54628	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1609788255.283361	CEZ0Dj4Cp3Zn6Uthoi	71.6.167.124	54628	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1609788255.469925	CEZ0Dj4Cp3Zn6Uthoi	71.6.167.124	54628	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1609788255.470149	CEZ0Dj4Cp3Zn6Uthoi	71.6.167.124	54628	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1609801695.969747	CKm20Z2Ix7DO0eQXz1	74.120.14.54	42656	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1609801695.969999	CKm20Z2Ix7DO0eQXz1	74.120.14.54	42656	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1609801696.124026	CKm20Z2Ix7DO0eQXz1	74.120.14.54	42656	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1609801696.124285	CKm20Z2Ix7DO0eQXz1	74.120.14.54	42656	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1609801696.282879	CKm20Z2Ix7DO0eQXz1	74.120.14.54	42656	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1609801696.283114	CKm20Z2Ix7DO0eQXz1	74.120.14.54	42656	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1609805700.067050	CwSTDhknr7sTJEPZh	178.73.215.171	6521	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1609805700.067308	CwSTDhknr7sTJEPZh	178.73.215.171	6521	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1609805700.139087	CwSTDhknr7sTJEPZh	178.73.215.171	6521	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1609805700.139336	CwSTDhknr7sTJEPZh	178.73.215.171	6521	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1609805700.212443	CwSTDhknr7sTJEPZh	178.73.215.171	6521	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1609805700.212673	CwSTDhknr7sTJEPZh	178.73.215.171	6521	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1609840874.331641	CQBSHN2ul1gTl0hAh5	89.47.62.108	43256	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1609840874.331918	CQBSHN2ul1gTl0hAh5	89.47.62.108	43256	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1609840874.515019	CQBSHN2ul1gTl0hAh5	89.47.62.108	43256	192.168.1.4	102	Job	type=PLC Stop	-	(empty)
+1609840874.515317	CQBSHN2ul1gTl0hAh5	89.47.62.108	43256	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=PLC Stop	-	(empty)
+1609840896.688628	CNWnRwbUdsbBgsZKa	89.47.62.108	43262	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1609840896.688857	CNWnRwbUdsbBgsZKa	89.47.62.108	43262	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1609840896.898825	CNWnRwbUdsbBgsZKa	89.47.62.108	43262	192.168.1.4	102	Job	type=PLC Service	-	(empty)
+1609840896.899076	CNWnRwbUdsbBgsZKa	89.47.62.108	43262	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=PLC Service	-	(empty)
+1609845709.209085	CUovfl2tB4m0hKL4Kd	93.174.95.106	46920	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1609845709.209329	CUovfl2tB4m0hKL4Kd	93.174.95.106	46920	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1609845709.436338	CfvyX245CNayc0WMzj	93.174.95.106	47110	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1609845709.436595	CfvyX245CNayc0WMzj	93.174.95.106	47110	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1609845709.579744	CfvyX245CNayc0WMzj	93.174.95.106	47110	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1609845709.580071	CfvyX245CNayc0WMzj	93.174.95.106	47110	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1609845709.648688	CfvyX245CNayc0WMzj	93.174.95.106	47110	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1609845709.648946	CfvyX245CNayc0WMzj	93.174.95.106	47110	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1609853898.225416	CvtIa92N0flIcrbhSj	192.241.197.146	58816	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1609853898.225724	CvtIa92N0flIcrbhSj	192.241.197.146	58816	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1609853898.420157	CvtIa92N0flIcrbhSj	192.241.197.146	58816	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1609853898.420511	CvtIa92N0flIcrbhSj	192.241.197.146	58816	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1609853898.616570	CvtIa92N0flIcrbhSj	192.241.197.146	58816	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1609853898.616896	CvtIa92N0flIcrbhSj	192.241.197.146	58816	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1609902218.527799	CqAJ1f2FVXY1U9cM34	167.248.133.38	48014	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1609902218.528138	CqAJ1f2FVXY1U9cM34	167.248.133.38	48014	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1609902218.701543	CqAJ1f2FVXY1U9cM34	167.248.133.38	48014	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1609902218.701732	CqAJ1f2FVXY1U9cM34	167.248.133.38	48014	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1609902218.855035	CqAJ1f2FVXY1U9cM34	167.248.133.38	48014	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1609902218.855301	CqAJ1f2FVXY1U9cM34	167.248.133.38	48014	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1609934479.624359	CIQToH1iYEoABUI3Fh	192.35.168.96	23692	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1609934479.624642	CIQToH1iYEoABUI3Fh	192.35.168.96	23692	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1609934479.768683	CIQToH1iYEoABUI3Fh	192.35.168.96	23692	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1609934479.768913	CIQToH1iYEoABUI3Fh	192.35.168.96	23692	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1609934479.914286	CIQToH1iYEoABUI3Fh	192.35.168.96	23692	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1609934479.914662	CIQToH1iYEoABUI3Fh	192.35.168.96	23692	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1609938699.519005	C5rnLB45LK5EOg1vBa	185.165.190.34	36214	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1609938699.519228	C5rnLB45LK5EOg1vBa	185.165.190.34	36214	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1609938700.258325	CqmLQZ1WHIwCuw8gK	185.165.190.34	36678	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1609938700.258549	CqmLQZ1WHIwCuw8gK	185.165.190.34	36678	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1609938700.392223	CqmLQZ1WHIwCuw8gK	185.165.190.34	36678	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1609938700.392539	CqmLQZ1WHIwCuw8gK	185.165.190.34	36678	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1609938700.722591	CqmLQZ1WHIwCuw8gK	185.165.190.34	36678	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1609938700.722824	CqmLQZ1WHIwCuw8gK	185.165.190.34	36678	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1609940398.389456	C2yrZZUh4f0ptLVsd	192.241.221.249	51962	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1609940398.389745	C2yrZZUh4f0ptLVsd	192.241.221.249	51962	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1609940398.588675	C2yrZZUh4f0ptLVsd	192.241.221.249	51962	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1609940398.588960	C2yrZZUh4f0ptLVsd	192.241.221.249	51962	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1609940398.788962	C2yrZZUh4f0ptLVsd	192.241.221.249	51962	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1609940398.789213	C2yrZZUh4f0ptLVsd	192.241.221.249	51962	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1609974782.536339	CqCEUi3dvMk9gsjN78	162.142.125.53	47742	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1609974782.536837	CqCEUi3dvMk9gsjN78	162.142.125.53	47742	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1609974782.681676	CqCEUi3dvMk9gsjN78	162.142.125.53	47742	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1609974782.681916	CqCEUi3dvMk9gsjN78	162.142.125.53	47742	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1609974782.828767	CqCEUi3dvMk9gsjN78	162.142.125.53	47742	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1609974782.829005	CqCEUi3dvMk9gsjN78	162.142.125.53	47742	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1610041027.636406	CU8muC1zO9n5TRNfx	192.241.224.47	35350	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1610041027.636706	CU8muC1zO9n5TRNfx	192.241.224.47	35350	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1610041027.831409	CU8muC1zO9n5TRNfx	192.241.224.47	35350	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1610041027.831724	CU8muC1zO9n5TRNfx	192.241.224.47	35350	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1610041028.027064	CU8muC1zO9n5TRNfx	192.241.224.47	35350	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1610041028.027293	CU8muC1zO9n5TRNfx	192.241.224.47	35350	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1610050426.607210	Cbyi373ttZ7ZS4ged	27.122.12.232	59562	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1610050426.607489	Cbyi373ttZ7ZS4ged	27.122.12.232	59562	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1610050427.204735	Cbyi373ttZ7ZS4ged	27.122.12.232	59562	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0000
+1610050427.205017	Cbyi373ttZ7ZS4ged	27.122.12.232	59562	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1610050427.880948	Cbyi373ttZ7ZS4ged	27.122.12.232	59562	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0000
+1610050427.881165	Cbyi373ttZ7ZS4ged	27.122.12.232	59562	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1610050430.044439	CcGCrp2pWniWW4Gha1	27.122.12.232	59564	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1610050430.044730	CcGCrp2pWniWW4Gha1	27.122.12.232	59564	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1610050430.869374	CcGCrp2pWniWW4Gha1	27.122.12.232	59564	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0000
+1610050430.869656	CcGCrp2pWniWW4Gha1	27.122.12.232	59564	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1610050431.780771	CcGCrp2pWniWW4Gha1	27.122.12.232	59564	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0000
+1610050431.780998	CcGCrp2pWniWW4Gha1	27.122.12.232	59564	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1610050434.081406	C7AHy7y4GiGSFaC03	27.122.12.232	59566	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1610050434.081737	C7AHy7y4GiGSFaC03	27.122.12.232	59566	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1610050434.919552	C7AHy7y4GiGSFaC03	27.122.12.232	59566	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0000
+1610050434.919836	C7AHy7y4GiGSFaC03	27.122.12.232	59566	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1610050435.861210	C7AHy7y4GiGSFaC03	27.122.12.232	59566	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0000
+1610050435.861428	C7AHy7y4GiGSFaC03	27.122.12.232	59566	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1610050438.090411	CsvzAQ3dPSgBU5NA5e	27.122.12.232	59568	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1610050438.090685	CsvzAQ3dPSgBU5NA5e	27.122.12.232	59568	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1610050438.788485	CsvzAQ3dPSgBU5NA5e	27.122.12.232	59568	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0000
+1610050438.788821	CsvzAQ3dPSgBU5NA5e	27.122.12.232	59568	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1610050439.418215	CsvzAQ3dPSgBU5NA5e	27.122.12.232	59568	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0000
+1610050439.418479	CsvzAQ3dPSgBU5NA5e	27.122.12.232	59568	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1610050580.609243	CX99ak1FugunECOI47	27.122.12.232	59616	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1610050580.609582	CX99ak1FugunECOI47	27.122.12.232	59616	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1610050580.626174	Cxm2zJ11hf5Q4D9T6	27.122.12.232	59614	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1610050580.626428	Cxm2zJ11hf5Q4D9T6	27.122.12.232	59614	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1610050580.628157	CM8hUj385EyRNzXg79	27.122.12.232	59618	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1610050580.628470	CM8hUj385EyRNzXg79	27.122.12.232	59618	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1610050581.584700	CX99ak1FugunECOI47	27.122.12.232	59616	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0232 index=0004
+1610050581.585048	CX99ak1FugunECOI47	27.122.12.232	59616	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0232 index=0004
+1610050581.605805	Cxm2zJ11hf5Q4D9T6	27.122.12.232	59614	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0232 index=0004
+1610050581.606083	Cxm2zJ11hf5Q4D9T6	27.122.12.232	59614	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0232 index=0004
+1610050581.629721	CM8hUj385EyRNzXg79	27.122.12.232	59618	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0232 index=0004
+1610050581.630015	CM8hUj385EyRNzXg79	27.122.12.232	59618	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0232 index=0004
+1610053404.822701	CB72YO1jbGU6osBXg1	167.248.133.40	46520	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1610053404.822929	CB72YO1jbGU6osBXg1	167.248.133.40	46520	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1610053404.975806	CB72YO1jbGU6osBXg1	167.248.133.40	46520	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1610053404.976003	CB72YO1jbGU6osBXg1	167.248.133.40	46520	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1610053405.130230	CB72YO1jbGU6osBXg1	167.248.133.40	46520	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1610053405.130476	CB72YO1jbGU6osBXg1	167.248.133.40	46520	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1610105325.204440	CY50ZtF1tVFgZ4F0f	74.120.14.39	44806	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1610105325.204725	CY50ZtF1tVFgZ4F0f	74.120.14.39	44806	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1610105325.355525	CY50ZtF1tVFgZ4F0f	74.120.14.39	44806	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1610105325.356181	CY50ZtF1tVFgZ4F0f	74.120.14.39	44806	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1610105325.507497	CY50ZtF1tVFgZ4F0f	74.120.14.39	44806	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1610105325.507699	CY50ZtF1tVFgZ4F0f	74.120.14.39	44806	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1610114630.261479	CzIlwc2S1VwAGqhRD	80.82.77.139	45866	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1610114630.261762	CzIlwc2S1VwAGqhRD	80.82.77.139	45866	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1610114631.579529	CeMVkZ01hYe9ewXI3	80.82.77.139	47128	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1610114631.579717	CeMVkZ01hYe9ewXI3	80.82.77.139	47128	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1610114631.674403	CeMVkZ01hYe9ewXI3	80.82.77.139	47128	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1610114631.674705	CeMVkZ01hYe9ewXI3	80.82.77.139	47128	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1610114631.789936	CeMVkZ01hYe9ewXI3	80.82.77.139	47128	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1610114631.790160	CeMVkZ01hYe9ewXI3	80.82.77.139	47128	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1610181701.330509	CcEjFT13Yo7FB1le7f	192.241.211.32	41604	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1610181701.330793	CcEjFT13Yo7FB1le7f	192.241.211.32	41604	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1610181701.526982	CcEjFT13Yo7FB1le7f	192.241.211.32	41604	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1610181701.527305	CcEjFT13Yo7FB1le7f	192.241.211.32	41604	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1610181701.724574	CcEjFT13Yo7FB1le7f	192.241.211.32	41604	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1610181701.724859	CcEjFT13Yo7FB1le7f	192.241.211.32	41604	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1610251043.453352	CE8Ixr3BBFv9SVUaib	162.142.125.56	36680	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1610251043.453711	CE8Ixr3BBFv9SVUaib	162.142.125.56	36680	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1610251043.598732	CE8Ixr3BBFv9SVUaib	162.142.125.56	36680	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1610251043.598963	CE8Ixr3BBFv9SVUaib	162.142.125.56	36680	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1610251043.745462	CE8Ixr3BBFv9SVUaib	162.142.125.56	36680	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1610251043.745702	CE8Ixr3BBFv9SVUaib	162.142.125.56	36680	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1610273722.840432	CAQuYJ15P2u9kv2joj	192.241.221.186	33668	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1610273722.840661	CAQuYJ15P2u9kv2joj	192.241.221.186	33668	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1610273723.032639	CAQuYJ15P2u9kv2joj	192.241.221.186	33668	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1610273723.032877	CAQuYJ15P2u9kv2joj	192.241.221.186	33668	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1610273723.225740	CAQuYJ15P2u9kv2joj	192.241.221.186	33668	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1610273723.225976	CAQuYJ15P2u9kv2joj	192.241.221.186	33668	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1610304711.885837	CpoXnNKtBqYnjYzYl	74.120.14.53	53934	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1610304711.886079	CpoXnNKtBqYnjYzYl	74.120.14.53	53934	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1610304712.034710	CpoXnNKtBqYnjYzYl	74.120.14.53	53934	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1610304712.034981	CpoXnNKtBqYnjYzYl	74.120.14.53	53934	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1610304712.184691	CpoXnNKtBqYnjYzYl	74.120.14.53	53934	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1610304712.184881	CpoXnNKtBqYnjYzYl	74.120.14.53	53934	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1610414692.341545	C3XlGA1wrqPT0XzgT2	178.73.215.171	51169	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1610414692.341762	C3XlGA1wrqPT0XzgT2	178.73.215.171	51169	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1610414692.420304	C3XlGA1wrqPT0XzgT2	178.73.215.171	51169	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1610414692.420622	C3XlGA1wrqPT0XzgT2	178.73.215.171	51169	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1610414692.500372	C3XlGA1wrqPT0XzgT2	178.73.215.171	51169	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1610414692.500803	C3XlGA1wrqPT0XzgT2	178.73.215.171	51169	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1610415356.240679	CSTKHf1HxxwNGuGiJ4	162.142.125.38	58838	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1610415356.240925	CSTKHf1HxxwNGuGiJ4	162.142.125.38	58838	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1610415356.386121	CSTKHf1HxxwNGuGiJ4	162.142.125.38	58838	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1610415356.386361	CSTKHf1HxxwNGuGiJ4	162.142.125.38	58838	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1610415356.532431	CSTKHf1HxxwNGuGiJ4	162.142.125.38	58838	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1610415356.532777	CSTKHf1HxxwNGuGiJ4	162.142.125.38	58838	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1610445371.987664	Ct9A461pn1sUQbQmqe	167.248.133.55	52104	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1610445371.987906	Ct9A461pn1sUQbQmqe	167.248.133.55	52104	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1610445372.141857	Ct9A461pn1sUQbQmqe	167.248.133.55	52104	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1610445372.142200	Ct9A461pn1sUQbQmqe	167.248.133.55	52104	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1610445372.297410	Ct9A461pn1sUQbQmqe	167.248.133.55	52104	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1610445372.297651	Ct9A461pn1sUQbQmqe	167.248.133.55	52104	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1610458657.501113	CyHpGXvgBTa0bNHse	192.241.223.226	48530	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1610458657.501617	CyHpGXvgBTa0bNHse	192.241.223.226	48530	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1610458657.695771	CyHpGXvgBTa0bNHse	192.241.223.226	48530	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1610458657.696099	CyHpGXvgBTa0bNHse	192.241.223.226	48530	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1610458657.892834	CyHpGXvgBTa0bNHse	192.241.223.226	48530	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1610458657.893185	CyHpGXvgBTa0bNHse	192.241.223.226	48530	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1610517765.701626	CSwYc1LBWr4VTZOol	178.32.197.83	42401	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1610517765.701968	CSwYc1LBWr4VTZOol	178.32.197.83	42401	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1610538268.408938	C2sDOn7gdzd3JQ8K8	192.35.168.112	1476	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1610538268.409199	C2sDOn7gdzd3JQ8K8	192.35.168.112	1476	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1610538268.553502	C2sDOn7gdzd3JQ8K8	192.35.168.112	1476	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1610538268.553857	C2sDOn7gdzd3JQ8K8	192.35.168.112	1476	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1610538268.699585	C2sDOn7gdzd3JQ8K8	192.35.168.112	1476	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1610538268.699907	C2sDOn7gdzd3JQ8K8	192.35.168.112	1476	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1610541584.167407	CaWtPpwoQW3LFI9H7	89.248.167.131	32828	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1610541584.167678	CaWtPpwoQW3LFI9H7	89.248.167.131	32828	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1610541584.546920	Ct7ICt1OOerK6GS9I	89.248.167.131	33068	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1610541584.547166	Ct7ICt1OOerK6GS9I	89.248.167.131	33068	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1610541584.598922	Ct7ICt1OOerK6GS9I	89.248.167.131	33068	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1610541584.599177	Ct7ICt1OOerK6GS9I	89.248.167.131	33068	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1610541584.656607	Ct7ICt1OOerK6GS9I	89.248.167.131	33068	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1610541584.656888	Ct7ICt1OOerK6GS9I	89.248.167.131	33068	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1610553078.402679	CoVBSdnn8XA5NkCXi	198.199.114.223	32926	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1610553078.402931	CoVBSdnn8XA5NkCXi	198.199.114.223	32926	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1610553078.594227	CoVBSdnn8XA5NkCXi	198.199.114.223	32926	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1610553078.594494	CoVBSdnn8XA5NkCXi	198.199.114.223	32926	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1610553078.787144	CoVBSdnn8XA5NkCXi	198.199.114.223	32926	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1610553078.787399	CoVBSdnn8XA5NkCXi	198.199.114.223	32926	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1610615309.145153	CkScteGCQ3Bts9vlb	89.248.174.3	48846	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1610615309.145422	CkScteGCQ3Bts9vlb	89.248.174.3	48846	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1610615309.194415	CkScteGCQ3Bts9vlb	89.248.174.3	48846	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1610615309.194738	CkScteGCQ3Bts9vlb	89.248.174.3	48846	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1610615309.244943	CkScteGCQ3Bts9vlb	89.248.174.3	48846	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1610615309.245166	CkScteGCQ3Bts9vlb	89.248.174.3	48846	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1610632290.389982	CLYOpw3iP45hoUQrH	167.248.133.56	51720	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1610632290.390254	CLYOpw3iP45hoUQrH	167.248.133.56	51720	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1610632290.544783	CLYOpw3iP45hoUQrH	167.248.133.56	51720	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1610632290.545092	CLYOpw3iP45hoUQrH	167.248.133.56	51720	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1610632290.700215	CLYOpw3iP45hoUQrH	167.248.133.56	51720	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1610632290.700489	CLYOpw3iP45hoUQrH	167.248.133.56	51720	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1610649845.644403	CDMWKO3auODzmzN0q2	192.241.219.168	47930	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1610649845.644636	CDMWKO3auODzmzN0q2	192.241.219.168	47930	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1610649845.844390	CDMWKO3auODzmzN0q2	192.241.219.168	47930	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1610649845.844704	CDMWKO3auODzmzN0q2	192.241.219.168	47930	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1610649846.044943	CDMWKO3auODzmzN0q2	192.241.219.168	47930	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1610649846.045215	CDMWKO3auODzmzN0q2	192.241.219.168	47930	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1610748756.437385	CQsDpF4EZD2NWxUhQe	162.142.125.38	37740	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1610748756.437642	CQsDpF4EZD2NWxUhQe	162.142.125.38	37740	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1610748756.582006	CQsDpF4EZD2NWxUhQe	162.142.125.38	37740	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1610748756.582233	CQsDpF4EZD2NWxUhQe	162.142.125.38	37740	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1610748756.731266	CQsDpF4EZD2NWxUhQe	162.142.125.38	37740	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1610748756.731545	CQsDpF4EZD2NWxUhQe	162.142.125.38	37740	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1610762433.481351	Cc3ss83RRIA1lw07d6	192.241.224.96	35268	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1610762433.481575	Cc3ss83RRIA1lw07d6	192.241.224.96	35268	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1610762433.677131	Cc3ss83RRIA1lw07d6	192.241.224.96	35268	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1610762433.677449	Cc3ss83RRIA1lw07d6	192.241.224.96	35268	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1610762433.872256	Cc3ss83RRIA1lw07d6	192.241.224.96	35268	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1610762433.872507	Cc3ss83RRIA1lw07d6	192.241.224.96	35268	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1610795005.449551	CYj2Ki3DP5sg1d9Zcd	192.241.215.169	45412	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1610795005.449826	CYj2Ki3DP5sg1d9Zcd	192.241.215.169	45412	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1610795005.648484	CYj2Ki3DP5sg1d9Zcd	192.241.215.169	45412	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1610795005.648752	CYj2Ki3DP5sg1d9Zcd	192.241.215.169	45412	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1610795005.849136	CYj2Ki3DP5sg1d9Zcd	192.241.215.169	45412	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1610795005.849451	CYj2Ki3DP5sg1d9Zcd	192.241.215.169	45412	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1610804484.888258	CYbrJe1kjDxPieX3n6	74.120.14.37	40772	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1610804484.888530	CYbrJe1kjDxPieX3n6	74.120.14.37	40772	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1610804485.348835	CYbrJe1kjDxPieX3n6	74.120.14.37	40772	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1610804485.349094	CYbrJe1kjDxPieX3n6	74.120.14.37	40772	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1610804485.511225	CYbrJe1kjDxPieX3n6	74.120.14.37	40772	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1610804485.511492	CYbrJe1kjDxPieX3n6	74.120.14.37	40772	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1610817088.317147	CyhB4ur2WNlKT1pDb	162.142.125.38	40844	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1610817088.317364	CyhB4ur2WNlKT1pDb	162.142.125.38	40844	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1610817088.462000	CyhB4ur2WNlKT1pDb	162.142.125.38	40844	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1610817088.462268	CyhB4ur2WNlKT1pDb	162.142.125.38	40844	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1610817088.607614	CyhB4ur2WNlKT1pDb	162.142.125.38	40844	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1610817088.607834	CyhB4ur2WNlKT1pDb	162.142.125.38	40844	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1610851703.865379	C1rLhF1Bf4EDJdAAVb	167.248.133.53	43906	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1610851703.865614	C1rLhF1Bf4EDJdAAVb	167.248.133.53	43906	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1610851704.019946	C1rLhF1Bf4EDJdAAVb	167.248.133.53	43906	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1610851704.020257	C1rLhF1Bf4EDJdAAVb	167.248.133.53	43906	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1610851704.175394	C1rLhF1Bf4EDJdAAVb	167.248.133.53	43906	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1610851704.175620	C1rLhF1Bf4EDJdAAVb	167.248.133.53	43906	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1610875440.535342	CvpOFo2IXxHTJP4676	74.120.14.40	58960	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1610875440.535618	CvpOFo2IXxHTJP4676	74.120.14.40	58960	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1610875440.687860	CvpOFo2IXxHTJP4676	74.120.14.40	58960	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1610875440.688121	CvpOFo2IXxHTJP4676	74.120.14.40	58960	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1610875440.841524	CvpOFo2IXxHTJP4676	74.120.14.40	58960	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1610875440.841784	CvpOFo2IXxHTJP4676	74.120.14.40	58960	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1610887518.678703	CLMhIe1iyxL4tBRovl	192.241.225.90	59338	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1610887518.679000	CLMhIe1iyxL4tBRovl	192.241.225.90	59338	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1610887518.874707	CLMhIe1iyxL4tBRovl	192.241.225.90	59338	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1610887518.875019	CLMhIe1iyxL4tBRovl	192.241.225.90	59338	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1610887519.071334	CLMhIe1iyxL4tBRovl	192.241.225.90	59338	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1610887519.071679	CLMhIe1iyxL4tBRovl	192.241.225.90	59338	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1610976001.034214	C5M2KF4T7uaRA43GF7	192.241.224.152	44582	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1610976001.034481	C5M2KF4T7uaRA43GF7	192.241.224.152	44582	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1610976001.226967	C5M2KF4T7uaRA43GF7	192.241.224.152	44582	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1610976001.227257	C5M2KF4T7uaRA43GF7	192.241.224.152	44582	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1610976001.421100	C5M2KF4T7uaRA43GF7	192.241.224.152	44582	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1610976001.421377	C5M2KF4T7uaRA43GF7	192.241.224.152	44582	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1611022500.515732	CrjM6v13Vym1GkVvrl	178.73.215.171	55743	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1611022500.515995	CrjM6v13Vym1GkVvrl	178.73.215.171	55743	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1611022500.591744	CrjM6v13Vym1GkVvrl	178.73.215.171	55743	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1611022500.592004	CrjM6v13Vym1GkVvrl	178.73.215.171	55743	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1611022500.668834	CrjM6v13Vym1GkVvrl	178.73.215.171	55743	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1611022500.669103	CrjM6v13Vym1GkVvrl	178.73.215.171	55743	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1611064801.618658	CvaWWo252hYyHUE28e	167.248.133.56	44196	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1611064801.618917	CvaWWo252hYyHUE28e	167.248.133.56	44196	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1611064801.768441	CvaWWo252hYyHUE28e	167.248.133.56	44196	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1611064801.768791	CvaWWo252hYyHUE28e	167.248.133.56	44196	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1611064801.919165	CvaWWo252hYyHUE28e	167.248.133.56	44196	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1611064801.919477	CvaWWo252hYyHUE28e	167.248.133.56	44196	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1611077528.880763	ClnRQB11buK41qJgc1	192.241.218.105	54848	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1611077528.881046	ClnRQB11buK41qJgc1	192.241.218.105	54848	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1611077529.071845	ClnRQB11buK41qJgc1	192.241.218.105	54848	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1611077529.072163	ClnRQB11buK41qJgc1	192.241.218.105	54848	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1611077529.264738	ClnRQB11buK41qJgc1	192.241.218.105	54848	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1611077529.265140	ClnRQB11buK41qJgc1	192.241.218.105	54848	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1611101517.293035	CzyNsfqlkMpAq12o5	45.83.66.146	31748	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1611101517.293277	CzyNsfqlkMpAq12o5	45.83.66.146	31748	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1611101517.351943	CzyNsfqlkMpAq12o5	45.83.66.146	31748	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1611101517.352198	CzyNsfqlkMpAq12o5	45.83.66.146	31748	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1611101517.412480	CzyNsfqlkMpAq12o5	45.83.66.146	31748	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1611101517.412751	CzyNsfqlkMpAq12o5	45.83.66.146	31748	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1611121642.803339	Cl84vb3kmkKdt6bxRe	192.35.168.160	56970	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1611121642.803555	Cl84vb3kmkKdt6bxRe	192.35.168.160	56970	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1611121642.943949	Cl84vb3kmkKdt6bxRe	192.35.168.160	56970	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1611121642.944266	Cl84vb3kmkKdt6bxRe	192.35.168.160	56970	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1611121643.085788	Cl84vb3kmkKdt6bxRe	192.35.168.160	56970	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1611121643.086016	Cl84vb3kmkKdt6bxRe	192.35.168.160	56970	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1611148390.037979	Cal1IF4pKuPj22zsth	74.120.14.54	57990	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1611148390.038205	Cal1IF4pKuPj22zsth	74.120.14.54	57990	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1611148390.213154	Cal1IF4pKuPj22zsth	74.120.14.54	57990	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1611148390.213392	Cal1IF4pKuPj22zsth	74.120.14.54	57990	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1611148390.388586	Cal1IF4pKuPj22zsth	74.120.14.54	57990	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1611148390.388802	Cal1IF4pKuPj22zsth	74.120.14.54	57990	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1611168667.018825	CbGmGnh8NAhBLaxp8	162.142.125.56	53606	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1611168667.019083	CbGmGnh8NAhBLaxp8	162.142.125.56	53606	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1611168667.163220	CbGmGnh8NAhBLaxp8	162.142.125.56	53606	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1611168667.163537	CbGmGnh8NAhBLaxp8	162.142.125.56	53606	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1611168667.308604	CbGmGnh8NAhBLaxp8	162.142.125.56	53606	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1611168667.308831	CbGmGnh8NAhBLaxp8	162.142.125.56	53606	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1611171118.000906	CfOu5i4NRxsLzzoIm3	192.241.210.184	43130	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1611171118.001167	CfOu5i4NRxsLzzoIm3	192.241.210.184	43130	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1611171118.194224	CfOu5i4NRxsLzzoIm3	192.241.210.184	43130	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1611171118.194555	CfOu5i4NRxsLzzoIm3	192.241.210.184	43130	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1611171118.389114	CfOu5i4NRxsLzzoIm3	192.241.210.184	43130	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1611171118.389366	CfOu5i4NRxsLzzoIm3	192.241.210.184	43130	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1611249303.786434	CGqsiV3CMjmdjUVpB	71.6.146.185	60376	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1611249303.786689	CGqsiV3CMjmdjUVpB	71.6.146.185	60376	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1611249304.376563	CzQgFj1C8HBR4Jokuk	71.6.146.185	60514	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1611249304.376844	CzQgFj1C8HBR4Jokuk	71.6.146.185	60514	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1611249304.572286	CzQgFj1C8HBR4Jokuk	71.6.146.185	60514	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1611249304.572604	CzQgFj1C8HBR4Jokuk	71.6.146.185	60514	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1611249304.769213	CzQgFj1C8HBR4Jokuk	71.6.146.185	60514	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1611249304.769488	CzQgFj1C8HBR4Jokuk	71.6.146.185	60514	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1611266450.938937	C7V7Qk32yWkIiapuEb	192.241.219.110	56270	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1611266450.939195	C7V7Qk32yWkIiapuEb	192.241.219.110	56270	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1611266451.140346	C7V7Qk32yWkIiapuEb	192.241.219.110	56270	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1611266451.140617	C7V7Qk32yWkIiapuEb	192.241.219.110	56270	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1611266451.343273	C7V7Qk32yWkIiapuEb	192.241.219.110	56270	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1611266451.343542	C7V7Qk32yWkIiapuEb	192.241.219.110	56270	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1611354425.175139	CiENehYI26WMJlRA7	167.248.133.54	40544	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1611354425.175404	CiENehYI26WMJlRA7	167.248.133.54	40544	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1611354425.329784	CiENehYI26WMJlRA7	167.248.133.54	40544	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1611354425.330126	CiENehYI26WMJlRA7	167.248.133.54	40544	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1611354425.485491	CiENehYI26WMJlRA7	167.248.133.54	40544	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1611354425.485838	CiENehYI26WMJlRA7	167.248.133.54	40544	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1611414972.245809	CWtuzI2Otjvb7p2Rsg	192.241.220.107	37350	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1611414972.246004	CWtuzI2Otjvb7p2Rsg	192.241.220.107	37350	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1611414972.445471	CWtuzI2Otjvb7p2Rsg	192.241.220.107	37350	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1611414972.445779	CWtuzI2Otjvb7p2Rsg	192.241.220.107	37350	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1611414972.646021	CWtuzI2Otjvb7p2Rsg	192.241.220.107	37350	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1611414972.646282	CWtuzI2Otjvb7p2Rsg	192.241.220.107	37350	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1611477065.082562	CgnwmWQhgvRJvAS87	162.142.125.55	46606	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1611477065.082892	CgnwmWQhgvRJvAS87	162.142.125.55	46606	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1611477065.227183	CgnwmWQhgvRJvAS87	162.142.125.55	46606	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1611477065.227351	CgnwmWQhgvRJvAS87	162.142.125.55	46606	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1611477065.373051	CgnwmWQhgvRJvAS87	162.142.125.55	46606	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1611477065.373286	CgnwmWQhgvRJvAS87	162.142.125.55	46606	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1611496750.472281	CwsbQV3jqRHcOsd3j3	162.142.125.37	42786	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1611496750.472552	CwsbQV3jqRHcOsd3j3	162.142.125.37	42786	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1611496750.695651	CwsbQV3jqRHcOsd3j3	162.142.125.37	42786	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1611496750.695947	CwsbQV3jqRHcOsd3j3	162.142.125.37	42786	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1611496750.874284	CwsbQV3jqRHcOsd3j3	162.142.125.37	42786	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1611496750.874517	CwsbQV3jqRHcOsd3j3	162.142.125.37	42786	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1611501176.002113	CLbi3n2QtnYIl9a85	27.122.12.247	57868	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1611501176.002399	CLbi3n2QtnYIl9a85	27.122.12.247	57868	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1611501178.649149	CLbi3n2QtnYIl9a85	27.122.12.247	57868	192.168.1.4	102	Job	type=Write Variable	1	Data Blocks (DB) 1.DBX 0.0 Byte 1
+1611501178.649509	CLbi3n2QtnYIl9a85	27.122.12.247	57868	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Write Variable	1	Object does not exist
+1611507619.399096	Cnvi1p10NNYCszRAJ5	192.241.222.191	58130	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1611507619.399320	Cnvi1p10NNYCszRAJ5	192.241.222.191	58130	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1611507619.592475	Cnvi1p10NNYCszRAJ5	192.241.222.191	58130	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1611507619.592770	Cnvi1p10NNYCszRAJ5	192.241.222.191	58130	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1611507619.787049	Cnvi1p10NNYCszRAJ5	192.241.222.191	58130	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1611507619.787332	Cnvi1p10NNYCszRAJ5	192.241.222.191	58130	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1611510494.501266	CzyUqq2wBDnEQJEcC9	89.248.174.3	57964	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1611510494.501488	CzyUqq2wBDnEQJEcC9	89.248.174.3	57964	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1611510494.548481	CzyUqq2wBDnEQJEcC9	89.248.174.3	57964	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1611510494.548722	CzyUqq2wBDnEQJEcC9	89.248.174.3	57964	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1611510494.596937	CzyUqq2wBDnEQJEcC9	89.248.174.3	57964	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1611510494.597148	CzyUqq2wBDnEQJEcC9	89.248.174.3	57964	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1611520057.679363	ClBV122lQ2EEMzAYAd	167.248.133.37	33562	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1611520057.679588	ClBV122lQ2EEMzAYAd	167.248.133.37	33562	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1611520057.832364	ClBV122lQ2EEMzAYAd	167.248.133.37	33562	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1611520057.832620	ClBV122lQ2EEMzAYAd	167.248.133.37	33562	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1611520057.987371	ClBV122lQ2EEMzAYAd	167.248.133.37	33562	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1611520057.987601	ClBV122lQ2EEMzAYAd	167.248.133.37	33562	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1611619722.138794	CA9VtB1OXObcXXSMc	74.120.14.53	55610	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1611619722.139064	CA9VtB1OXObcXXSMc	74.120.14.53	55610	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1611619722.284817	CA9VtB1OXObcXXSMc	74.120.14.53	55610	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1611619722.285062	CA9VtB1OXObcXXSMc	74.120.14.53	55610	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1611619722.460310	CA9VtB1OXObcXXSMc	74.120.14.53	55610	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1611619722.460604	CA9VtB1OXObcXXSMc	74.120.14.53	55610	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1611627076.503319	C45QyDx8G3Bcqywil	178.73.215.171	45852	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1611627076.503540	C45QyDx8G3Bcqywil	178.73.215.171	45852	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1611627076.574450	C45QyDx8G3Bcqywil	178.73.215.171	45852	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1611627076.574759	C45QyDx8G3Bcqywil	178.73.215.171	45852	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1611627076.647377	C45QyDx8G3Bcqywil	178.73.215.171	45852	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1611627076.647642	C45QyDx8G3Bcqywil	178.73.215.171	45852	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1611704015.130299	C6nBZBWaXfKHs6KO2	192.241.194.162	39968	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1611704015.130563	C6nBZBWaXfKHs6KO2	192.241.194.162	39968	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1611704015.329003	C6nBZBWaXfKHs6KO2	192.241.194.162	39968	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1611704015.329215	C6nBZBWaXfKHs6KO2	192.241.194.162	39968	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1611704015.529767	C6nBZBWaXfKHs6KO2	192.241.194.162	39968	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1611704015.530003	C6nBZBWaXfKHs6KO2	192.241.194.162	39968	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1611736873.537209	CCbL114KJYEW1JRXY7	192.35.168.160	41812	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1611736873.537489	CCbL114KJYEW1JRXY7	192.35.168.160	41812	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1611736873.677813	CCbL114KJYEW1JRXY7	192.35.168.160	41812	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1611736873.678147	CCbL114KJYEW1JRXY7	192.35.168.160	41812	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1611736873.819754	CCbL114KJYEW1JRXY7	192.35.168.160	41812	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1611736873.820731	CCbL114KJYEW1JRXY7	192.35.168.160	41812	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1611785379.441976	CTmyK74uWVD3oZg02c	66.240.192.138	34294	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1611785379.442276	CTmyK74uWVD3oZg02c	66.240.192.138	34294	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1611785380.111511	CoeB6G1ctrGd7FazD7	66.240.192.138	35050	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1611785380.111773	CoeB6G1ctrGd7FazD7	66.240.192.138	35050	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1611785380.440861	CoeB6G1ctrGd7FazD7	66.240.192.138	35050	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1611785380.441194	CoeB6G1ctrGd7FazD7	66.240.192.138	35050	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1611785380.674651	CoeB6G1ctrGd7FazD7	66.240.192.138	35050	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1611785380.674873	CoeB6G1ctrGd7FazD7	66.240.192.138	35050	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1611785399.152965	CIbhvE41GQm8WX1yv8	139.219.13.13	38478	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1611785399.153215	CIbhvE41GQm8WX1yv8	139.219.13.13	38478	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1611785400.083531	COWISM34j2DmFCVNGj	139.219.13.13	38486	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1611785400.083784	COWISM34j2DmFCVNGj	139.219.13.13	38486	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1611785400.392108	COWISM34j2DmFCVNGj	139.219.13.13	38486	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1611785400.392466	COWISM34j2DmFCVNGj	139.219.13.13	38486	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1611785400.702838	COWISM34j2DmFCVNGj	139.219.13.13	38486	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1611785400.703210	COWISM34j2DmFCVNGj	139.219.13.13	38486	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1611805471.631727	CzmkCT3aNtuIwhg4mi	192.241.204.75	58338	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1611805471.632005	CzmkCT3aNtuIwhg4mi	192.241.204.75	58338	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1611805471.823525	CzmkCT3aNtuIwhg4mi	192.241.204.75	58338	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1611805471.823787	CzmkCT3aNtuIwhg4mi	192.241.204.75	58338	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1611805472.017926	CzmkCT3aNtuIwhg4mi	192.241.204.75	58338	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1611805472.018175	CzmkCT3aNtuIwhg4mi	192.241.204.75	58338	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1611821788.915680	CWIEbA5KvOtHO03S9	167.248.133.55	58788	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1611821788.915901	CWIEbA5KvOtHO03S9	167.248.133.55	58788	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1611821789.066627	CWIEbA5KvOtHO03S9	167.248.133.55	58788	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1611821789.066922	CWIEbA5KvOtHO03S9	167.248.133.55	58788	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1611821789.218441	CWIEbA5KvOtHO03S9	167.248.133.55	58788	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1611821789.218783	CWIEbA5KvOtHO03S9	167.248.133.55	58788	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1611832626.371189	CGmv9u29EHbOsCO6L5	74.120.14.53	45090	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1611832626.371508	CGmv9u29EHbOsCO6L5	74.120.14.53	45090	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1611832626.582669	CGmv9u29EHbOsCO6L5	74.120.14.53	45090	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1611832626.582945	CGmv9u29EHbOsCO6L5	74.120.14.53	45090	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1611832626.734185	CGmv9u29EHbOsCO6L5	74.120.14.53	45090	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1611832626.734435	CGmv9u29EHbOsCO6L5	74.120.14.53	45090	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1611866315.917307	C7tuyw4rKDn9iEAc98	162.142.125.39	48568	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1611866315.917562	C7tuyw4rKDn9iEAc98	162.142.125.39	48568	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1611866316.062962	C7tuyw4rKDn9iEAc98	162.142.125.39	48568	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1611866316.063429	C7tuyw4rKDn9iEAc98	162.142.125.39	48568	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1611866316.208917	C7tuyw4rKDn9iEAc98	162.142.125.39	48568	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1611866316.209172	C7tuyw4rKDn9iEAc98	162.142.125.39	48568	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1611934760.470416	CdRFuE3h7XtKatukT6	192.241.204.54	58610	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1611934760.470636	CdRFuE3h7XtKatukT6	192.241.204.54	58610	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1611934760.662437	CdRFuE3h7XtKatukT6	192.241.204.54	58610	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1611934760.662661	CdRFuE3h7XtKatukT6	192.241.204.54	58610	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1611934760.863740	CdRFuE3h7XtKatukT6	192.241.204.54	58610	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1611934760.863977	CdRFuE3h7XtKatukT6	192.241.204.54	58610	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1612046550.901921	C1JsOe1wjEmkStQUxd	192.241.220.48	43656	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1612046550.902235	C1JsOe1wjEmkStQUxd	192.241.220.48	43656	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1612046551.093956	C1JsOe1wjEmkStQUxd	192.241.220.48	43656	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1612046551.094269	C1JsOe1wjEmkStQUxd	192.241.220.48	43656	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1612046551.287183	C1JsOe1wjEmkStQUxd	192.241.220.48	43656	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1612046551.287447	C1JsOe1wjEmkStQUxd	192.241.220.48	43656	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1612108394.659774	Cvewnv2bGoGzhBj6g	74.120.14.56	34264	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1612108394.659961	Cvewnv2bGoGzhBj6g	74.120.14.56	34264	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1612108394.832525	Cvewnv2bGoGzhBj6g	74.120.14.56	34264	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1612108394.832780	Cvewnv2bGoGzhBj6g	74.120.14.56	34264	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1612108394.982390	Cvewnv2bGoGzhBj6g	74.120.14.56	34264	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1612108394.982575	Cvewnv2bGoGzhBj6g	74.120.14.56	34264	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1612160406.906808	Co7OTW34ejYCLbNGD7	192.241.225.90	55564	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1612160406.907075	Co7OTW34ejYCLbNGD7	192.241.225.90	55564	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1612160407.102540	Co7OTW34ejYCLbNGD7	192.241.225.90	55564	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1612160407.102867	Co7OTW34ejYCLbNGD7	192.241.225.90	55564	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1612160407.299347	Co7OTW34ejYCLbNGD7	192.241.225.90	55564	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1612160407.299569	Co7OTW34ejYCLbNGD7	192.241.225.90	55564	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1612196119.932091	CQtnnI60Rl9tB03g4	167.248.133.40	49456	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1612196119.932318	CQtnnI60Rl9tB03g4	167.248.133.40	49456	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1612196120.082657	CQtnnI60Rl9tB03g4	167.248.133.40	49456	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1612196120.083411	CQtnnI60Rl9tB03g4	167.248.133.40	49456	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1612196120.234373	CQtnnI60Rl9tB03g4	167.248.133.40	49456	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1612196120.234580	CQtnnI60Rl9tB03g4	167.248.133.40	49456	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1612213090.526686	CqyB4p19zL08JfeQ94	71.6.199.23	37148	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1612213090.526896	CqyB4p19zL08JfeQ94	71.6.199.23	37148	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1612213091.103192	CvQ9mF3BuNCiPyZdsj	71.6.199.23	38050	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1612213091.103433	CvQ9mF3BuNCiPyZdsj	71.6.199.23	38050	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1612213091.298672	CvQ9mF3BuNCiPyZdsj	71.6.199.23	38050	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1612213091.299018	CvQ9mF3BuNCiPyZdsj	71.6.199.23	38050	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1612213091.492811	CvQ9mF3BuNCiPyZdsj	71.6.199.23	38050	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1612213091.493117	CvQ9mF3BuNCiPyZdsj	71.6.199.23	38050	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1612225920.962000	CJ4UTv2lUZdHO0nnpl	178.73.215.171	10361	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1612225920.962234	CJ4UTv2lUZdHO0nnpl	178.73.215.171	10361	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1612225921.038500	CJ4UTv2lUZdHO0nnpl	178.73.215.171	10361	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1612225921.038822	CJ4UTv2lUZdHO0nnpl	178.73.215.171	10361	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1612225921.116318	CJ4UTv2lUZdHO0nnpl	178.73.215.171	10361	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1612225921.116539	CJ4UTv2lUZdHO0nnpl	178.73.215.171	10361	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1612246936.754711	CdYr6L29LscPy2bnBa	192.241.225.100	51788	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1612246936.754966	CdYr6L29LscPy2bnBa	192.241.225.100	51788	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1612246936.948596	CdYr6L29LscPy2bnBa	192.241.225.100	51788	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1612246936.948964	CdYr6L29LscPy2bnBa	192.241.225.100	51788	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1612246937.142996	CdYr6L29LscPy2bnBa	192.241.225.100	51788	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1612246937.143266	CdYr6L29LscPy2bnBa	192.241.225.100	51788	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1612281218.597663	Ce7Zx74DfDTqNwoxX3	162.142.125.39	35384	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1612281218.597943	Ce7Zx74DfDTqNwoxX3	162.142.125.39	35384	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1612281218.988756	Ce7Zx74DfDTqNwoxX3	162.142.125.39	35384	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1612281218.989029	Ce7Zx74DfDTqNwoxX3	162.142.125.39	35384	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1612281219.140503	Ce7Zx74DfDTqNwoxX3	162.142.125.39	35384	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1612281219.140772	Ce7Zx74DfDTqNwoxX3	162.142.125.39	35384	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1612345182.215422	CwpNXX2IZO1LDjeIWh	192.241.224.132	53234	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1612345182.215710	CwpNXX2IZO1LDjeIWh	192.241.224.132	53234	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1612345182.411902	CwpNXX2IZO1LDjeIWh	192.241.224.132	53234	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1612345182.412213	CwpNXX2IZO1LDjeIWh	192.241.224.132	53234	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1612345182.609522	CwpNXX2IZO1LDjeIWh	192.241.224.132	53234	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1612345182.609751	CwpNXX2IZO1LDjeIWh	192.241.224.132	53234	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1612350899.982081	CicF5u2ds0yTi6Tk37	185.142.236.34	48864	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1612350899.982255	CicF5u2ds0yTi6Tk37	185.142.236.34	48864	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1612350900.490385	C2tDQO3FhYHantkHRj	185.142.236.34	49052	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1612350900.490685	C2tDQO3FhYHantkHRj	185.142.236.34	49052	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1612350900.659220	C2tDQO3FhYHantkHRj	185.142.236.34	49052	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1612350900.659451	C2tDQO3FhYHantkHRj	185.142.236.34	49052	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1612350900.716605	C2tDQO3FhYHantkHRj	185.142.236.34	49052	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1612350900.716800	C2tDQO3FhYHantkHRj	185.142.236.34	49052	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1612353352.610245	CRP4Jt1pP0nz1eEN9g	192.35.168.80	14516	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1612353352.610425	CRP4Jt1pP0nz1eEN9g	192.35.168.80	14516	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1612353352.752398	CRP4Jt1pP0nz1eEN9g	192.35.168.80	14516	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1612353352.752717	CRP4Jt1pP0nz1eEN9g	192.35.168.80	14516	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1612353352.895776	CRP4Jt1pP0nz1eEN9g	192.35.168.80	14516	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1612353352.895999	CRP4Jt1pP0nz1eEN9g	192.35.168.80	14516	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1612384332.161992	ChaAfn1ruzc2MyWD3i	89.248.174.3	33278	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1612384332.162210	ChaAfn1ruzc2MyWD3i	89.248.174.3	33278	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1612384332.212086	ChaAfn1ruzc2MyWD3i	89.248.174.3	33278	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1612384332.212335	ChaAfn1ruzc2MyWD3i	89.248.174.3	33278	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1612384332.263053	ChaAfn1ruzc2MyWD3i	89.248.174.3	33278	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1612384332.263264	ChaAfn1ruzc2MyWD3i	89.248.174.3	33278	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1612446598.178328	CsSbjR324QYR3P6J1a	192.241.223.159	43208	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1612446598.178715	CsSbjR324QYR3P6J1a	192.241.223.159	43208	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1612446598.376908	CsSbjR324QYR3P6J1a	192.241.223.159	43208	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1612446598.377185	CsSbjR324QYR3P6J1a	192.241.223.159	43208	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1612446598.576755	CsSbjR324QYR3P6J1a	192.241.223.159	43208	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1612446598.577132	CsSbjR324QYR3P6J1a	192.241.223.159	43208	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1612480730.518619	CB9Bv84pg3gHYmwlj2	74.120.14.53	56172	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1612480730.518847	CB9Bv84pg3gHYmwlj2	74.120.14.53	56172	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1612480730.671960	CB9Bv84pg3gHYmwlj2	74.120.14.53	56172	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1612480730.672213	CB9Bv84pg3gHYmwlj2	74.120.14.53	56172	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1612480730.826479	CB9Bv84pg3gHYmwlj2	74.120.14.53	56172	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1612480730.826714	CB9Bv84pg3gHYmwlj2	74.120.14.53	56172	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+1612491452.414451	Cp7gqA4cyzIhKB1eke	167.248.133.39	33920	192.168.1.4	102	Job	type=Setup Communication	-	(empty)
+1612491452.414690	Cp7gqA4cyzIhKB1eke	167.248.133.39	33920	192.168.1.4	102	Acknowledge Data	class=No error,code=0,type=Setup Communication	-	(empty)
+1612491452.565212	Cp7gqA4cyzIhKB1eke	167.248.133.39	33920	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x0011 index=0001
+1612491452.565467	Cp7gqA4cyzIhKB1eke	167.248.133.39	33920	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x0011 index=0000
+1612491452.717114	Cp7gqA4cyzIhKB1eke	167.248.133.39	33920	192.168.1.4	102	User Data	mode=Request,group=CPU Functions,sub=Read SZL	-	Octet String id=0x001c index=0001
+1612491452.717434	Cp7gqA4cyzIhKB1eke	167.248.133.39	33920	192.168.1.4	102	User Data	mode=Response,group=CPU Functions,sub=Read SZL,code=0	-	Octet String id=0x001c index=0000
+#close	2021-02-05-11-59-26
