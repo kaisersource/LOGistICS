@@ -1,7 +1,7 @@
 # Overview 
 LOGistICS is a monitoring framework for investigating the security of industrial PLC systems. Diverse processing components and probes with different tasks are included in the architecture
 
-
+![alt text](https://github.com/kaisersource/LOGistICS/blob/main/Low%20Level%20Design/LLD%20Logistics%20ASIS.svg)
 
 Build LOGistICS container inside the dir by using:
 docker build -t logistics .
