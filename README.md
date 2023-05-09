@@ -1,5 +1,5 @@
 # Overview 
-LOGistICS is a monitoring framework for investigating the security of industrial PLC systems. Diverse processing components and probes with different tasks are included in the architecture
+LOGistICS is a monitoring framework for investigating the security of industrial PLC systems. Diverse processing components and probes with different tasks are included in the architecture. The honeypot node logs S7 and Modbus traffic.
 
 ![alt text](https://github.com/kaisersource/LOGistICS/blob/main/Low%20Level%20Design/LLD%20Logistics%20ASIS.svg)
 
