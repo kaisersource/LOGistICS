@@ -9,7 +9,7 @@ docker build -t logistics .
 Execute in interactive mode in order to enable GUI:
 docker run -it -p 102:102 -p 502:502 logistics
 
-In order to detach the container and avoid its suicide do:
+To detach the container and avoid its suicide do:
 ctrl+p, then ctrl+q 
 
 [TODO]
