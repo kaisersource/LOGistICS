@@ -80,7 +80,7 @@ def filter_tcp(packet):
        return results
 
 def check_arg(args=None):
-    parser = argparse.ArgumentParser(description='LOGistICS KaiserSniffer')
+    parser = argparse.ArgumentParser(description='LOGistICS KaiserSniff')
     parser.add_argument('-I', '--interface',
                             help='e.g. lo, wlan0',
                             default='lo')
