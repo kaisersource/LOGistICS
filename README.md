@@ -26,11 +26,12 @@ ctrl+p, then ctrl+q
 
 ### v0.1.1
 - [x] Merging honeypot setup with a shell script
-- [x] Upload updated version of pyshark-based capture script
-- [x] Fixed where live capture couldn't be possible in some circumstances.
-- [ ] Check and report deployment differences between Zeek versions (3.0.8 was used. Otherwise Security Onion distro is adviced)
-- [ ] Docker compose to start all the services, then make the honeypot container a dependency of the capture container 
-- [ ] Add support of further ICS protocols e.g. DNP3. 
+- [x] Upload updated version of pyshark-based capture script (latest - 0.6)
+- [x] Fixed where live capture couldn't be possible in some circumstances
+- [ ] Embed KaiserSniff inside rootfs + unique build
+- [ ] Check and report deployment differences between Zeek versions (3.0.8 was used)
+- [ ] Docker compose to start all the services, then make the honeypot container a dependency of the capture container;
+- [ ] Add support of further ICS protocols e.g. DNP3
 - [x] Moved Python dependencies to requirements.txt
 
 ### v.0.1.0
