@@ -5,7 +5,7 @@ ARG LOGDIR=/var/log/logistics
 COPY /rootfs/home/Modbus/requirements.txt /home/Modbus/requirements.txt
 WORKDIR /home/Modbus/
 RUN apt update \
-    && apt install -y gcc python python3-pip python-setuptools dialog screen supervisor libcap2-bin \
+    && apt install -y gcc python python3-pip python-setuptools dialog screen supervisor wireshark libcap2-bin \
     && pip3 install -r "requirements.txt" && mkdir -p $LOGDIR \
     && chmod -R 777 /tmp /var/log/ 
 COPY rootfs /
