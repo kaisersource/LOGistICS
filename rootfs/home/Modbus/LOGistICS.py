@@ -138,20 +138,12 @@ def log_to_dest(a):
         else:
             valves[i] = 'Off'
 
-
-
-
-
-
-
-
 "New Function"
 "Assigns template to Modbus Identity "
 def set_Template(idt,t):
     
     #Invoking template selector according to t value
-    my_selector= ts.selector(t)
-    
+    my_selector = ts.selector(t)
     t=int(t)
   
     idt.VendorName,idt.ProductCode,idt.VendorUrl,idt.ProductName,idt.ModelName,idt.MajorMinorRevision = my_selector
@@ -199,8 +191,6 @@ def run_Serv(h,p,t):
     ir = ModbusSequentialDataBlock(0,(20,20,20,20,20,20,104,116,116,112,115,58,47,47,116, 101, 114, 109, 115, 97, 110, 100, 99, 111, 110, 100, 105, 116, 105, 111, 110, 115, 46, 103, 97, 109,101,47)))
     
     context = ModbusServerContext(slaves=store, single=True)
-  
-    
     #Invoke template
     #Todo : istantiate multiple profiles 
    
@@ -209,7 +199,6 @@ def run_Serv(h,p,t):
     idt = ModbusDeviceIdentification()
 
     set_Template(idt,t)
-  
 
     time_loop0 = 500
     time_loop1 = 500
@@ -226,5 +215,3 @@ def run_Serv(h,p,t):
 if __name__ == "__main__":
     h, p, t = check_arg(sys.argv[1:])
     run_Serv(h,p,t)
-    
-
