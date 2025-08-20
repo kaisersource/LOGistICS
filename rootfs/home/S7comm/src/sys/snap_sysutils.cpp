@@ -27,7 +27,7 @@
 #include "snap_sysutils.h"
 
 #ifdef OS_OSX
-int clock_gettime(int clk_id, struct timespec* t) 
+int clock_gettime(int clk_id, struct timespec* t)
 {
     struct timeval now;
     int rv = gettimeofday(&now, NULL);
@@ -70,4 +70,59 @@ longword DeltaTime(longword &Elapsed)
     if (TheTime<Elapsed)
         Elapsed=0;
     return TheTime-Elapsed;
+}
+//---------------------------------------------------------------------------
+word SwapWord(word Value)
+{
+    return  ((Value >> 8) & 0xFF) | ((Value << 8) & 0xFF00);
+}
+//---------------------------------------------------------------------------
+longword SwapDWord(longword Value)
+{
+    #pragma pack(1)
+	typedef struct {
+        union {
+            struct {
+                byte b1, b2, b3, b4;
+            } bb; // to be ISO C++ compliant we cannot have unnamed struct
+            longword Value;
+        };
+    }lw;
+    #pragma pack()
+
+    lw Result;
+    byte tmp;
+
+    Result.Value=Value;
+    tmp=Result.bb.b4;
+    Result.bb.b4=Result.bb.b1;
+    Result.bb.b1=tmp;
+    tmp=Result.bb.b3;
+    Result.bb.b3=Result.bb.b2;
+    Result.bb.b2=tmp;
+    return Result.Value;
+}
+//------------------------------------------------------------------------------
+byte BCD(word Value)
+{
+    return ((Value / 10) << 4) + (Value % 10);
+}
+//------------------------------------------------------------------------------
+longword AsciiToNum(pbyte ascii, size_t len) {
+    longword dec = 1;
+    longword num = 0;
+    for (int i = 1; i <= len; i++, dec *= 10) {
+        num += (ascii[len - i] - 0x30) * dec;
+    }
+    return num;
+}
+//------------------------------------------------------------------------------
+void NumToAscii(pbyte buff, longword num, size_t len) {
+    longword dec = 1;
+    for (int i = 1; i < len; i++)
+        dec *= 10;
+    for (int i = 1; i <= len; i++, dec /= 10) {
+        buff[len - i] = (num / dec) + 0x30;
+        num %= dec;
+    }
 }

@@ -6,22 +6,23 @@
 ## Intend this makefile only as a "batch examples updater" after library modification.
 ##
 
-Libs     := -lsnap7 
-Wrapper  :=snap7.cpp
+Libs     := -lsnap7
+Wrapper  := snap7.cpp
 
 CXX      := g++
 CC       := gcc
-CXXFLAGS :=-O3 -std=c++17
+CXXFLAGS := -O3
 CFLAGS   :=
+LDFLAGS  := -lstdc++
 
 .PHONY: all clean
 
-all: 
-	$(CXX) $(CXXFLAGS) -o client ../client.cpp ../$(Wrapper) $(Libs) 
-	$(CXX) $(CXXFLAGS) -o server ../server.cpp ../$(Wrapper) $(Libs) 
-	$(CXX) $(CXXFLAGS) -o srv_resourceless ../srv_resourceless.cpp ../$(Wrapper) $(Libs) 
-	$(CXX) $(CXXFLAGS) -o apartner ../apartner.cpp ../$(Wrapper) $(Libs) 
-	$(CXX) $(CXXFLAGS) -o ppartner ../ppartner.cpp ../$(Wrapper) $(Libs) 
+all:
+	$(CXX) $(CXXFLAGS) $(LDFLAGS) -o client ../client.cpp ../$(Wrapper) $(Libs)
+	$(CXX) $(CXXFLAGS) $(LDFLAGS) -o server ../server.cpp ../$(Wrapper) $(Libs)
+	$(CXX) $(CXXFLAGS) $(LDFLAGS) -o srv_resourceless ../srv_resourceless.cpp ../$(Wrapper) $(Libs)
+	$(CXX) $(CXXFLAGS) $(LDFLAGS) -o apartner ../apartner.cpp ../$(Wrapper) $(Libs)
+	$(CXX) $(CXXFLAGS) $(LDFLAGS) -o ppartner ../ppartner.cpp ../$(Wrapper) $(Libs)
 
 clean:
 	$(RM) client

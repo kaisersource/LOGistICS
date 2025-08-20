@@ -145,10 +145,19 @@ EXPORTSPEC S7Object S7API Srv_Create();
 EXPORTSPEC void S7API Srv_Destroy(S7Object &Server);
 EXPORTSPEC int S7API Srv_GetParam(S7Object Server, int ParamNumber, void *pValue);
 EXPORTSPEC int S7API Srv_SetParam(S7Object Server, int ParamNumber, void *pValue);
+EXPORTSPEC int S7API Srv_SetSZL(S7Object Server, int SZLID, pbyte Val, int len);
+EXPORTSPEC int S7API Srv_SetForcePDU(S7Object Server, word size);
 EXPORTSPEC int S7API Srv_Start(S7Object Server);
 EXPORTSPEC int S7API Srv_StartTo(S7Object Server, const char *Address);
 EXPORTSPEC int S7API Srv_Stop(S7Object Server);
+EXPORTSPEC int S7API Srv_SetUseSZLCache(S7Object Server, const SZLAnswerMap& cacheRef);
+EXPORTSPEC int S7API Srv_UnsetUseSZLCache(S7Object Server);
 // Data
+EXPORTSPEC int S7API Srv_GetDiagRequest(S7Object Server, longword client_id, byte job_id, RequestDiag*& rd);
+EXPORTSPEC int S7API Srv_AddDiagResponse(S7Object Server, longword client_id, byte job_id, ResponseDiag* rd);
+EXPORTSPEC int S7API Srv_AddBlock(S7Object Server, void *pBinary, int Size);
+EXPORTSPEC int S7API Srv_GetBlock(S7Object Server, byte BlkType, word BlkNum, pbyte &block);
+EXPORTSPEC int S7API Srv_AddDiagItem(S7Object Server, pbyte Item);
 EXPORTSPEC int S7API Srv_RegisterArea(S7Object Server, int AreaCode, word Index, void *pUsrData, int Size);
 EXPORTSPEC int S7API Srv_UnregisterArea(S7Object Server, int AreaCode, word Index);
 EXPORTSPEC int S7API Srv_LockArea(S7Object Server, int AreaCode, word Index);
@@ -174,7 +183,7 @@ EXPORTSPEC void S7API Par_Destroy(S7Object &Partner);
 EXPORTSPEC int S7API Par_GetParam(S7Object Partner, int ParamNumber, void *pValue);
 EXPORTSPEC int S7API Par_SetParam(S7Object Partner, int ParamNumber, void *pValue);
 EXPORTSPEC int S7API Par_Start(S7Object Partner);
-EXPORTSPEC int S7API Par_StartTo(S7Object Partner, const char *LocalAddress, const char *RemoteAddress, 
+EXPORTSPEC int S7API Par_StartTo(S7Object Partner, const char *LocalAddress, const char *RemoteAddress,
 	word LocTsap, word RemTsap);
 EXPORTSPEC int S7API Par_Stop(S7Object Partner);
 // BSend

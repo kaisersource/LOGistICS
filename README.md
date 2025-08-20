@@ -20,18 +20,16 @@ ctrl+p, then ctrl+q
 - [x] Container Hardening
 - [x] Move GUI to website 
 - [x] Migrate template params from csv to ARM/SQL database compliant.   
-- [x] Continuous improvement of Python-based Analysis based on ZAT.
-- [x] Save internal states of PLC inside a Cache-based DB (eg. Redis).
-- [x] Dynamic Time Warping on collected logs in order to check the correlation between events based on time.
-
+- [ ] Continuous improvement of Python-based Analysis based on ZAT.
+- [ ] Save internal states of PLC inside a Cache-based DB (eg. Redis).
+- [ ] Dynamic Time Warping on collected logs in order to check the correlation between events based on time.
+- [ ] Embed Sniffer with unique build
+- [ ] Add support of further ICS protocols e.g. DNP3
 ### v0.1.1
 - [x] Merging honeypot setup with a shell script
-- [x] Upload updated version of pyshark-based capture script (latest - 0.6)
+- [x] Pyshark update (latest - 0.6)
 - [x] Fixed where live capture couldn't be possible in some circumstances
-- [ ] Embed KaiserSniff inside rootfs + unique build
-- [ ] Check and report deployment differences between Zeek versions (3.0.8 was used)
-- [ ] Docker compose to start all the services, then make the honeypot container a dependency of the capture container;
-- [ ] Add support of further ICS protocols e.g. DNP3
+
 - [x] Moved Python dependencies to requirements.txt
 
 ### v.0.1.0

@@ -42,11 +42,8 @@
      unsigned char DB21[512];  // Our DB1
      unsigned char DB103[1280];  // Our DB2
      unsigned char DB3[1024]; // Our DB3
-     
-     //std::allocator<char> alloc;
-     //char* OB1 = alloc.allocate(150);
-     //unsigned char OB1[2048]; // Our OB1
-    
+     unsigned char OB1[1024]; // Our OB1
+     unsigned char DB1000[1000]; // Our OB1
 	 byte cnt = 0;
      std::ofstream outfile;
 
@@ -71,10 +68,7 @@ void S7API ReadEventCallBack(void *usrPtr, PSrvEvent PEvent, int Size)
 {
     // print the read event
     printf("%s\n",SrvEventText(PEvent).c_str());
-	
-    
-    
-    if (PEvent->EvtParam1==S7AreaDB)
+	if (PEvent->EvtParam1==S7AreaDB)
 	{
                 // As example the DB requested is filled before transferred
                 // EvtParam1 contains the DB number.
@@ -83,31 +77,30 @@ void S7API ReadEventCallBack(void *usrPtr, PSrvEvent PEvent, int Size)
 		case 1 : memset(&DB21, ++cnt, sizeof(DB21));break;
 		case 2 : memset(&DB103, ++cnt, sizeof(DB103));break;
 		case 3 : memset(&DB3, ++cnt, sizeof(DB3));break;
-        //case 4 : memset();
+        case 4 : memset(&OB1, ++cnt, sizeof(OB1));break;
+        case 5 : memset(&DB1000, ++cnt, sizeof(DB1000));break;
 		}
 	}
     
-        
 };
 
 int main(int argc, char* argv[])
 {
     int Error;
     Server = new TS7Server;
-   
+
     // Share some resources with our virtual PLC
     Server->RegisterArea(srvAreaDB,     // We are registering a DB
-                         21,             // Its number is 1 (DB1)
-                         &DB21,          // Our buffer for DB1
+                         21,             // Its number is 21 (DB21)
+                         &DB21,          // Our buffer for DB21
                          sizeof(DB21));  // Its size
     // Do the same for DB2 and DB3
-   
-   
     Server->RegisterArea(srvAreaDB, 103, &DB103, sizeof(DB103));
-    //Server->RegisterArea(srvAreaDB, 1, &OB1, sizeof(OB1));
     Server->RegisterArea(srvAreaDB, 3, &DB3, sizeof(DB3));
-    
-    // We mask the read event to avoid the double trigger for the same event                  
+    Server->RegisterArea(srvAreaOB, 1, &OB1, sizeof(OB1));
+    Server->RegisterArea(srvAreaOB, 1000, &DB1000, sizeof(DB1000));
+
+    // We mask the read event to avoid the double trigger for the same event
     Server->SetEventsMask(~evcDataRead);
     Server->SetEventsCallback(EventCallBack, NULL);
     // Set the Read Callback
@@ -115,11 +108,12 @@ int main(int argc, char* argv[])
     // Start the server onto the default adapter.
     // To select an adapter we have to use Server->StartTo("192.168.x.y").
     // Start() is the same of StartTo("0.0.0.0");
-    Error=Server->Start();
+    Error=Server->StartTo(argv[1]);
     if (Error==0)
     {
 	// Now the server is running ... wait a key to terminate
         getchar();
+        printf("%s\n", "Bye!");
     }
     else
         printf("%s\n",SrvErrorText(Error).c_str());

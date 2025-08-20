@@ -38,7 +38,7 @@
 
 // Visual Studio needs this to use the correct time_t size
 #if defined (_WIN32) && !defined(_WIN64)
-# define _USE_32BIT_TIME_T 
+# define _USE_32BIT_TIME_T
 #endif
 
 #if defined(unix) || defined(__unix__) || defined(__unix)
@@ -49,7 +49,8 @@
 # define OS_SOLARIS
 #endif
 
-#if BSD>=0
+// XXX >= triggers on my machine and wont define uintptr_t
+#if BSD>0
 # define OS_BSD
 #endif
 
@@ -74,7 +75,7 @@
 // Visual C++ not C99 compliant (VS2008--)
 #ifdef _MSC_VER
 # if _MSC_VER >= 1600
-#  include <stdint.h>  // VS2010++ have it 
+#  include <stdint.h>  // VS2010++ have it
 # else
    typedef signed __int8     int8_t;
    typedef signed __int16    int16_t;
@@ -107,12 +108,12 @@ extern "C" {
 #endif
 
 #ifdef OS_OSX
-#  include <stdint.h>  
+#  include <stdint.h>
 #  include <time.h>
 #endif
 
 #ifdef OS_SOLARIS
-#  include <stdint.h>  
+#  include <stdint.h>
 #  include <time.h>
 #endif
 
@@ -204,7 +205,7 @@ typedef struct{
 }TS7Tag, *PS7Tag;
 
 //------------------------------------------------------------------------------
-//                                  PARAMS LIST            
+//                                  PARAMS LIST
 //------------------------------------------------------------------------------
 const int p_u16_LocalPort  	    = 1;
 const int p_u16_RemotePort 	    = 2;
@@ -222,9 +223,13 @@ const int p_i32_BRecvTimeout    = 13;
 const int p_u32_RecoveryTime    = 14;
 const int p_u32_KeepAliveTime   = 15;
 
-// Client/Partner Job status 
+// Client/Partner Job status
 const int JobComplete           = 0;
 const int JobPending            = 1;
+
+// SZL identifiers (lib internals, not S7)
+const int SZL_ID_0011 = 0;
+const int SZL_ID_001C = 1;
 
 //******************************************************************************
 //                                   CLIENT
@@ -347,7 +352,7 @@ typedef struct {
 
 // Blocks info
 typedef struct {
-   int BlkType;    // Block Type (OB, DB) 
+   int BlkType;    // Block Type (OB, DB)
    int BlkNumber;  // Block number
    int BlkLang;    // Block Language
    int BlkFlags;   // Block flags
@@ -359,7 +364,7 @@ typedef struct {
    int Version;    // Block version
    // Chars info
    char CodeDate[11]; // Code date
-   char IntfDate[11]; // Interface date 
+   char IntfDate[11]; // Interface date
    char Author[9];    // Author
    char Family[9];    // Family
    char Header[9];    // Header
@@ -581,7 +586,7 @@ const longword evcDownload            = 0x00800000;
 const longword evcDirectory           = 0x01000000;
 const longword evcSecurity            = 0x02000000;
 const longword evcControl             = 0x04000000;
-const longword evcReserved_08000000   = 0x08000000; // actually unused
+const longword evcGroupProgrammer     = 0x08000000;
 const longword evcReserved_10000000   = 0x10000000; // actually unused
 const longword evcReserved_20000000   = 0x20000000; // actually unused
 const longword evcReserved_40000000   = 0x40000000; // actually unused
@@ -601,6 +606,8 @@ const word evsGetClock                = 0x0001;
 const word evsSetClock                = 0x0002;
 const word evsSetPassword             = 0x0001;
 const word evsClrPassword             = 0x0002;
+const word evsGPStatic                = 0x0001;
+const word evsGPBlink                 = 0x0002;
 // Event Params : functions group
 const word grProgrammer               = 0x0041;
 const word grCyclicData               = 0x0042;
@@ -658,6 +665,7 @@ S7Object S7API Srv_Create();
 void S7API Srv_Destroy(S7Object *Server);
 int S7API Srv_GetParam(S7Object Server, int ParamNumber, void *pValue);
 int S7API Srv_SetParam(S7Object Server, int ParamNumber, void *pValue);
+int S7API Srv_SetSZL(S7Object Server, int SZLID, pbyte Val, int len);
 int S7API Srv_StartTo(S7Object Server, const char *Address);
 int S7API Srv_Start(S7Object Server);
 int S7API Srv_Stop(S7Object Server);

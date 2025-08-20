@@ -517,6 +517,22 @@ int TS7Server::SetParam(int ParamNumber, void *pValue)
     return Srv_SetParam(Server, ParamNumber, pValue);
 }
 //---------------------------------------------------------------------------
+int TS7Server::SetUseSZLCache(const SZLAnswerMap &cache) {
+    return Srv_SetUseSZLCache(Server, cache);
+}
+//---------------------------------------------------------------------------
+int TS7Server::UnsetUseSZLCache() {
+    return Srv_UnsetUseSZLCache(Server);
+}
+//---------------------------------------------------------------------------
+int TS7Server::SetForcePDU(word size) {
+    return Srv_SetForcePDU(Server, size);
+}
+//---------------------------------------------------------------------------
+int TS7Server::SetSZL(int SZLID, pbyte val, int len) {
+    return Srv_SetSZL(Server, SZLID, val, len);
+}
+//---------------------------------------------------------------------------
 int TS7Server::SetEventsCallback(pfn_SrvCallBack PCallBack, void *UsrPtr)
 {
     return Srv_SetEventsCallback(Server, PCallBack, UsrPtr);
@@ -574,6 +590,30 @@ void TS7Server::SetEventsMask(longword Mask)
 void TS7Server::SetLogMask(longword Mask)
 {
     Srv_SetMask(Server, mkLog, Mask);
+}
+//---------------------------------------------------------------------------
+RequestDiag* TS7Server::GetDiagRequest(longword client_id, byte job_id) {
+    RequestDiag* rd;
+    Srv_GetDiagRequest(Server, client_id, job_id, rd);
+    return rd;
+}
+//---------------------------------------------------------------------------
+int TS7Server::AddDiagResponse(longword client_id, byte job_id, ResponseDiag* rd) {
+    return Srv_AddDiagResponse(Server, client_id, job_id, rd);
+}
+//---------------------------------------------------------------------------
+int TS7Server::AddBlock(void *pBinary, int Size) {
+    return Srv_AddBlock(Server, pBinary, Size);
+}
+//---------------------------------------------------------------------------
+pbyte TS7Server::GetBlock(byte BlkType, word BlkNum) {
+    pbyte block;
+    Srv_GetBlock(Server, BlkType, BlkNum, &block);
+    return block;
+}
+//---------------------------------------------------------------------------
+void TS7Server::AddDiagItem(pbyte Item) {
+    Srv_AddDiagItem(Server, Item);
 }
 //---------------------------------------------------------------------------
 int TS7Server::RegisterArea(int AreaCode, word Index, void *pUsrData, word Size)

@@ -1,5 +1,6 @@
 FROM ubuntu:22.04
 
+
 # Impostazioni di ambiente (best practice: raggruppare all'inizio)
 ENV TERM=xterm \
     TZ=Europe/Rome \
@@ -17,7 +18,12 @@ COPY /rootfs/home/Modbus/requirements.txt ./requirements.txt
 RUN apt-get update && \
     echo "wireshark-common wireshark-common/install-setuid boolean true" | debconf-set-selections && \
     apt-get install -y --no-install-recommends \
+    build-essential \
+    make \
+    g++ \
     gcc \
+    git \
+    --no-install-recommends \
     python3 \
     python3-pip \
     python3-venv \
@@ -32,6 +38,15 @@ RUN apt-get update && \
 
 # Copia il resto dei file e finalizza la configurazione
 COPY rootfs /
+WORKDIR /home/S7comm/build/unix/
+#compilazione snap7
+RUN ls -l
+RUN make -f x86_64_linux.mk FW_TYPE=300 && make -f x86_64_linux.mk FW_TYPE=400 && make -f x86_64_linux.mk FW_TYPE=1200
+
+RUN make -f x86_64_linux.mk install 
+
+RUN cd /home/S7comm/examples/cpp/x86_64-linux/ && make 
+
 RUN mkdir -p $LOGDIR && \
     chmod -R 777 /tmp /var/log/
 

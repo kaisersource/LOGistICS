@@ -363,7 +363,6 @@ static BaseString PDUText(TSrvEvent &Event)
                                    switch (Event.EvtParam1)
                                    {
                                      case grCyclicData : return "Function group cyclic data not yet implemented";
-                                     case grProgrammer : return "Function group programmer not yet implemented";
                                    }; // <- no break needed here
                                  }
       default : return "Unknown Return code ("+IntToString(Event.EvtRetCode)+")";
@@ -437,16 +436,6 @@ static BaseString ReadSZLText(TSrvEvent &Event)
         return Result+" --> NOT AVAILABLE";
 }
 //---------------------------------------------------------------------------
-static BaseString UploadText(TSrvEvent &Event)
-{
-   return "Block upload requested --> NOT PERFORMED (due to invalid security level)";
-}
-//---------------------------------------------------------------------------
-static BaseString DownloadText(TSrvEvent &Event)
-{
-   return "Block download requested --> NOT PERFORMED (due to invalid security level)";
-}
-//---------------------------------------------------------------------------
 static BaseString StrBlockType(word Code)
 {
     switch (Code)
@@ -461,6 +450,39 @@ static BaseString StrBlockType(word Code)
         default : return "[Unknown 0x"+NumToString(Code,16,4)+"]";
     };
 }
+//---------------------------------------------------------------------------
+static BaseString UploadText(TSrvEvent &Event)
+{
+    BaseString Result="Upload " + StrBlockType(Event.EvtParam1) + IntToString(Event.EvtParam2) + ": ";
+    switch (Event.EvtRetCode) {
+        case evrNoError:
+            Result += "Successful";
+            break;
+        case evrDataSizeMismatch:
+            Result += "Data size does not match";
+            break;
+        default:
+            Result += "Unknown";
+    }
+   return Result;
+}
+//---------------------------------------------------------------------------
+static BaseString DownloadText(TSrvEvent &Event)
+{
+    BaseString Result="Download " + StrBlockType(Event.EvtParam1) + IntToString(Event.EvtParam2) + ": ";
+    switch (Event.EvtRetCode) {
+        case evrNoError:
+            Result += "Successful";
+            break;
+        case evrDataSizeMismatch:
+            Result += "Data size does not match";
+            break;
+        default:
+            Result += "Unknown";
+    }
+   return Result;
+}
+
 //---------------------------------------------------------------------------
 static BaseString BlockInfoText(TSrvEvent &Event)
 {
@@ -488,6 +510,28 @@ static BaseString SecurityText(TSrvEvent &Event)
     };
 }
 //---------------------------------------------------------------------------
+static BaseString GroupProgrammerText(TSrvEvent &Event)
+{
+    switch (Event.EvtParam1)
+    {
+        case evsGPStatic      : return "Group Programmer : Standard request (forces) --> OK";
+        case evsGPBlink       : return "Group Programmer : Blink LED --> NOT IMPLEMENTED (sending default response)";
+        case evsGPRequestDiag : return "Group Programmer : Request diag mode (Job " + IntToString(Event.EvtParam4) + ") --> OK";
+        case evsGPReadDiag    : return "Group Programmer : Read diagnotic data (Job " + IntToString(Event.EvtParam4) + ") --> OK";
+        case evsGPRemoveDiag  : return "Group Programmer : Stop diag mode (Job " + IntToString(Event.EvtParam4) + ") --> OK";
+        default               : return "Group Programmer : Unknown Subfunction";
+    };
+}
+//---------------------------------------------------------------------------
+static BaseString GroupCyclicDataText(TSrvEvent &Event)
+{
+    switch (Event.EvtParam1)
+    {
+        case evsGCRequestData : return "Group Cyclic Data: Request Cyclic Data";
+        default               : return "Group Cyclic Data: Unknown Subfunction";
+    };
+}
+//---------------------------------------------------------------------------
 BaseString EvtSrvText(TSrvEvent &Event)
 {
     BaseString S;
@@ -496,17 +540,19 @@ BaseString EvtSrvText(TSrvEvent &Event)
     {
         switch (Event.EvtCode)
         {
-            case evcPDUincoming  : S="PDU incoming : "+PDUText(Event);break;
-            case evcDataRead     : S="Read request, "+TxtArea(Event)+TxtStartSize(Event)+TxtDataResult(Event);break;
-            case evcDataWrite    : S="Write request, "+TxtArea(Event)+TxtStartSize(Event)+TxtDataResult(Event);break;
-            case evcNegotiatePDU : S="The client requires a PDU size of "+IntToString(Event.EvtParam1)+" bytes";break;
-            case evcControl      : S=ControlText(Event.EvtParam1);break;
-            case evcReadSZL      : S=ReadSZLText(Event);break;
-            case evcClock        : S=ClockText(Event.EvtParam1);break;
-            case evcUpload       : S=UploadText(Event);break;
-            case evcDownload     : S=DownloadText(Event);break;
-            case evcDirectory    : S=BlockInfoText(Event);break;
-            case evcSecurity     : S=SecurityText(Event);break;
+            case evcPDUincoming    : S="PDU incoming : "+PDUText(Event);break;
+            case evcDataRead       : S="Read request, "+TxtArea(Event)+TxtStartSize(Event)+TxtDataResult(Event);break;
+            case evcDataWrite      : S="Write request, "+TxtArea(Event)+TxtStartSize(Event)+TxtDataResult(Event);break;
+            case evcNegotiatePDU   : S="The client requires a PDU size of "+IntToString(Event.EvtParam1)+" bytes";break;
+            case evcControl        : S=ControlText(Event.EvtParam1);break;
+            case evcReadSZL        : S=ReadSZLText(Event);break;
+            case evcClock          : S=ClockText(Event.EvtParam1);break;
+            case evcUpload         : S=UploadText(Event);break;
+            case evcDownload       : S=DownloadText(Event);break;
+            case evcDirectory      : S=BlockInfoText(Event);break;
+            case evcSecurity       : S=SecurityText(Event);break;
+            case evcGroupProgrammer: S=GroupProgrammerText(Event);break;
+            case evcGroupCyclicData: S=GroupCyclicDataText(Event);break;
             default:               S="Unknown event ("+IntToString(Event.EvtCode)+")";break;
         }
         return SenderText(Event)+S;

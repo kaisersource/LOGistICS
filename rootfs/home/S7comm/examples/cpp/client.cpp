@@ -31,7 +31,6 @@
 #include <stdlib.h>
 #include "snap7.h"
 
-#include <string.h>
 #ifdef OS_WINDOWS
 # define WIN32_LEAN_AND_MEAN
 # include <windows.h>
@@ -39,7 +38,7 @@
 
      TS7Client *Client;
 
-	 byte Buffer[512]; // 64 K buffer
+	 byte Buffer[65536]; // 64 K buffer
      int SampleDBNum = 1000;
 
      char *Address;     // PLC IP Address
@@ -275,54 +274,6 @@ void OrderCode()
           printf("  Version    : %d.%d.%d\n",Info.V1,Info.V2,Info.V3);
      };
 }
-
-void GetProtection(){
-    TS7Protection prot;
-	int res = Client->GetProtection(&prot);
-
-
-    if (Check(res,"Protection Level")) {
-        switch (prot.bart_sch){
-            case 0:
-                printf("Position of Operating Mode Selector: %d = UNDEFINED \n", prot.bart_sch);
-            break;
-            case 1:    
-                printf("Position of Operating Mode Selector: %d = RUN (Read-only) \n", prot.bart_sch);
-            break;
-            case 2:    
-                printf("Position of Operating Mode Selector: %d = RUN-P (Read-Write) \n", prot.bart_sch);
-            break;
-            case 3:    
-                printf("Position of Operating Mode Selector: %d = STOP \n", prot.bart_sch);
-            break;
-            } 
-
-         switch (prot.sch_par){
-            case 0:
-                printf("Assigned password: %d = NO \n", prot.sch_par);
-            break;
-            case 1 ... 3:    
-                printf("Assigned password: %d = YES \n", prot.sch_par);
-            break;
-        }
-         switch (prot.anl_sch){
-            case 0:
-                printf("Restart Mode: %d = UNDEFINED \n", prot.anl_sch);
-            break;
-            case 1:    
-                printf("Restart Mode: %d = COLD  \n", prot.anl_sch);
-            break;
-            case 2:    
-                printf("Restart Mode: %d = WARM \n", prot.anl_sch);
-            break;
-        }
-        printf("Protection Level using Operating Mode Selector: %d \n", prot.sch_schal);  
-        printf("Valid Protection Level: %d \n", prot.sch_rel);  
-    }
-}
-
-    
-
 //------------------------------------------------------------------------------
 // CPU Info : unit info
 //------------------------------------------------------------------------------
@@ -371,63 +322,14 @@ void UnitStatus()
      };
 }
 //------------------------------------------------------------------------------
-// Set password
-// Send the password to the PLC to meet its security level.
-//------------------------------------------------------------------------------
-void SetPassword(){
-char *buf;
-
-int i;
-        char p[] = "ga";
-        //char msg[2048] = {0};
-         // the user types the command he wants
-        //memcpy( p, msg+2, 0xffff);
-    int res = Client->SetSessionPassword(p);
-    printf("Result: %d",res);
-    if(Check(res,"Set Password"))
-        printf("Password Set up correctly.");   
-}
-
-/*
-
-void SetPassword(){
-    S7Object obj;
-    char p[] = calloc(sizeof(char)*400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000);
-    int res = Cli_SetSessionPassword(obj,p);
-    printf("Password setup...: %d",res);
-    if(Check(res,"Set Password"))
-        printf("Password Set up correctly.");   
-}
-
-*/
-//------------------------------------------------------------------------------
-// Download Blocknum 0
-//------------------------------------------------------------------------------
-
-void DownloadDB0()
-{
-     int Size = sizeof(Buffer); // Size is IN/OUT par
-                                // In input it tells the client the size available
-                                // In output it tells us how many bytes were uploaded.
-     int res=Client->Download(Block_SDB, &Buffer, Size);
-     if (Check(res,"Block Download (SDB 0)"))
-     {
-          printf("Dump (%d bytes) :\n",Size);
-          hexdump(&Buffer,Size);
-     }
-}
-
-
-//------------------------------------------------------------------------------
 // Upload DB0 (surely exists in AG)
 //------------------------------------------------------------------------------
-
 void UploadDB0()
 {
      int Size = sizeof(Buffer); // Size is IN/OUT par
                                 // In input it tells the client the size available
                                 // In output it tells us how many bytes were uploaded.
-     int res=Client->Upload(Block_DB, 0, &Buffer, &Size);
+     int res=Client->Upload(Block_SDB, 0, &Buffer, &Size);
      if (Check(res,"Block Upload (SDB 0)"))
      {
           printf("Dump (%d bytes) :\n",Size);
@@ -469,7 +371,7 @@ void AsEWUploadDB0()
                                 // In input it tells the client the size available
                                 // In output it tells us how many bytes were uploaded.
      JobDone=false;
-     int res=Client->AsUpload(Block_FC, 21, &Buffer, &Size);
+     int res=Client->AsUpload(Block_SDB, 0, &Buffer, &Size);
      
      if (res==0)
      {
@@ -531,9 +433,9 @@ bool CliConnect()
 {
     int res = Client->ConnectTo(Address,Rack,Slot);
     if (Check(res,"UNIT Connection")) {
-          printf(" Connected to   : %s (Rack=%d, Slot=%d)\n",Address,Rack,Slot);
-          printf(" PDU Requested  : %d bytes\n",Client->PDURequested());
-          printf(" PDU Negotiated : %d bytes\n",Client->PDULength());
+          printf("  Connected to   : %s (Rack=%d, Slot=%d)\n",Address,Rack,Slot);
+          printf("  PDU Requested  : %d bytes\n",Client->PDURequested());
+          printf("  PDU Negotiated : %d bytes\n",Client->PDULength());
     };
     return res==0;
 }
@@ -554,17 +456,11 @@ void PerformTests()
      CpInfo();
      UnitStatus();
      ReadSzl_0011_0000();
-     GetProtection();
-     SetPassword();
-     //AsCBUploadDB0();
-     //UploadDB0();
-     //DownloadDB0();  
-     //AsCBUploadDB0();
+     UploadDB0();
+     AsCBUploadDB0();
      AsEWUploadDB0();
-     //AsPOUploadDB0();
-     //DownloadDB0();
+     AsPOUploadDB0();
      MultiRead();
-    
 }
 //------------------------------------------------------------------------------
 // Tests Summary
