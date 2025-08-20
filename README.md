@@ -13,24 +13,23 @@ To detach the container and avoid its suicide do:
 ctrl+p, then ctrl+q 
 
 [TODO]
-- [x] Deploy proper implementation of pyshark module, enhanced with its latest features
-- [x] Step 1: Supervisord integration for proper process management inside a container. Step 2: splitting logistics in microservices, one for each exposed svc.
+
 - [x] Ehnancement: deploy LOGistICS by using Compose or Acorn
-- [x] Migrate snap7 to pysnap7
-- [x] Container Hardening
-- [x] Move GUI to website 
-- [x] Migrate template params from csv to ARM/SQL database compliant.   
+- [ ] Migrate snap7 from 1.4.0 to 1.4.3
+- [ ] Container Hardening
 - [ ] Continuous improvement of Python-based Analysis based on ZAT.
-- [ ] Save internal states of PLC inside a Cache-based DB (eg. Redis).
-- [ ] Dynamic Time Warping on collected logs in order to check the correlation between events based on time.
-- [ ] Embed Sniffer with unique build
+- [ ] DTW on collected data
 - [ ] Add support of further ICS protocols e.g. DNP3
+- [ ] Compile multiple firmware inside the image
+
 ### v0.1.1
 - [x] Merging honeypot setup with a shell script
 - [x] Pyshark update (latest - 0.6)
-- [x] Fixed where live capture couldn't be possible in some circumstances
-
+- [x] Fixed KaiserSniff where live capture couldn't be possible in some circumstances.
+- [x] Supervisord integration for proper process management inside a container.
 - [x] Moved Python dependencies to requirements.txt
+- [x] Multistage Build shrinked image to 700 MB 
+- [x] Update image to ubuntu 24.04
 
 ### v.0.1.0
 
