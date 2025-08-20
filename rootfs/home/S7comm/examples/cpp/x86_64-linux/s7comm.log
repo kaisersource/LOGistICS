@@ -330,3 +330,5 @@
 2025-08-18 15:25:35 [127.0.0.1] The client requires a PDU size of 480 bytes
 2025-08-18 15:25:35 [127.0.0.1] Upload OB1: Successful
 2025-08-18 15:25:35 [127.0.0.1] Client disconnected by peer
+2025-08-20 10:06:40 Server Cannot start listener - Socket Error :  TCP : Address already in use
+2025-08-20 10:06:52 Server started

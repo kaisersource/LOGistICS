@@ -1,4 +1,4 @@
-FROM ubuntu:22.04
+FROM ubuntu:24.04
 
 
 # Impostazioni di ambiente (best practice: raggruppare all'inizio)
@@ -15,20 +15,24 @@ WORKDIR /home/Modbus/
 COPY /rootfs/home/Modbus/requirements.txt ./requirements.txt
 
 # venv - deps - reqs all-in-one
-RUN apt-get update && \
-    echo "wireshark-common wireshark-common/install-setuid boolean true" | debconf-set-selections && \
-    apt-get install -y --no-install-recommends \
-    build-essential \
-    make \
+RUN apt-get update \
+    && apt-get upgrade -y \
+    # Combine all installations into a single command
+    # Removed redundant packages like make, g++, gcc (included in build-essential)
+    && apt-get install -y software-properties-common \
+    && add-apt-repository ppa:ubuntu-toolchain-r/test \
+    && echo "wireshark-common wireshark-common/install-setuid boolean true" | debconf-set-selections \
+    && apt-get install -y --no-install-recommends \
+    ca-certificates \
+    gcc-13 \
     g++ \
-    gcc \
+    make \
     git \
-    --no-install-recommends \
+    dialog\
+    screen \
     python3 \
     python3-pip \
     python3-venv \
-    dialog \
-    screen \
     supervisor \
     libcap2-bin \
     tshark && \
@@ -38,14 +42,14 @@ RUN apt-get update && \
 
 # Copia il resto dei file e finalizza la configurazione
 COPY rootfs /
-WORKDIR /home/S7comm/build/unix/
-#compilazione snap7
-RUN ls -l
-RUN make -f x86_64_linux.mk FW_TYPE=300 && make -f x86_64_linux.mk FW_TYPE=400 && make -f x86_64_linux.mk FW_TYPE=1200
-
-RUN make -f x86_64_linux.mk install 
-
-RUN cd /home/S7comm/examples/cpp/x86_64-linux/ && make 
+# Compila solamente la versione di default (s7 300) all'interno del container.
+# Then compile server.cpp binaries linking snap7 library copied to /usr/lib
+RUN cd /home/S7comm/build/unix/ \
+    && make -f x86_64_linux.mk  clean \
+    && make -f x86_64_linux.mk \
+    && make -f x86_64_linux.mk install \
+    && cd /home/S7comm/examples/cpp/x86_64-linux \
+    && make clean && make
 
 RUN mkdir -p $LOGDIR && \
     chmod -R 777 /tmp /var/log/
