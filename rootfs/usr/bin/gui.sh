@@ -62,22 +62,22 @@ CHOICE2=$(dialog --clear \
 clear
 case $CHOICE2 in
         1)
-            cp $S7_PATH/libsnap7_300.so /usr/local/lib/libsnap7.so;
-            cp $S7_PATH/libsnap7_300.so /usr/lib/libsnap7.so;
+            cp $S7_PATH/libsnap7.so-300 /usr/local/lib/libsnap7.so;
+            cp $S7_PATH/libsnap7.so-300 /usr/lib/libsnap7.so;
 	    echo "Copied";;
         2)
             echo "Copying library..."
-            cp $S7_PATH/libsnap7_400.so /usr/local/lib/libsnap7.so;
-            cp $S7_PATH/libsnap7_400.so /usr/lib/libsnap7.so;
+            cp $S7_PATH/libsnap7.so-400 /usr/local/lib/libsnap7.so;
+            cp $S7_PATH/libsnap7.so-400 /usr/lib/libsnap7.so;
             echo "Copied";;
         3)
-            cp $S7_PATH/libsnap7_1200.so /usr/local/lib/libsnap7.so;
-            cp $S7_PATH/libsnap7_1200.so /usr/lib/libsnap7.so;
+            cp $S7_PATH/libsnap7.so-1200 /usr/local/lib/libsnap7.so;
+            cp $S7_PATH/libsnap7.so-1200 /usr/lib/libsnap7.so;
 	    echo "Copied";;
 		
 esac
 
-S7_SERVER_PATH="$PWD/S7comm/examples/cpp/x86_64-linux"
+S7_SERVER_PATH="/home/S7comm/examples/cpp/x86_64-linux"
 
 
 dialog --title "Would you like to start the honeypot?" \
